@@ -72,7 +72,7 @@ label= "NAVI"                              ;
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃     1     ┃     2     ┃     3     ┃     4     ┃     5     ┃   ┃     6     ┃     7     ┃     8     ┃     9     ┃     0     ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃  CMD+A    ┃  SK OPT   ┃  SK CTRL  ┃  SK GUI   ┃   LEFT    ┃   ┃   DOWN    ┃    UP     ┃   RIGHT   ┃    DEL    ┃           ┃
+//             ┃  CMD+A    ┃  SK OPT   ┃  SK CTRL  ┃  SK G   ┃   LEFT    ┃   ┃   DOWN    ┃    UP     ┃   RIGHT   ┃    DEL    ┃           ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃           ┃  CMD+Z    ┃  CMD+X    ┃  CMD+C    ┃  CMD+V    ┃ CMD+SH+Z  ┃   ┃   HOME    ┃   PG DN   ┃   PG UP   ┃    END    ┃           ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -82,8 +82,8 @@ label= "NAVI"                              ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp N1      &kp N2      &kp N3      &kp N4      &kp N5          &kp N6      &kp N7      &kp N8      &kp N9      &kp N0
-                &kp LGUI(A) &sk LALT    &sk LCTRL   &sk LGUI    &kp LEFT        &kp DOWN    &kp UP      &kp RIGHT   &kp DEL     &trans
-    &trans      &kp LGUI(Z) &kp LGUI(X) &kp LGUI(C) &kp LGUI(V) &kp LS(LGUI(Z)) &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans      &trans      
+                &kp LG(A) &sk LALT    &sk LCTRL   &sk LG    &kp LEFT        &kp DOWN    &kp UP      &kp RIGHT   &kp DEL     &trans
+    &trans      &kp LG(Z) &kp LG(X) &kp LG(C) &kp LG(V) &kp LS(LG(Z)) &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans      &trans      
                                         &trans      &trans      &trans          &kp BSPC    &mo MOO     &sk RSHFT      
                         >;
                 };
@@ -106,11 +106,10 @@ label= "SYM"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT       &kp CARET   &kp AMPS    &kp ASTRK   &kp PLUS    &kp QMARK         
-                &kp PIPE    &kp EQUAL   &kp SQT     &kp DQT     &kp GRAVE       &trans      &sk LGUI    &sk LCTRL   &sk LALT    &kp FSLH 
-    &trans      &kp TILDE   &kp LBRC    &kp LBKT    &kp RBKT    &kp RBRC        &kp LT      &kp RPAR    &kp LPAR    &kp GT      &kp BSLH    &trans         
-                                        &sk LC(LA(LGUI)) &mo MOO &kp LGUI(SPACE) &kp BSPC    &mo MOO     &sk RSHFT      
-                        >;
+                &kp EXCL    &kp AT      &kp HASH        &kp DLLR    &kp PRCNT       &kp CARET   &kp AMPS    &kp ASTRK   &kp PLUS    &kp QMARK         
+                &kp PIPE    &kp EQUAL   &kp SQT         &kp DQT     &kp GRAVE       &trans      &sk LG      &sk LCTRL   &sk LALT    &kp FSLH 
+    &trans      &kp TILDE   &kp LBRC    &kp LBKT        &kp RBKT    &kp RBRC        &kp LT      &kp RPAR    &kp LPAR    &kp GT      &kp BSLH    &trans         
+                                        &sk LC(LA(LG))  &mo MOO     &kp LG(SPACE)   &kp BSPC    &mo MOO     &sk RSHFT                        >;
                 };
 
                 moo_layer {
