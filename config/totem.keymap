@@ -95,6 +95,27 @@
             #binding-cells = <0>;
             bindings = <&sk LEFT_SHIFT>, <&caps_word>;
         };
+
+        double_quote: double_quote {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DOUBLE_QUOTE";
+            #binding-cells = <0>;
+            bindings = <&kp DOUBLE_QUOTES>, <&dquote>;
+        };
+
+        single_quote: single_quote {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SINGLE_QUOTE";
+            #binding-cells = <0>;
+            bindings = <&kp SQT>, <&squote>;
+        };
+
+        grave_quote: grave_quote {
+            compatible = "zmk,behavior-tap-dance";
+            label = "GRAVE_QUOTE";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE>, <&gquote>;
+        };
     };
 
     macros {
@@ -215,10 +236,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL   &kp AT     &kp HASH               &kp DLLR  &kp PRCNT        &kp CARET             &kp AMPS      &kp ASTRK  &kp PLUS  &kp QMARK
-        &kp PIPE   &kp EQUAL  &squote                &dquote   &gquote          &kp LA(LC(LEFT_GUI))  &sk LEFT_GUI  &sk LCTRL  &sk LALT  &kp FSLH
-&trans  &kp TILDE  &kp LBRC   &kp LBKT               &kp RBKT  &kp RBRC         &kp LT                &kp RPAR      &kp LPAR   &kp GT    &kp BSLH   &trans
-                              &sk LS(LA(LG(LCTRL)))  &mo 3     &kp LG(SPACE)    &trans                &trans        &trans
+        &kp EXCL   &kp AT     &kp HASH               &kp DLLR       &kp PRCNT        &kp CARET             &kp AMPS      &kp ASTRK  &kp PLUS  &kp QMARK
+        &kp PIPE   &kp EQUAL  &single_quote          &double_quote  &grave_quote     &kp LA(LC(LEFT_GUI))  &sk LEFT_GUI  &sk LCTRL  &sk LALT  &kp FSLH
+&trans  &kp TILDE  &kp LBRC   &kp LBKT               &kp RBKT       &kp RBRC         &kp LT                &kp RPAR      &kp LPAR   &kp GT    &kp BSLH   &trans
+                              &sk LS(LA(LG(LCTRL)))  &mo 3          &kp LG(SPACE)    &trans                &trans        &trans
             >;
         };
 
