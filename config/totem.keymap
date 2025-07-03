@@ -29,10 +29,44 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
+        zx {
+            bindings = <&kp LS(LA(LC(LG(Z))))>;
+            key-positions = <22 21 21>;
+        };
+
+        xc {
+            bindings = <&kp LS(LC(LA(LG(X))))>;
+            key-positions = <22 23>;
+        };
+
+        cv {
+            bindings = <&kp LS(LC(LG(LA(C))))>;
+            key-positions = <23 24>;
+        };
+
+        vb {
+            bindings = <&kp LS(LA(LC(LG(V))))>;
+            key-positions = <24 25>;
+        };
+    };
+
+    behaviors {
+        comma: comma {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA";
+            bindings = <&kp COMMA>, <&kp SEMICOLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        period: period {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PERIOD";
+            bindings = <&kp PERIOD>, <&kp COLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
@@ -70,7 +104,7 @@
         nav_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "NAVI";
+            label = "NAV";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -110,10 +144,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL   &kp AT     &kp HASH        &kp DLLR  &kp PRCNT        &kp CARET  &kp AMPS  &kp ASTRK  &kp PLUS  &kp QMARK
-        &kp PIPE   &kp EQUAL  &kp SQT         &kp DQT   &kp GRAVE        &trans     &sk LG    &sk LCTRL  &sk LALT  &kp FSLH
-&trans  &kp TILDE  &kp LBRC   &kp LBKT        &kp RBKT  &kp RBRC         &kp LT     &kp RPAR  &kp LPAR   &kp GT    &kp BSLH   &trans
-                              &sk LC(LA(LG))  &mo MOO   &kp LG(SPACE)    &kp BSPC   &mo MOO   &sk RSHFT
+        &kp EXCL   &kp AT     &kp HASH               &kp DLLR  &kp PRCNT        &kp CARET  &kp AMPS      &kp ASTRK  &kp PLUS  &kp QMARK
+        &kp PIPE   &kp EQUAL  &kp SQT                &kp DQT   &kp GRAVE        &trans     &sk LEFT_GUI  &sk LCTRL  &sk LALT  &kp FSLH
+&trans  &kp TILDE  &kp LBRC   &kp LBKT               &kp RBKT  &kp RBRC         &kp LT     &kp RPAR      &kp LPAR   &kp GT    &kp BSLH   &trans
+                              &sk LS(LA(LG(LCTRL)))  &mo MOO   &kp LG(SPACE)    &trans     &trans        &trans
             >;
         };
 
@@ -139,6 +173,17 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
+        };
+
+        fn_layer {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "FUNCTION";
         };
     };
 };
