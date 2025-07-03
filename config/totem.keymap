@@ -118,10 +118,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp N1     &kp N2     &kp N3     &kp N4     &kp N5           &kp N6    &kp N7     &kp N8        &kp N9     &kp N0
-        &kp LG(A)  &sk LALT   &sk LCTRL  &sk LGUI   &trans           &kp LEFT  &kp DOWN   &kp UP_ARROW  &kp RIGHT  &kp DELETE
-&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))    &kp HOME  &kp PG_DN  &kp PG_UP     &kp END    &kp TAB     &trans
-                              &trans     &trans     &trans           &kp BSPC  &mo MOO    &sk RSHFT
+             &kp N1     &kp N2     &kp N3     &kp N4     &kp N5           &kp N6    &kp N7     &kp N8        &kp N9     &kp N0
+             &kp LG(A)  &sk LALT   &sk LCTRL  &sk LGUI   &trans           &kp LEFT  &kp DOWN   &kp UP_ARROW  &kp RIGHT  &kp DELETE
+&kp C_RESET  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))    &kp HOME  &kp PG_DN  &kp PG_UP     &kp END    &kp TAB     &trans
+                                   &trans     &trans     &trans           &kp BSPC  &mo MOO    &sk RSHFT
             >;
         };
 
@@ -146,7 +146,7 @@
             bindings = <
         &kp EXCL   &kp AT     &kp HASH               &kp DLLR  &kp PRCNT        &kp CARET  &kp AMPS      &kp ASTRK  &kp PLUS  &kp QMARK
         &kp PIPE   &kp EQUAL  &kp SQT                &kp DQT   &kp GRAVE        &trans     &sk LEFT_GUI  &sk LCTRL  &sk LALT  &kp FSLH
-&trans  &kp TILDE  &kp LBRC   &kp LBKT               &kp RBKT  &kp RBRC         &kp LT     &kp RPAR      &kp LPAR   &kp GT    &kp BSLH   &trans
+&trans  &kp TILDE  &kp LBRC   &kp LBKT               &kp RBKT  &kp RBRC         &kp LT     &kp RPAR      &kp LPAR   &kp GT    &kp BSLH   &kp C_RESET
                               &sk LS(LA(LG(LCTRL)))  &mo MOO   &kp LG(SPACE)    &trans     &trans        &trans
             >;
         };
