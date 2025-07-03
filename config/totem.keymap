@@ -54,19 +54,19 @@
         rbrace {
             bindings = <&rbrace>;
             key-positions = <28 27>;
-            layers = <1>;
+            layers = <2>;
         };
 
         sbrace {
             bindings = <&sbrace>;
             key-positions = <23 24>;
-            layers = <1>;
+            layers = <2>;
         };
 
         cbrace {
             bindings = <&cbrace>;
             key-positions = <22 25>;
-            layers = <1>;
+            layers = <2>;
         };
     };
 
@@ -84,24 +84,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "PERIOD";
             bindings = <&kp PERIOD>, <&kp COLON>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        pgdown: pgdown {
-            compatible = "zmk,behavior-mod-morph";
-            label = "PGDOWN";
-            bindings = <&kp PAGE_DOWN>, <&kp COMMA>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        pgup: pgup {
-            compatible = "zmk,behavior-mod-morph";
-            label = "PGUP";
-            bindings = <&kp PG_UP>, <&kp PERIOD>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -181,10 +163,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp Q  &kp W  &kp E   &kp R  &kp T      &kp Y      &kp U  &kp I    &kp O    &kp P
-            &kp A  &kp S  &kp D   &kp F  &kp G      &kp H      &kp J  &kp K    &kp L    &kp MINUS
-&caps_word  &kp Z  &kp X  &kp C   &kp V  &kp B      &kp N      &kp M  &comma   &period  &kp TAB    &caps_word
-                          &shift  &mo 1  &kp ESC    &kp SPACE  &mo 2  &kp RET
+        &kp Q  &kp W  &kp E   &kp R  &kp T      &kp Y      &kp U  &kp I    &kp O    &kp P
+        &kp A  &kp S  &kp D   &kp F  &kp G      &kp H      &kp J  &kp K    &kp L    &kp MINUS
+&trans  &kp Z  &kp X  &kp C   &kp V  &kp B      &kp N      &kp M  &comma   &period  &kp TAB    &trans
+                      &shift  &mo 1  &kp ESC    &kp SPACE  &mo 2  &kp RET
             >;
         };
 
@@ -209,7 +191,7 @@
             bindings = <
            &kp N1     &kp N2     &kp N3     &kp N4     &kp N5                  &kp N6    &kp N7    &kp N8        &kp N9     &kp N0
            &kp LG(A)  &sk LALT   &sk LCTRL  &sk LGUI   &kp LA(LC(LEFT_GUI))    &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &kp DELETE
-&kp LC(K)  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))           &kp HOME  &pgdown   &pgup         &kp END    &kp TAB     &kp LA(BACKSPACE)
+&kp LC(K)  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))           &kp HOME  &none     &none         &kp END    &kp TAB     &kp LA(BACKSPACE)
                                  &trans     &trans     &trans                  &kp BSPC  &mo 3     &sk RSHFT
             >;
         };
@@ -257,10 +239,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp C_BRIGHTNESS_MINIMUM  &kp C_BRI_DEC       &kp C_BRI_INC       &kp C_BRI_MAX       &trans             &trans           &kp K_MUTE           &kp C_VOL_DN         &kp C_VOLUME_UP      &kp K_POWER
-        &trans                    &sk LA(LEFT_SHIFT)  &sk LC(LEFT_SHIFT)  &sk LG(LEFT_SHIFT)  &trans             &trans           &sk RG(RIGHT_SHIFT)  &sk RC(RIGHT_SHIFT)  &sk RA(RIGHT_SHIFT)  &trans
-&trans  &mkp MB1                  &kp LG(MINUS)       &kp LG(EQUAL)       &kp LG(N0)          &rgb_ug RGB_TOG    &msc MOVE_X(15)  &msc MOVE_Y(15)      &msc MOVE_Y(-15)     &msc MOVE_X(-15)     &mkp MB2     &trans
-                                                      &trans              &trans              &trans             &trans           &trans               &trans
+        &kp K_SLEEP  &kp C_BRI_DEC       &kp C_BRI_INC       &rgb_ug RGB_TOG     &trans    &trans           &kp K_MUTE           &kp C_VOL_DN         &kp C_VOLUME_UP      &kp K_POWER
+        &trans       &sk LA(LEFT_SHIFT)  &sk LC(LEFT_SHIFT)  &sk LG(LEFT_SHIFT)  &trans    &trans           &sk RG(RIGHT_SHIFT)  &sk RC(RIGHT_SHIFT)  &sk RA(RIGHT_SHIFT)  &trans
+&trans  &mkp MB1     &kp LG(MINUS)       &kp LG(EQUAL)       &kp LG(N0)          &trans    &msc MOVE_X(15)  &msc MOVE_Y(15)      &msc MOVE_Y(-15)     &msc MOVE_X(-15)     &mkp MB2     &trans
+                                         &trans              &trans              &trans    &trans           &trans               &trans
             >;
         };
     };
