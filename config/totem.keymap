@@ -50,6 +50,24 @@
             bindings = <&kp LS(LA(LC(LG(V))))>;
             key-positions = <24 25>;
         };
+
+        rbrace {
+            bindings = <&rbrace>;
+            key-positions = <28 27>;
+            layers = <1>;
+        };
+
+        sbrace {
+            bindings = <&sbrace>;
+            key-positions = <23 24>;
+            layers = <1>;
+        };
+
+        cbrace {
+            bindings = <&cbrace>;
+            key-positions = <22 25>;
+            layers = <1>;
+        };
     };
 
     behaviors {
@@ -117,6 +135,27 @@
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp GRAVE &kp LEFT>;
             label = "GQUOTE";
+        };
+
+        rbrace: lbrace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
+            label = "LBRACE";
+        };
+
+        sbrace: rbrace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
+            label = "RBRACE";
+        };
+
+        cbrace: cbrace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
+            label = "CBRACE";
         };
     };
 
