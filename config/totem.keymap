@@ -197,7 +197,7 @@
             bindings = <
         &kp C_BRIGHTNESS_MINIMUM  &kp C_BRI_DEC       &kp C_BRI_INC       &kp C_BRI_MAX       &trans    &trans           &kp K_MUTE           &kp C_VOL_DN         &kp C_VOLUME_UP      &rgb_ug RGB_TOG
         &trans                    &sk LA(LEFT_SHIFT)  &sk LC(LEFT_SHIFT)  &sk LG(LEFT_SHIFT)  &trans    &trans           &sk RG(RIGHT_SHIFT)  &sk RC(RIGHT_SHIFT)  &sk RA(RIGHT_SHIFT)  &trans
-&trans  &mkp MB1                  &kp LG(MINUS)       &kp EQUAL           &kp LG(N0)          &trans    &msc MOVE_X(15)  &msc MOVE_Y(15)      &msc MOVE_Y(-15)     &msc MOVE_X(-15)     &mkp MB2         &trans
+&trans  &mkp MB1                  &kp LG(MINUS)       &kp LG(EQUAL)       &kp LG(N0)          &trans    &msc MOVE_X(15)  &msc MOVE_Y(15)      &msc MOVE_Y(-15)     &msc MOVE_X(-15)     &mkp MB2         &trans
                                                       &trans              &trans              &trans    &trans           &trans               &trans
             >;
         };
