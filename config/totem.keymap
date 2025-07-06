@@ -27,6 +27,8 @@
     tapping-term-ms = <170>;
 };
 
+&caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE MINUS>; };
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -184,10 +186,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp Q  &kp W  &kp E   &kp R  &kp T      &kp Y      &kp U  &kp I    &kp O    &kp P
-        &kp A  &kp S  &kp D   &kp F  &kp G      &kp H      &kp J  &kp K    &kp L    &kp MINUS
-&trans  &kp Z  &kp X  &kp C   &kp V  &kp B      &kp N      &kp M  &comma   &period  &kp TAB    &trans
-                      &shift  &mo 1  &kp ESC    &kp SPACE  &mo 2  &kp RET
+                &kp Q  &kp W  &kp E   &kp R  &kp T      &kp Y      &kp U  &kp I    &kp O    &kp P
+                &kp A  &kp S  &kp D   &kp F  &kp G      &kp H      &kp J  &kp K    &kp L    &kp MINUS
+&kp LA(DELETE)  &kp Z  &kp X  &kp C   &kp V  &kp B      &kp N      &kp M  &comma   &period  &kp TAB    &kp LA(BACKSPACE)
+                              &shift  &mo 1  &kp ESC    &kp SPACE  &mo 2  &kp RET
             >;
         };
 
@@ -210,10 +212,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp N1     &kp N2     &kp N3     &kp N4     &kp N5                  &kp N6    &kp N7    &kp N8        &kp N9     &kp N0
-           &kp LG(A)  &sk LALT   &sk LCTRL  &sk LGUI   &kp LA(LC(LEFT_GUI))    &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &kp DELETE
-&kp LC(K)  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))           &kp HOME  &none     &none         &kp END    &kp TAB     &kp LA(BACKSPACE)
-                                 &trans     &trans     &trans                  &kp BSPC  &mo 3     &sk RSHFT
+        &kp N1     &kp N2     &kp N3     &kp N4     &kp N5                  &kp N6    &kp N7         &kp N8        &kp N9     &kp N0
+        &kp LG(A)  &sk LALT   &sk LCTRL  &sk LGUI   &kp LA(LC(LEFT_GUI))    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp DELETE
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))           &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &kp TAB     &trans
+                              &trans     &trans     &trans                  &kp BSPC  &mo 3          &sk RSHFT
             >;
         };
 
