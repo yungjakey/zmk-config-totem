@@ -55,7 +55,7 @@
 
         rbrace {
             bindings = <&rbrace>;
-            key-positions = <28 27>;
+            key-positions = <12 13>;
             layers = <2>;
         };
 
@@ -171,6 +171,20 @@
             bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
             label = "CBRACE";
         };
+
+        larrow: larrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LESS_THAN &kp MINUS>;
+            label = "LARROW";
+        };
+
+        rarrow: rarrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp GREATER_THAN>;
+            label = "RARROW";
+        };
     };
 
     keymap {
@@ -247,10 +261,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL   &kp AT     &kp HASH  &kp DLLR  &kp PRCNT       &kp CARET             &kp AMPS      &kp ASTRK  &kp PLUS  &kp QMARK
-        &kp PIPE   &kp EQUAL  &trans    &trans    &grave_quote    &kp LA(LC(LEFT_GUI))  &sk LEFT_GUI  &sk LCTRL  &sk LALT  &kp FSLH
-&trans  &kp TILDE  &kp LBRC   &kp LBKT  &kp RBKT  &kp RBRC        &kp LT                &kp RPAR      &kp LPAR   &kp GT    &kp BSLH   &trans
-                              &trans    &mo 3     &kp DELETE      &trans                &trans        &trans
+        &kp EXCL   &kp AT     &kp HASH              &kp DLLR               &kp PRCNT       &kp CARET             &kp AMPS       &kp ASTRK         &kp PLUS  &kp QMARK
+        &kp PIPE   &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &grave_quote    &kp LA(LC(LEFT_GUI))  &sk LEFT_GUI   &sk LCTRL         &sk LALT  &kp FSLH
+&trans  &kp TILDE  &kp LBRC   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RBRC        &larrow               &kp LESS_THAN  &kp GREATER_THAN  &rarrow   &kp BSLH   &trans
+                              &trans                &mo 3                  &kp DELETE      &trans                &trans         &trans
             >;
         };
 
