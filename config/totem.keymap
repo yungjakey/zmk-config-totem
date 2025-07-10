@@ -230,17 +230,6 @@
             >;
         };
 
-        number {
-            bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-
-            label = "NUM";
-        };
-
         symbol {
             bindings = <
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
@@ -254,13 +243,24 @@
 
         navigation {
             bindings = <
-        &trans     &trans     &trans     &trans     &trans           &trans    &trans     &trans     &trans     &trans
-        &kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp LG(G)        &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp TAB
-&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans   &trans
-                              &trans     &trans     &trans           &trans    &trans     &trans
+        &kp N1       &kp N2                   &kp N3                &kp N4     &kp N5           &kp N6    &kp N7     &kp N8     &kp N9     &kp N0
+        &lt 4 LG(A)  &mt_left LEFT_ALT LG(S)  &mt_left LCTRL LG(D)  &kp LG(F)  &caps_word       &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp TAB
+&trans  &kp LG(Z)    &kp LG(X)                &kp LG(C)             &kp LG(V)  &kp LS(LG(Z))    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans   &trans
+                                              &trans                &trans     &trans           &trans    &trans     &trans
             >;
 
             label = "NAV";
+        };
+
+        mouse {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "MOO";
         };
 
         function {
