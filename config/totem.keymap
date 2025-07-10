@@ -226,10 +226,10 @@
 
         navigation {
             bindings = <
-        &kp N1     &kp N2        &kp N3     &kp N4        &kp N5           &kp N6         &kp N7     &kp N8     &kp N9     &kp N0
-        &kp LG(A)  &sk LEFT_ALT  &sk LCTRL  &sk LEFT_GUI  &caps_word       &kp LEFT       &kp DOWN   &kp UP     &kp RIGHT  &kp DEL
-&trans  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)     &kp LS(LG(Z))    &kp HOME       &kp PG_DN  &kp PG_UP  &kp END    &kp TAB  &trans
-                                 &none      &trans        &none            &kp BACKSPACE  &mo 3      &trans
+       &kp N1     &kp N2        &kp N3     &kp N4        &kp N5           &kp N6         &kp N7     &kp N8     &kp N9     &kp N0
+       &kp LG(A)  &sk LEFT_ALT  &sk LCTRL  &sk LEFT_GUI  &caps_word       &kp LEFT       &kp DOWN   &kp UP     &kp RIGHT  &kp DEL
+&mo 3  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)     &kp LS(LG(Z))    &kp HOME       &kp PG_DN  &kp PG_UP  &kp END    &kp TAB  &trans
+                                &none      &trans        &none            &kp BACKSPACE  &mo 4      &trans
             >;
 
             label = "NAV";
@@ -239,22 +239,11 @@
             bindings = <
         &kp LS(EXCL)  &kp LS(AT)     &kp LS(POUND)         &kp LS(DLLR)           &kp LS(PRCNT)       &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)       &kp LS(PLUS)   &kp LS(QMARK)
         &kp ESCAPE    &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &caps_word     &sk RIGHT_GUI  &sk RIGHT_CONTROL  &sk RIGHT_ALT  &kp ENTER
-&trans  &kp TILDE     &kp LS(LBRC)   &kp LBKT              &kp RBKT               &kp LS(RBRC)        &grave_quote   &kp EQUAL      &kp FSLH           &kp LS(PIPE)   &kp BSLH       &trans
-                                     &trans                &mo 3                  &kp LG(SPACE)       &none          &trans         &none
+&trans  &kp TILDE     &kp LS(LBRC)   &kp LBKT              &kp RBKT               &kp LS(RBRC)        &grave_quote   &kp EQUAL      &kp FSLH           &kp LS(PIPE)   &kp BSLH       &mo 4
+                                     &trans                &mo 4                  &kp LG(SPACE)       &none          &trans         &none
             >;
 
             label = "SYM";
-        };
-
-        function {
-            bindings = <
-        &trans  &kp C_BRIGHTNESS_DEC  &kp C_BRI_UP          &trans            &trans    &trans  &kp K_MUTE         &kp C_VOL_DN           &kp C_VOLUME_UP    &trans
-        &trans  &kp LS(LEFT_GUI)      &kp LS(LEFT_CONTROL)  &kp LS(LEFT_GUI)  &trans    &trans  &kp RS(RIGHT_GUI)  &kp LS(RIGHT_CONTROL)  &kp RS(RIGHT_ALT)  &trans
-&trans  &trans  &trans                &trans                &trans            &trans    &trans  &kp LG(MINUS)      &kp LG(EQUAL)          &kp LG(N0)         &trans  &trans
-                                      &trans                &trans            &trans    &trans  &trans             &trans
-            >;
-
-            label = "FUN";
         };
 
         mouse {
@@ -266,6 +255,17 @@
             >;
 
             label = "MOO";
+        };
+
+        function {
+            bindings = <
+        &trans  &kp C_BRIGHTNESS_DEC  &kp C_BRI_UP          &trans            &trans    &trans  &kp K_MUTE         &kp C_VOL_DN           &kp C_VOLUME_UP    &trans
+        &trans  &kp LS(LEFT_GUI)      &kp LS(LEFT_CONTROL)  &kp LS(LEFT_GUI)  &trans    &trans  &kp RS(RIGHT_GUI)  &kp LS(RIGHT_CONTROL)  &kp RS(RIGHT_ALT)  &trans
+&trans  &trans  &trans                &trans                &trans            &trans    &trans  &kp LG(MINUS)      &kp LG(EQUAL)          &kp LG(N0)         &trans  &trans
+                                      &trans                &trans            &trans    &trans  &trans             &trans
+            >;
+
+            label = "FUN";
         };
     };
 };
