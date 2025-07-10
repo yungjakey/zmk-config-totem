@@ -229,7 +229,7 @@
         &kp LS(EXCL)  &kp LS(AT)     &kp LS(POUND)         &kp LS(DLLR)           &kp LS(PRCNT)       &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)       &kp LS(PLUS)   &kp LS(QMARK)
         &trans        &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &trans         &kp RIGHT_GUI  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &trans
 &trans  &kp TILDE     &kp LS(LBRC)   &kp LBKT              &kp RBKT               &kp LS(RBRC)        &grave_quote   &kp EQUAL      &kp FSLH           &kp LS(PIPE)   &kp BSLH       &trans
-                                     &trans                &trans                 &trans              &trans         &trans         &trans
+                                     &trans                &trans                 &trans              &none          &trans         &none
             >;
 
             label = "SYM";
@@ -240,7 +240,7 @@
         &kp N1       &kp N2                   &kp N3                &kp N4                   &kp N5           &kp N6    &kp N7     &kp N8     &kp N9     &kp N0
         &lt 3 LG(A)  &mt_left LEFT_ALT LG(S)  &mt_left LCTRL LG(D)  &mt_left LEFT_GUI LG(F)  &caps_word       &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp TAB
 &trans  &kp LG(Z)    &kp LG(X)                &kp LG(C)             &kp LG(V)                &kp LS(LG(Z))    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans   &trans
-                                              &trans                &trans                   &trans           &trans    &trans     &trans
+                                              &none                 &trans                   &none            &trans    &trans     &trans
             >;
 
             label = "NAV";
