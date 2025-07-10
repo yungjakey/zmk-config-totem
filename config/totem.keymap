@@ -248,10 +248,10 @@
 
         function {
             bindings = <
-        &trans  &trans            &trans                &trans            &trans    &trans  &trans             &trans                 &trans             &trans
-        &trans  &kp LS(LEFT_GUI)  &kp LS(LEFT_CONTROL)  &kp LS(LEFT_GUI)  &trans    &trans  &kp RS(RIGHT_GUI)  &kp LS(RIGHT_CONTROL)  &kp RS(RIGHT_ALT)  &trans
-&trans  &trans  &trans            &trans                &trans            &trans    &trans  &trans             &trans                 &trans             &trans  &trans
-                                  &trans                &trans            &trans    &trans  &trans             &trans
+        &trans  &kp C_BRIGHTNESS_INC  &kp C_BRI_UP          &trans            &trans    &trans  &trans             &trans                 &trans             &trans
+        &trans  &kp LS(LEFT_GUI)      &kp LS(LEFT_CONTROL)  &kp LS(LEFT_GUI)  &trans    &trans  &kp RS(RIGHT_GUI)  &kp LS(RIGHT_CONTROL)  &kp RS(RIGHT_ALT)  &trans
+&trans  &trans  &trans                &trans                &trans            &trans    &trans  &trans             &trans                 &trans             &trans  &trans
+                                      &trans                &trans            &trans    &trans  &trans             &trans
             >;
 
             label = "FUN";
