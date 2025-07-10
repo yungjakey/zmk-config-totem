@@ -223,10 +223,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp Q  &kp W         &kp E         &kp R           &kp T         &kp Y           &kp U          &kp I          &kp O          &kp P
-        &kp A  &mt_left 0 0  &mt_left 0 0  &mt_left 0 0    &kp G         &kp H           &mt_right 0 0  &mt_right 0 0  &mt_right 0 0  &kp MINUS
-&trans  &kp Z  &kp X         &kp C         &kp V           &kp B         &kp N           &kp M          &comma         &period        &quotes    &trans
-                             &lt 0 A       &kp LEFT_SHIFT  &kp ESCAPE    &kp LEFT_SHIFT  &kp SPACE      &lt 0 A
+        &kp Q  &kp W                &kp E                    &kp R                &kp T         &kp Y           &kp U          &kp I          &kp O          &kp P
+        &kp A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &kp G         &kp H           &mt_right 0 0  &mt_right 0 0  &mt_right 0 0  &kp MINUS
+&trans  &kp Z  &kp X                &kp C                    &kp V                &kp B         &kp N           &kp M          &comma         &period        &quotes    &trans
+                                    &lt 0 A                  &kp LEFT_SHIFT       &kp ESCAPE    &kp LEFT_SHIFT  &kp SPACE      &lt 0 A
             >;
         };
     };
