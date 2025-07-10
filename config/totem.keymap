@@ -233,10 +233,10 @@
 
         symbol {
             bindings = <
-        &kp LS(EXCL)  &kp LS(AT)     &kp LS(POUND)         &kp LS(DLLR)           &kp LS(PRCNT)       &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(PLUS)  &kp LS(QMARK)
-        &trans        &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &trans         &trans        &trans        &trans        &trans
-&trans  &trans        &kp LS(LBRC)   &kp LBKT              &kp RBKT               &kp LS(RBRC)        &trans         &trans        &trans        &trans        &trans         &trans
-                                     &trans                &trans                 &trans              &trans         &trans        &trans
+        &kp LS(EXCL)  &kp LS(AT)     &kp LS(POUND)         &kp LS(DLLR)           &kp LS(PRCNT)       &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)       &kp LS(PLUS)   &kp LS(QMARK)
+        &trans        &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &trans         &kp RIGHT_GUI  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &trans
+&trans  &kp TILDE     &kp LS(LBRC)   &kp LBKT              &kp RBKT               &kp LS(RBRC)        &grave_quote   &kp EQUAL      &kp FSLH           &kp LS(PIPE)   &kp BSLH       &trans
+                                     &trans                &trans                 &trans              &trans         &trans         &trans
             >;
 
             label = "SYM";
