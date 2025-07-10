@@ -126,7 +126,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             hold-trigger-on-release;
-            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31>;
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31 32 33 34 35 37 36>;
             require-prior-idle-ms = <100>;
             tapping-term-ms = <200>;
         };
@@ -141,7 +141,7 @@
             hold-trigger-on-release;
             require-prior-idle-ms = <100>;
             tapping-term-ms = <200>;
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 22 23 24 25 20 21>;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 22 23 24 25 20 21 32 33 34 35 36 37>;
         };
     };
 
@@ -225,17 +225,17 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp Q  &kp W  &kp E    &kp R           &kp T         &kp Y           &kp U      &kp I    &kp O    &kp P
-        &kp A  &kp S  &kp D    &kp F           &kp G         &kp H           &kp J      &kp K    &kp L    &kp MINUS
-&trans  &kp Z  &kp X  &kp C    &kp V           &kp B         &kp N           &kp M      &comma   &period  &quotes    &trans
-                      &lt 1 A  &kp LEFT_SHIFT  &kp ESCAPE    &kp LEFT_SHIFT  &kp SPACE  &lt 2 A
+        &kp Q  &kp W         &kp E         &kp R           &kp T         &kp Y           &kp U          &kp I          &kp O          &kp P
+        &kp A  &mt_left 0 0  &mt_left 0 0  &mt_left 0 0    &kp G         &kp H           &mt_right 0 0  &mt_right 0 0  &mt_right 0 0  &kp MINUS
+&trans  &kp Z  &kp X         &kp C         &kp V           &kp B         &kp N           &kp M          &comma         &period        &quotes    &trans
+                             &lt 1 A       &kp LEFT_SHIFT  &kp ESCAPE    &kp LEFT_SHIFT  &kp SPACE      &lt 2 A
             >;
         };
 
         navigation {
             bindings = <
         &kp N1     &kp N2                  &kp N3                      &kp N4                  &kp N5                                &kp N6                           &kp N7                   &kp N8                      &kp N9               &kp N0
-        &kp LG(A)  &kp LEFT_ALT            &kp LCTRL                   &kp LEFT_GUI            &kp LC(LA(LEFT_GUI))                  &mt LA(LC(LEFT_GUI)) LEFT_ARROW  &mt LEFT_GUI DOWN_ARROW  &mt RIGHT_CONTROL UP_ARROW  &mt RIGHT_ALT RIGHT  &kp DEL
+        &kp LG(A)  &mt_left 0 0            &kp LCTRL                   &kp LEFT_GUI            &kp LC(LA(LEFT_GUI))                  &mt LA(LC(LEFT_GUI)) LEFT_ARROW  &mt LEFT_GUI DOWN_ARROW  &mt RIGHT_CONTROL UP_ARROW  &mt RIGHT_ALT RIGHT  &kp DEL
 &trans  &kp LG(Z)  &mt LS(LEFT_ALT) LG(X)  &mt LS(LEFT_CONTROL) LG(C)  &mt LS(LEFT_GUI) LG(V)  &mt LS(LA(LC(LEFT_GUI))) LG(LS(Z))    &kp HOME                         &kp PG_DN                &kp PG_UP                   &kp END              &kp TAB  &trans
                                            &none                       &trans                  &none                                 &kp BACKSPACE                    &trans                   &trans
             >;
