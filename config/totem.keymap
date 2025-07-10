@@ -88,13 +88,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        shift: shift {
-            compatible = "zmk,behavior-tap-dance";
-            label = "SHIFT";
-            #binding-cells = <0>;
-            bindings = <&sk LEFT_SHIFT>, <&caps_word>;
-        };
-
         double_quote: double_quote {
             compatible = "zmk,behavior-tap-dance";
             label = "DOUBLE_QUOTE";
@@ -206,15 +199,30 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp Q  &kp W  &kp E   &kp R  &kp T        &kp Y      &kp U  &kp I   &kp O    &kp P
-                &kp A  &kp S  &kp D   &kp F  &kp G        &kp H      &kp J  &kp K   &kp L    &kp MINUS
-&kp LA(DELETE)  &kp Z  &kp X  &kp C   &kp V  &kp B        &kp N      &kp M  &comma  &period  &quotes    &kp LA(BACKSPACE)
-                              &shift  &mo 0  &kp SPACE    &kp SPACE  &mo 0  &shift
+              &kp Q  &kp W  &kp E           &kp R         &kp T        &kp Y      &kp U        &kp I            &kp O    &kp P
+              &kp A  &kp S  &kp D           &kp F         &kp G        &kp H      &kp J        &kp K            &kp L    &kp MINUS
+&kp LEFT_ALT  &kp Z  &kp X  &kp C           &kp V         &kp B        &kp N      &kp M        &comma           &period  &quotes    &kp RCTRL
+                            &sk LEFT_SHIFT  &lt 1 ESCAPE  &kp SPACE    &kp SPACE  &lt 2 ENTER  &sk RIGHT_SHIFT
             >;
         };
 
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+        layer_2 {
+            bindings = <
+        &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7     &kp N8     &kp N9     &kp N0
+        &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp DEL
+&trans  &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp TAB  &trans
+                        &trans  &trans  &trans    &trans    &trans     &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+        &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(CARET)  &kp LS(AMPS)  &kp LS(LPAR)  &kp LS(QUESTION)
+        &trans        &trans      &trans         &trans        &trans           &trans         &trans         &trans        &trans        &trans
+&trans  &trans        &trans      &trans         &trans        &trans           &trans         &trans         &trans        &trans        &trans            &trans
+                                  &trans         &trans        &trans           &trans         &trans         &trans
+            >;
+        };
 
         fn_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
