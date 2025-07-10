@@ -220,7 +220,7 @@
         &kp Q  &kp W                &kp E                    &kp R                &kp T        &kp Y      &kp U                  &kp I                      &kp O                  &kp P
         &kp A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &kp G        &kp H      &mt_right J RIGHT_GUI  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &kp MINUS
 &trans  &kp Z  &kp X                &kp C                    &kp V                &kp B        &kp N      &kp M                  &comma                     &period                &quotes    &trans
-                                    &lt 1 TAB                &kp ENTER            &kp SPACE    &kp SPACE  &kp RIGHT_SHIFT        &lt 2 ESCAPE
+                                    &lt 1 TAB                &lt 1 ESCAPE         &kp SPACE    &kp SPACE  &lt 2 SPACE            &lt 2 ESCAPE
             >;
         };
 
@@ -229,7 +229,7 @@
         &kp N1     &kp N2        &kp N3     &kp N4        &kp N5           &kp N6         &kp N7     &kp N8          &kp N9     &kp N0
         &kp LG(A)  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &caps_word       &kp LEFT       &kp DOWN   &kp UP          &kp RIGHT  &kp TAB
 &trans  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)     &kp LS(LG(Z))    &kp HOME       &kp PG_DN  &kp PG_UP       &kp END    &trans   &trans
-                                 &trans     &none         &none            &kp BACKSPACE  &trans     &kp LEFT_SHIFT
+                                 &none      &trans        &none            &kp BACKSPACE  &trans     &kp LEFT_SHIFT
             >;
 
             label = "NAV";
@@ -238,7 +238,7 @@
         symbol {
             bindings = <
         &kp LS(EXCL)  &kp LS(AT)     &kp LS(POUND)         &kp LS(DLLR)           &kp LS(PRCNT)       &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)       &kp LS(PLUS)   &kp LS(QMARK)
-        &trans        &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &trans         &kp RIGHT_GUI  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &mo 4
+        &trans        &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &caps_word     &kp RIGHT_GUI  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &none
 &trans  &kp TILDE     &kp LS(LBRC)   &kp LBKT              &kp RBKT               &kp LS(RBRC)        &grave_quote   &kp EQUAL      &kp FSLH           &kp LS(PIPE)   &kp BSLH       &trans
                                      &trans                &trans                 &trans              &none          &trans         &none
             >;
