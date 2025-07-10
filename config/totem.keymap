@@ -27,14 +27,14 @@
     tapping-term-ms = <170>;
 };
 
-&caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE MINUS>; };
+&caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE LEFT_ARROW DOWN_ARROW UP_ARROW RIGHT_ARROW MINUS UNDER>; };
 
 / {
     combos {
         compatible = "zmk,combos";
 
         zx {
-            bindings = <&kp LS(LA(LC(LG(Z))))>;
+            bindings = <&kp LS(LA(LC(LG(LEFT_BRACE))))>;
             key-positions = <22 21 21>;
         };
 
@@ -199,17 +199,17 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp Q  &kp W  &kp E             &kp R      &kp T         &kp Y      &kp U        &kp I              &kp O    &kp P
-        &kp A  &kp S  &kp D             &kp F      &kp G         &kp H      &kp J        &kp K              &kp L    &kp MINUS
-&trans  &kp Z  &kp X  &kp C             &kp V      &kp B         &kp N      &kp M        &comma             &period  &quotes    &trans
-                      &mt LEFT_SHIFT A  &lt 2 TAB  &kp ESCAPE    &kp SPACE  &lt 1 ENTER  &mt RIGHT_SHIFT A
+        &kp Q  &kp W  &kp E    &kp R           &kp T         &kp Y      &kp U      &kp I    &kp O    &kp P
+        &kp A  &kp S  &kp D    &kp F           &kp G         &kp H      &kp J      &kp K    &kp L    &kp MINUS
+&trans  &kp Z  &kp X  &kp C    &kp V           &kp B         &kp N      &kp M      &comma   &period  &quotes    &trans
+                      &lt 1 A  &kp LEFT_SHIFT  &kp ESCAPE    &kp SPACE  &kp SPACE  &lt 2 A
             >;
         };
 
         navigation {
             bindings = <
         &kp N1     &kp N2                  &kp N3                      &kp N4                  &kp N5                                &kp N6                           &kp N7                   &kp N8                      &kp N9               &kp N0
-        &kp LG(A)  &sk LEFT_ALT            &sk LCTRL                   &kp LEFT_GUI            &sk LC(LA(LEFT_GUI))                  &mt LA(LC(LEFT_GUI)) LEFT_ARROW  &mt LEFT_GUI DOWN_ARROW  &mt RIGHT_CONTROL UP_ARROW  &mt RIGHT_ALT RIGHT  &kp DEL
+        &kp LG(A)  &kp LEFT_ALT            &kp LCTRL                   &kp LEFT_GUI            &kp LC(LA(LEFT_GUI))                  &mt LA(LC(LEFT_GUI)) LEFT_ARROW  &mt LEFT_GUI DOWN_ARROW  &mt RIGHT_CONTROL UP_ARROW  &mt RIGHT_ALT RIGHT  &kp DEL
 &trans  &kp LG(Z)  &mt LS(LEFT_ALT) LG(X)  &mt LS(LEFT_CONTROL) LG(C)  &mt LS(LEFT_GUI) LG(V)  &mt LS(LA(LC(LEFT_GUI))) LG(LS(Z))    &kp HOME                         &kp PG_DN                &kp PG_UP                   &kp END              &kp TAB  &trans
                                            &none                       &trans                  &none                                 &kp BACKSPACE                    &trans                   &trans
             >;
@@ -219,10 +219,10 @@
 
         symbol {
             bindings = <
-        &kp LS(EXCL)  &kp LS(AT)              &kp LS(POUND)               &kp LS(DLLR)                    &kp LS(PRCNT)                        &kp LS(CARET)          &kp LS(AMPERSAND)  &kp LS(ASTERISK)   &kp LS(PLUS)   &kp LS(QUESTION)
-        &kp PIPE      &mt LEFT_ALT LESS_THAN  &mt LCTRL LEFT_PARENTHESIS  &mt LEFT_GUI RIGHT_PARENTHESIS  &mt LA(LC(LEFT_GUI)) GREATER_THAN    &kp LA(LC(RIGHT_GUI))  &kp RIGHT_GUI      &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp SLASH
-&trans  &kp TILDE     &kp LEFT_BRACE          &kp LEFT_BRACKET            &kp RIGHT_BRACKET               &kp RIGHT_BRACE                      &kp GRAVE              &trans             &trans             &trans         &kp BACKSLASH     &trans
-                                              &none                       &none                           &none                                &none                  &trans             &none
+        &kp LS(EXCL)  &kp LS(AT)              &kp LS(POUND)               &kp LS(DLLR)                    &kp LS(PRCNT)                        &kp LS(CARET)          &kp LS(AMPERSAND)           &kp LS(ASTERISK)            &kp LS(PLUS)                        &kp LS(QUESTION)
+        &kp PIPE      &mt LEFT_ALT LESS_THAN  &mt LCTRL LEFT_PARENTHESIS  &mt LEFT_GUI RIGHT_PARENTHESIS  &mt LC(LA(LEFT_GUI)) GREATER_THAN    &kp LA(LC(RIGHT_GUI))  &kp RIGHT_GUI               &kp RIGHT_CONTROL           &kp RIGHT_ALT                       &kp SLASH
+&trans  &kp TILDE     &kp LEFT_BRACE          &kp LEFT_BRACKET            &kp RIGHT_BRACKET               &kp RIGHT_BRACE                      &trans                 &mt LS(LEFT_GUI) LESS_THAN  &mt LS(LEFT_CONTROL) EQUAL  &mt LS(RIGHT_CONTROL) GREATER_THAN  &kp BACKSLASH     &trans
+                                              &none                       &none                           &none                                &none                  &trans                      &none
             >;
 
             label = "SYM";
