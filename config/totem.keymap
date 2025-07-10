@@ -262,10 +262,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL   &kp AT          &kp HASH              &kp DLLR               &kp PRCNT           &kp CARET             &kp AMPS      &kp ASTRK  &kp PLUS  &kp QUESTION
-        &trans     &kp LESS_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &kp LA(LC(LEFT_GUI))  &sk LEFT_GUI  &sk LCTRL  &sk LALT  &trans
-&trans  &kp TILDE  &kp LEFT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_BRACE     &grave_quote          &kp EQUAL     &kp SLASH  &kp PIPE  &kp BACKSLASH  &trans
-                                   &trans                &mo 3                  &kp DELETE          &trans                &trans        &trans
+        &kp EXCL   &kp AT                   &kp HASH                       &kp DLLR                    &kp PRCNT                           &kp CARET               &kp AMPS                        &kp ASTRK                   &kp PLUS  &kp QUESTION
+        &trans     &mt LEFT_ALT LEFT_BRACE  &mt LEFT_CONTROL LEFT_BRACKET  &mt LEFT_GUI RIGHT_BRACKET  &mt LC(LA(LEFT_GUI)) RIGHT_BRACE    &mt LA(LC(LEFT_GUI)) A  &mt LEFT_GUI RIGHT_PARENTHESIS  &mt LCTRL LEFT_PARENTHESIS  &sk LALT  &trans
+&trans  &kp TILDE  &trans                   &kp LEFT_BRACKET               &kp RIGHT_BRACKET           &kp RIGHT_BRACE                     &grave_quote            &kp EQUAL                       &kp SLASH                   &kp PIPE  &kp BACKSLASH  &trans
+                                            &trans                         &mo 3                       &kp DELETE                          &trans                  &trans                          &trans
             >;
         };
 
