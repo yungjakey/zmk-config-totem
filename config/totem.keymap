@@ -117,6 +117,32 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        mt_left: mt_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_LEFT";
+            bindings = <&none>, <&none>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31>;
+            require-prior-idle-ms = <100>;
+            tapping-term-ms = <200>;
+        };
+
+        mt_right: mt_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_RIGHT";
+            bindings = <&none>, <&none>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            hold-trigger-on-release;
+            require-prior-idle-ms = <100>;
+            tapping-term-ms = <200>;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 22 23 24 25 20 21>;
+        };
     };
 
     macros {
@@ -199,10 +225,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp Q  &kp W  &kp E    &kp R           &kp T         &kp Y      &kp U      &kp I    &kp O    &kp P
-        &kp A  &kp S  &kp D    &kp F           &kp G         &kp H      &kp J      &kp K    &kp L    &kp MINUS
-&trans  &kp Z  &kp X  &kp C    &kp V           &kp B         &kp N      &kp M      &comma   &period  &quotes    &trans
-                      &lt 1 A  &kp LEFT_SHIFT  &kp ESCAPE    &kp SPACE  &kp SPACE  &lt 2 A
+        &kp Q  &kp W  &kp E    &kp R           &kp T         &kp Y           &kp U      &kp I    &kp O    &kp P
+        &kp A  &kp S  &kp D    &kp F           &kp G         &kp H           &kp J      &kp K    &kp L    &kp MINUS
+&trans  &kp Z  &kp X  &kp C    &kp V           &kp B         &kp N           &kp M      &comma   &period  &quotes    &trans
+                      &lt 1 A  &kp LEFT_SHIFT  &kp ESCAPE    &kp LEFT_SHIFT  &kp SPACE  &lt 2 A
             >;
         };
 
@@ -226,6 +252,15 @@
             >;
 
             label = "SYM";
+        };
+
+        layer_4 {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
         };
 
         function {
