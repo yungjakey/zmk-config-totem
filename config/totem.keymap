@@ -248,7 +248,7 @@
 
         function {
             bindings = <
-        &trans  &kp C_BRIGHTNESS_INC  &kp C_BRI_UP          &trans            &trans    &trans  &kp K_MUTE         &kp C_VOL_DN           &kp C_VOLUME_UP    &trans
+        &trans  &kp C_BRIGHTNESS_DEC  &kp C_BRI_UP          &trans            &trans    &trans  &kp K_MUTE         &kp C_VOL_DN           &kp C_VOLUME_UP    &trans
         &trans  &kp LS(LEFT_GUI)      &kp LS(LEFT_CONTROL)  &kp LS(LEFT_GUI)  &trans    &trans  &kp RS(RIGHT_GUI)  &kp LS(RIGHT_CONTROL)  &kp RS(RIGHT_ALT)  &trans
 &trans  &trans  &trans                &trans                &trans            &trans    &trans  &kp LG(MINUS)      &kp LG(EQUAL)          &kp LG(N0)         &trans  &trans
                                       &trans                &trans            &trans    &trans  &trans             &trans
