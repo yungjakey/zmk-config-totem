@@ -235,7 +235,7 @@
         &none             &kp LS(AT)     &kp LS(POUND)               &kp LS(DLLR)           &kp LS(PRCNT)       &kp LS(CARET)          &kp LS(AMPS)   &kp LS(STAR)       &kp LS(PLUS)   &none
         &kp LS(NUMBER_1)  &kp LESS_THAN  &kp LEFT_PARENTHESIS        &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &kp RA(RC(RIGHT_GUI))  &kp RIGHT_GUI  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &lt 4 QUESTION
 &trans  &kp TILDE         &kp LS(LBRC)   &kp LBKT                    &kp RBKT               &kp LS(RBRC)        &grave_quote           &kp EQUAL      &kp FSLH           &kp LS(PIPE)   &kp BSLH        &trans
-                                         &kp LG(LA(LC(LEFT_SHIFT)))  &mo 5                  &kp LG(SPACE)       &none                  &trans         &none
+                                         &mt_caps_word LEFT_SHIFT 0  &mo 5                  &kp LG(SPACE)       &none                  &trans         &none
             >;
 
             label = "SYM";
@@ -243,10 +243,10 @@
 
         mouse {
             bindings = <
-       &none  &none  &none  &none  &none    &none            &none         &none           &none           &none
-       &none  &none  &none  &none  &none    &msc SCRL_RIGHT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_LEFT  &trans
-&none  &none  &none  &none  &none  &none    &trans           &trans        &trans          &trans          &trans  &none
-                     &none  &none  &none    &kp DELETE       &trans        &trans
+       &none   &none   &none   &none   &none    &none            &none         &none           &none           &none
+       &trans  &trans  &trans  &trans  &none    &msc SCRL_RIGHT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_LEFT  &trans
+&none  &none   &none   &none   &none   &none    &trans           &trans        &trans          &trans          &trans  &none
+                       &none   &none   &none    &kp DELETE       &trans        &trans
             >;
 
             label = "MOO";
@@ -254,10 +254,10 @@
 
         function {
             bindings = <
-       &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-       &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-                     &none  &none  &none    &none  &none  &none
+       &none  &kp K_MUTE     &kp C_VOL_DN   &kp C_VOLUME_UP       &none     &none  &none   &none   &none   &none
+       &none  &kp LG(MINUS)  &kp LG(EQUAL)  &kp LG(N0)            &none     &none  &trans  &trans  &trans  &trans
+&none  &none  &none          &kp C_BRI_DEC  &kp C_BRIGHTNESS_INC  &none     &none  &none   &none   &none   &none   &none
+                             &trans         &trans                &trans    &none  &none   &none
             >;
 
             label = "FUN";
@@ -265,10 +265,10 @@
 
         additional {
             bindings = <
-       &none          &none             &none                 &none             &none    &none  &none              &none                  &none              &none
-       &kp LC(LA(Q))  &kp LS(LEFT_GUI)  &kp LS(LEFT_CONTROL)  &kp LS(LEFT_GUI)  &none    &none  &kp RS(RIGHT_GUI)  &kp LS(RIGHT_CONTROL)  &kp RS(RIGHT_ALT)  &kp K_POWER
-&none  &none          &none             &none                 &none             &none    &none  &none              &none                  &none              &none        &none
-                                        &none                 &trans            &none    &none  &trans             &none
+       &none          &none             &none                 &none             &none                         &none                        &none              &none                  &none              &none
+       &kp LC(LA(Q))  &kp LS(LEFT_GUI)  &kp LS(LEFT_CONTROL)  &kp LS(LEFT_GUI)  &kp LA(LC(LG(LEFT_SHIFT)))    &kp RA(RC(RG(RIGHT_SHIFT)))  &kp RS(RIGHT_GUI)  &kp LS(RIGHT_CONTROL)  &kp RS(RIGHT_ALT)  &kp K_POWER
+&none  &none          &none             &none                 &none             &none                         &none                        &none              &none                  &none              &none        &none
+                                        &none                 &trans            &none                         &none                        &trans             &none
             >;
 
             label = "add";
