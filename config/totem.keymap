@@ -103,11 +103,12 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             hold-trigger-on-release;
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31 32 33 34 35 37 36>;
             require-prior-idle-ms = <100>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <150>;
         };
 
         mt_right: mt_right {
@@ -116,11 +117,12 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             hold-trigger-on-release;
             require-prior-idle-ms = <100>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 22 23 24 25 20 21 32 33 34 35 36 37>;
+            quick-tap-ms = <150>;
         };
 
         mt_caps_word: mt_caps_word {
@@ -216,10 +218,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp Q  &kp W                &kp E                    &kp R                &kp T                     &kp Y                   &kp U                  &kp I                      &kp O                  &kp P
-        &kp A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt LC(LA(LEFT_GUI)) G    &mt LA(LC(LEFT_GUI)) H  &mt_right RIGHT_GUI J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &lt 3 MINUS
-&trans  &kp Z  &kp X                &kp C                    &kp V                &kp B                     &kp N                   &kp M                  &comma                     &period                &kp TAB      &trans
-                                    &sk LEFT_SHIFT           &lt 1 ESCAPE         &kp SPACE                 &kp SPACE               &lt 2 ENTER            &sk RIGHT_SHIFT
+        &kp Q  &kp W                &kp E                    &kp R                &kp T                          &kp Y                         &kp U                  &kp I                      &kp O                  &kp P
+        &kp A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt_left LC(LA(LEFT_GUI)) G    &mt_right LA(LC(LEFT_GUI)) H  &mt_right RIGHT_GUI J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &lt 3 MINUS
+&trans  &kp Z  &kp X                &kp C                    &kp V                &kp B                          &kp N                         &kp M                  &comma                     &period                &kp TAB      &trans
+                                    &sk LEFT_SHIFT           &lt 1 ESCAPE         &kp SPACE                      &kp SPACE                     &lt 2 ENTER            &sk RIGHT_SHIFT
             >;
         };
 
