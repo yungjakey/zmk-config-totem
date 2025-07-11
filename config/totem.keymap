@@ -214,7 +214,7 @@
 
             bindings = <
         &kp Q  &kp W                &kp E                    &kp R                &kp T                     &kp Y                   &kp U                  &kp I                      &kp O                  &kp P
-        &kp A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt LC(LA(LEFT_GUI)) G    &mt LA(LC(LEFT_GUI)) H  &mt_right J RIGHT_GUI  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &lt 3 MINUS
+        &kp A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt LC(LA(LEFT_GUI)) G    &mt LA(LC(LEFT_GUI)) H  &mt_right RIGHT_GUI J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &lt 3 MINUS
 &trans  &kp Z  &kp X                &kp C                    &kp V                &kp B                     &kp N                   &kp M                  &comma                     &period                &quotes      &trans
                                     &sk LEFT_SHIFT           &lt 1 ESCAPE         &kp SPACE                 &kp SPACE               &lt 2 ENTER            &sk RIGHT_SHIFT
             >;
