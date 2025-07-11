@@ -25,29 +25,10 @@
     combos {
         compatible = "zmk,combos";
 
-        zx {
-            bindings = <&kp LS(LA(LC(LG(LEFT_BRACE))))>;
-            key-positions = <22 21 21>;
-        };
-
-        xc {
-            bindings = <&kp LS(LC(LA(LG(X))))>;
-            key-positions = <22 23>;
-        };
-
-        cv {
-            bindings = <&kp LS(LC(LG(LA(C))))>;
-            key-positions = <23 24>;
-        };
-
-        vb {
-            bindings = <&kp LS(LA(LC(LG(V))))>;
-            key-positions = <24 25>;
-        };
-
         rbrace {
             bindings = <&rbrace>;
             key-positions = <12 13>;
+            layers = <1>;
         };
 
         sbrace {
@@ -58,6 +39,11 @@
         cbrace {
             bindings = <&cbrace>;
             key-positions = <22 25>;
+        };
+
+        caps {
+            bindings = <&caps_word>;
+            key-positions = <32 37>;
         };
     };
 
@@ -227,18 +213,18 @@
 
             bindings = <
         &kp Q  &kp W                &kp E                    &kp R                &kp T                &kp Y              &kp U                  &kp I                      &kp O                  &kp P
-        &kp A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt_caps_word 0 G    &mt_caps_word 0 H  &mt_right J RIGHT_GUI  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &kp MINUS
-&trans  &kp Z  &kp X                &kp C                    &kp V                &kp B                &kp N              &kp M                  &comma                     &period                &quotes    &trans
-                                    &sk LEFT_SHIFT           &mo 1                &kp SPACE            &kp SPACE          &mo 2                  &sk RIGHT_SHIFT
+        &kp A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt_caps_word 0 G    &mt_caps_word 0 H  &mt_right J RIGHT_GUI  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &lt 4 MINUS
+&trans  &kp Z  &kp X                &kp C                    &kp V                &kp B                &kp N              &kp M                  &comma                     &period                &quotes      &trans
+                                    &sk LEFT_SHIFT           &lt 1 ESCAPE         &kp TAB              &kp SPACE          &lt 2 ENTER            &sk RIGHT_SHIFT
             >;
         };
 
         navigation {
             bindings = <
-        &kp N1     &kp N2        &kp N3     &kp N4        &kp N5           &kp N6    &kp N7     &kp N8     &kp N9     &kp N0
-        &kp LG(A)  &sk LEFT_ALT  &sk LCTRL  &sk LEFT_GUI  &caps_word       &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp DEL
-&trans  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)     &kp LS(LG(Z))    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp TAB  &trans
-                                 &none      &trans        &none            &trans    &mo 3      &trans
+        &kp N1     &kp N2        &kp N3     &kp N4        &kp N5           &kp N6         &kp N7     &kp N8     &kp N9     &kp N0
+        &kp LG(A)  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &caps_word       &kp LEFT       &kp DOWN   &kp UP     &kp RIGHT  &kp TAB
+&trans  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)     &kp LS(LG(Z))    &kp HOME       &kp PG_DN  &kp PG_UP  &kp END    &kp TAB  &trans
+                                 &none      &trans        &none            &kp BACKSPACE  &mo 3      &trans
             >;
 
             label = "NAV";
@@ -247,7 +233,7 @@
         symbol {
             bindings = <
         &kp LS(EXCL)  &kp LS(AT)     &kp LS(POUND)         &kp LS(DLLR)           &kp LS(PRCNT)       &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)       &kp LS(PLUS)   &kp LS(QMARK)
-        &kp ESCAPE    &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &caps_word     &sk RIGHT_GUI  &sk RIGHT_CONTROL  &sk RIGHT_ALT  &kp ENTER
+        &kp ESCAPE    &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &caps_word     &kp RIGHT_GUI  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp ENTER
 &trans  &kp TILDE     &kp LS(LBRC)   &kp LBKT              &kp RBKT               &kp LS(RBRC)        &grave_quote   &kp EQUAL      &kp FSLH           &kp LS(PIPE)   &kp BSLH       &trans
                                      &trans                &mo 3                  &trans              &none          &trans         &none
             >;
