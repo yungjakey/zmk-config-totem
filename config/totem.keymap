@@ -91,15 +91,6 @@
             bindings = <&kp GRAVE>, <&gquote>;
         };
 
-        quotes: quotes {
-            compatible = "zmk,behavior-mod-morph";
-            label = "QUOTES";
-            bindings = <&single_quote>, <&double_quote>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
         mt_left: mt_left {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_LEFT";
