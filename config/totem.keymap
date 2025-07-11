@@ -20,14 +20,7 @@
 #define SYM  2
 #define MOO  3
 
-&mt {
-    quick-tap-ms = <100>;
-    global-quick-tap;
-    flavor = "tap-preferred";
-    tapping-term-ms = <170>;
-};
-
-&caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE MINUS>; };
+&caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE MINUS HOME END LEFT_ARROW DOWN_ARROW UP_ARROW RIGHT_ARROW PAGE_DOWN PAGE_UP>; };
 
 / {
     combos {
