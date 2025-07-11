@@ -11,6 +11,7 @@
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
@@ -243,10 +244,10 @@
 
         mouse {
             bindings = <
-       &none   &none   &none   &none   &none    &none            &none         &none           &none           &none
-       &trans  &trans  &trans  &trans  &none    &msc SCRL_RIGHT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_LEFT  &trans
-&none  &none   &none   &none   &none   &none    &trans           &trans        &trans          &trans          &trans  &none
-                       &none   &none   &none    &kp DELETE       &trans        &trans
+       &none   &none           &none       &none       &none    &none            &none         &none           &none           &none
+       &trans  &trans          &trans      &trans      &none    &msc SCRL_RIGHT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_LEFT  &none
+&none  &none   &bt BT_CLR_ALL  &bt BT_PRV  &bt BT_NXT  &none    &trans           &trans        &trans          &trans          &trans  &none
+                               &none       &trans      &none    &kp DELETE       &trans        &trans
             >;
 
             label = "MOO";
@@ -254,10 +255,10 @@
 
         function {
             bindings = <
-       &none  &kp K_MUTE     &kp C_VOL_DN   &kp C_VOLUME_UP       &none     &none  &none   &none   &none   &none
-       &none  &kp LG(MINUS)  &kp LG(EQUAL)  &kp LG(N0)            &none     &none  &trans  &trans  &trans  &trans
-&none  &none  &none          &kp C_BRI_DEC  &kp C_BRIGHTNESS_INC  &none     &none  &none   &none   &none   &none   &none
-                             &trans         &trans                &trans    &none  &none   &none
+       &none  &kp K_MUTE     &kp C_VOL_DN   &kp C_VOLUME_UP       &none     &none  &none       &none       &none           &none
+       &none  &kp LG(MINUS)  &kp LG(EQUAL)  &kp LG(N0)            &none     &none  &trans      &trans      &trans          &trans
+&none  &none  &none          &kp C_BRI_DEC  &kp C_BRIGHTNESS_INC  &none     &none  &bt BT_NXT  &bt BT_PRV  &bt BT_CLR_ALL  &none   &none
+                             &trans         &trans                &trans    &none  &trans      &none
             >;
 
             label = "FUN";
@@ -265,7 +266,7 @@
 
         additional {
             bindings = <
-       &none          &none             &none                 &none             &none                         &none                        &none              &none                  &none              &none
+       &trans         &none             &none                 &none             &none                         &none                        &none              &none                  &none              &none
        &kp LC(LA(Q))  &kp LS(LEFT_GUI)  &kp LS(LEFT_CONTROL)  &kp LS(LEFT_GUI)  &kp LA(LC(LG(LEFT_SHIFT)))    &kp RA(RC(RG(RIGHT_SHIFT)))  &kp RS(RIGHT_GUI)  &kp LS(RIGHT_CONTROL)  &kp RS(RIGHT_ALT)  &kp K_POWER
 &none  &none          &none             &none                 &none             &none                         &none                        &none              &none                  &none              &none        &none
                                         &none                 &trans            &none                         &none                        &trans             &none
