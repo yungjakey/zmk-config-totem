@@ -137,7 +137,10 @@
         dquote: dquote {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DOUBLE_QUOTES &kp DOUBLE_QUOTES &kp LEFT>;
+            bindings =
+                <&kp DOUBLE_QUOTES &kp DOUBLE_QUOTES &kp LEFT>,
+                <&macro_press>;
+
             label = "DQUOTE";
         };
 
@@ -215,17 +218,17 @@
             bindings = <
         &kp Q  &kp W                &kp E                    &kp R                &kp T                     &kp Y                   &kp U                  &kp I                      &kp O                  &kp P
         &kp A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt LC(LA(LEFT_GUI)) G    &mt LA(LC(LEFT_GUI)) H  &mt_right RIGHT_GUI J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &lt 3 MINUS
-&trans  &kp Z  &kp X                &kp C                    &kp V                &kp B                     &kp N                   &kp M                  &comma                     &period                &quotes      &trans
+&trans  &kp Z  &kp X                &kp C                    &kp V                &kp B                     &kp N                   &kp M                  &comma                     &period                &kp TAB      &trans
                                     &sk LEFT_SHIFT           &lt 1 ESCAPE         &kp SPACE                 &kp SPACE               &lt 2 ENTER            &sk RIGHT_SHIFT
             >;
         };
 
         navigation {
             bindings = <
-        &none           &kp N2        &kp N3     &kp N4        &kp N5                  &kp N6         &kp N7     &kp N8                      &kp N9     &none
-        &lt 3 NUMBER_1  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &kp LA(LC(LEFT_GUI))    &kp LEFT       &kp DOWN   &kp UP                      &kp RIGHT  &kp N0
-&trans  &kp LG(Z)       &kp LG(X)     &kp LG(C)  &kp LG(V)     &kp LS(LG(Z))           &kp HOME       &kp PG_DN  &kp PG_UP                   &kp END    &kp TAB  &trans
-                                      &none      &trans        &none                   &kp BACKSPACE  &mo 5      &mt_caps_word LEFT_SHIFT 0
+        &kp NUMBER_1  &kp N2        &kp N3     &kp N4        &kp N5                  &kp N6         &kp N7     &kp N8                      &kp N9     &kp N0
+        &lt 3 LG(A)   &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &kp LA(LC(LEFT_GUI))    &kp LEFT       &kp DOWN   &kp UP                      &kp RIGHT  &kp DELETE
+&trans  &kp LG(Z)     &kp LG(X)     &kp LG(C)  &kp LG(V)     &kp LS(LG(Z))           &kp HOME       &kp PG_DN  &kp PG_UP                   &kp END    &kp TAB     &trans
+                                    &none      &trans        &none                   &kp BACKSPACE  &mo 5      &mt_caps_word LEFT_SHIFT 0
             >;
 
             label = "NAV";
@@ -233,10 +236,10 @@
 
         symbol {
             bindings = <
-        &none             &kp LS(AT)     &kp LS(POUND)               &kp LS(DLLR)           &kp LS(PRCNT)       &kp LS(CARET)          &kp LS(AMPS)   &kp LS(STAR)       &kp LS(PLUS)   &none
-        &kp LS(NUMBER_1)  &kp LESS_THAN  &kp LEFT_PARENTHESIS        &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &kp RA(RC(RIGHT_GUI))  &kp RIGHT_GUI  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &lt 4 QUESTION
-&trans  &kp TILDE         &kp LS(LBRC)   &kp LBKT                    &kp RBKT               &kp LS(RBRC)        &grave_quote           &kp EQUAL      &kp FSLH           &kp LS(PIPE)   &kp BSLH        &trans
-                                         &mt_caps_word LEFT_SHIFT 0  &mo 5                  &kp LG(SPACE)       &none                  &trans         &none
+        &kp EXCLAMATION  &kp LS(AT)     &kp LS(POUND)               &kp LS(DLLR)           &kp LS(PRCNT)       &kp LS(CARET)          &kp LS(AMPS)   &kp LS(STAR)       &kp LS(PLUS)   &kp RA(QUESTION)
+        &kp EQUAL        &kp LESS_THAN  &kp LEFT_PARENTHESIS        &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &kp RA(RC(RIGHT_GUI))  &kp RIGHT_GUI  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &lt 4 SLASH
+&trans  &kp TILDE        &kp LS(LBRC)   &kp LBKT                    &kp RBKT               &kp LS(RBRC)        &grave_quote           &single_quote  &double_quote      &kp LS(PIPE)   &kp BSLH          &trans
+                                        &mt_caps_word LEFT_SHIFT 0  &mo 5                  &kp LG(SPACE)       &none                  &trans         &none
             >;
 
             label = "SYM";
@@ -247,7 +250,7 @@
        &none   &none           &none       &none       &none    &none            &none         &none           &none           &none
        &trans  &trans          &trans      &trans      &none    &msc SCRL_RIGHT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_LEFT  &none
 &none  &none   &bt BT_CLR_ALL  &bt BT_PRV  &bt BT_NXT  &none    &trans           &trans        &trans          &trans          &trans  &none
-                               &none       &trans      &none    &kp DELETE       &trans        &trans
+                               &none       &trans      &none    &trans           &trans        &trans
             >;
 
             label = "MOO";
