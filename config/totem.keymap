@@ -20,7 +20,10 @@
 #define SYM  2
 #define MOO  3
 
-&caps_word { continue-list = <BACKSPACE DELETE MINUS UNDERSCORE ENTER>; };
+&caps_word {
+    continue-list = <UNDERSCORE BACKSPACE DELETE LEFT_ARROW DOWN_ARROW UP_ARROW RIGHT_ARROW HOME END PAGE_DOWN PAGE_UP>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+};
 
 / {
     combos {
