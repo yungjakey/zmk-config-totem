@@ -213,7 +213,7 @@
 
             bindings = <
         &kp Q  &kp W                &kp E                    &kp R                &kp T                     &kp Y                   &kp U                  &kp I                      &kp O                  &kp P
-        &kp A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt LC(LA(LEFT_GUI)) G    &mt LA(LC(LEFT_GUI)) H  &mt_right J RIGHT_GUI  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &lt 4 MINUS
+        &kp A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt LC(LA(LEFT_GUI)) G    &mt LA(LC(LEFT_GUI)) H  &mt_right J RIGHT_GUI  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &lt 3 MINUS
 &trans  &kp Z  &kp X                &kp C                    &kp V                &kp B                     &kp N                   &kp M                  &comma                     &period                &quotes      &trans
                                     &sk LEFT_SHIFT           &lt 1 ESCAPE         &kp SPACE                 &kp SPACE               &lt 2 ENTER            &sk RIGHT_SHIFT
             >;
@@ -221,10 +221,10 @@
 
         navigation {
             bindings = <
-        &none         &kp N2        &kp N3     &kp N4        &kp N5                  &kp N6         &kp N7     &kp N8                      &kp N9     &none
-        &kp NUMBER_1  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &kp LA(LC(LEFT_GUI))    &kp LEFT       &kp DOWN   &kp UP                      &kp RIGHT  &kp N0
-&trans  &kp LG(Z)     &kp LG(X)     &kp LG(C)  &kp LG(V)     &kp LS(LG(Z))           &kp HOME       &kp PG_DN  &kp PG_UP                   &kp END    &kp TAB  &trans
-                                    &none      &trans        &none                   &kp BACKSPACE  &mo 3      &mt_caps_word LEFT_SHIFT 0
+        &none           &kp N2        &kp N3     &kp N4        &kp N5                  &kp N6         &kp N7     &kp N8                      &kp N9     &none
+        &lt 3 NUMBER_1  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &kp LA(LC(LEFT_GUI))    &kp LEFT       &kp DOWN   &kp UP                      &kp RIGHT  &kp N0
+&trans  &kp LG(Z)       &kp LG(X)     &kp LG(C)  &kp LG(V)     &kp LS(LG(Z))           &kp HOME       &kp PG_DN  &kp PG_UP                   &kp END    &kp TAB  &trans
+                                      &none      &trans        &none                   &kp BACKSPACE  &mo 5      &mt_caps_word LEFT_SHIFT 0
             >;
 
             label = "NAV";
@@ -233,34 +233,45 @@
         symbol {
             bindings = <
         &none             &kp LS(AT)     &kp LS(POUND)               &kp LS(DLLR)           &kp LS(PRCNT)       &kp LS(CARET)          &kp LS(AMPS)   &kp LS(STAR)       &kp LS(PLUS)   &none
-        &kp LS(NUMBER_1)  &kp LESS_THAN  &kp LEFT_PARENTHESIS        &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &kp RA(RC(RIGHT_GUI))  &kp RIGHT_GUI  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp LS(N0)
-&trans  &kp TILDE         &kp LS(LBRC)   &kp LBKT                    &kp RBKT               &kp LS(RBRC)        &grave_quote           &kp EQUAL      &kp FSLH           &kp LS(PIPE)   &kp BSLH    &trans
-                                         &mt_caps_word LEFT_SHIFT 0  &mo 3                  &kp LG(SPACE)       &none                  &trans         &none
+        &kp LS(NUMBER_1)  &kp LESS_THAN  &kp LEFT_PARENTHESIS        &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &kp RA(RC(RIGHT_GUI))  &kp RIGHT_GUI  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &lt 4 QUESTION
+&trans  &kp TILDE         &kp LS(LBRC)   &kp LBKT                    &kp RBKT               &kp LS(RBRC)        &grave_quote           &kp EQUAL      &kp FSLH           &kp LS(PIPE)   &kp BSLH        &trans
+                                         &kp LG(LA(LC(LEFT_SHIFT)))  &mo 5                  &kp LG(SPACE)       &none                  &trans         &none
             >;
 
             label = "SYM";
         };
 
+        mouse {
+            bindings = <
+       &none  &none  &none  &none  &none    &none            &none         &none           &none           &none
+       &none  &none  &none  &none  &none    &msc SCRL_RIGHT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_LEFT  &trans
+&none  &none  &none  &none  &none  &none    &trans           &trans        &trans          &trans          &trans  &none
+                     &none  &none  &none    &kp DELETE       &trans        &trans
+            >;
+
+            label = "MOO";
+        };
+
         function {
             bindings = <
-        &none          &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none             &none     &none   &kp K_MUTE         &kp C_VOL_DN           &kp C_VOL_UP       &none
-        &kp LC(LA(Q))  &kp LS(LEFT_GUI)      &kp LS(LEFT_CONTROL)  &kp LS(LEFT_GUI)  &trans    &trans  &kp RS(RIGHT_GUI)  &kp LS(RIGHT_CONTROL)  &kp RS(RIGHT_ALT)  &kp K_POWER
-&trans  &trans         &trans                &trans                &trans            &trans    &trans  &kp LG(MINUS)      &kp LG(EQUAL)          &kp LG(N0)         &trans       &trans
-                                             &trans                &trans            &trans    &trans  &trans             &trans
+       &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+       &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+                     &none  &none  &none    &none  &none  &none
             >;
 
             label = "FUN";
         };
 
-        mouse {
+        additional {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans           &trans        &trans          &trans          &trans
-        &trans  &trans  &trans  &trans  &trans    &msc SCRL_RIGHT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_LEFT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans           &trans        &trans          &trans          &trans  &trans
-                        &trans  &trans  &trans    &trans           &trans        &trans
+       &none          &none             &none                 &none             &none    &none  &none              &none                  &none              &none
+       &kp LC(LA(Q))  &kp LS(LEFT_GUI)  &kp LS(LEFT_CONTROL)  &kp LS(LEFT_GUI)  &none    &none  &kp RS(RIGHT_GUI)  &kp LS(RIGHT_CONTROL)  &kp RS(RIGHT_ALT)  &kp K_POWER
+&none  &none          &none             &none                 &none             &none    &none  &none              &none                  &none              &none        &none
+                                        &none                 &trans            &none    &none  &trans             &none
             >;
 
-            label = "MOO";
+            label = "add";
         };
     };
 };
