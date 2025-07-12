@@ -253,7 +253,7 @@
 
             bindings = <
         &kp Q  &kp W                &kp E                    &kp R                &kp T                          &kp Y                         &kp U                  &kp I                      &kp O                  &kp P
-        &kp A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt_left LC(LA(LEFT_GUI)) G    &mt_right LA(LC(LEFT_GUI)) H  &mt_right RIGHT_GUI J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &kp DEL
+        &kp A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt_left LC(LA(LEFT_GUI)) G    &mt_right LA(LC(LEFT_GUI)) H  &mt_right RIGHT_GUI J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &kp MINUS
 &trans  &kp Z  &kp X                &kp C                    &kp V                &kp B                          &kp N                         &kp M                  &comma_semicolon           &period_colon          &slash_backslash  &trans
                                     &sk LEFT_SHIFT           &lt 2 ESCAPE         &kp BACKSPACE                  &kp SPACE                     &lt 1 ENTER            &sk LEFT_SHIFT
             >;
@@ -262,9 +262,9 @@
         symbol {
             bindings = <
        &kp EXCL   &kp LS(AT)      &kp LS(POUND)         &kp LS(DLLR)           &kp LS(PRCNT)       &kp LS(CARET)          &kp LS(AMPS)   &kp LS(STAR)       &kp LS(PLUS)   &kp QUESTION
-       &kp UNDER  &kp LESS_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &sk RC(RA(RIGHT_GUI))  &sk RIGHT_GUI  &sk RIGHT_CONTROL  &sk RIGHT_ALT  &kp MINUS
-&none  &kp TILDE  &kp LEFT_BRACE  &kp LBKT              &kp RBKT               &kp RIGHT_BRACE     &kp EQUAL              &double_quote  &single_quote      &grave_quote   &kp PIPE      &none
-                                  &none                 &trans                 &none               &none                  &trans         &none
+       &kp PIPE   &kp LESS_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &sk RC(RA(RIGHT_GUI))  &sk RIGHT_GUI  &sk RIGHT_CONTROL  &sk RIGHT_ALT  &kp EQUAL
+&none  &kp TILDE  &kp LEFT_BRACE  &kp LBKT              &kp RBKT               &kp RIGHT_BRACE     &none                  &double_quote  &single_quote      &grave_quote   &none         &none
+                                  &none                 &mo 2                  &none               &none                  &trans         &none
             >;
 
             label = "SYM";
