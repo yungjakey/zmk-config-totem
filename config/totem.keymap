@@ -283,10 +283,10 @@
 
         layer_3 {
             bindings = <
-       &kp N1  &kp N2        &kp N3         &kp N4        &kp N5    &kp N6  &kp N7         &kp N8         &kp N9        &kp N0
-       &none   &kp LS(LALT)  &kp LS(RCTRL)  &kp LS(LGUI)  &none     &none   &kp LG(LSHFT)  &kp LS(RCTRL)  &kp LS(RALT)  &none
-&none  &none   &none         &none          &none         &none     &none   &none          &none          &none         &none   &none
-                             &none          &none         &none     &none   &none          &none
+       &kp N1  &kp N2        &kp N3         &kp N4        &kp N5                   &kp N6                 &kp N7         &kp N8        &kp N9        &kp N0
+       &none   &kp LS(LALT)  &kp LS(RCTRL)  &kp LS(LGUI)  &kp LS(LG(LA(LCTRL)))    &kp LS(LG(LA(LCTRL)))  &kp LG(LSHFT)  &kp LG(LALT)  &kp LS(LGUI)  &none
+&none  &none   &none         &none          &none         &none                    &none                  &none          &none         &none         &none   &none
+                             &none          &none         &none                    &none                  &none          &none
             >;
         };
     };
