@@ -244,10 +244,10 @@
 
         symbol {
             bindings = <
-       &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-       &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-                     &none  &mo 2  &none    &none  &mo 2  &none
+       &kp LS(EXCL)  &kp LS(AT)                   &kp LS(POUND)                           &kp LS(DLLR)                         &kp LS(PRCNT)       &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(PLUS)  &kp LS(QMARK)
+       &kp EQUAL     &mt_left LEFT_ALT LESS_THAN  &mt_left LEFT_CONTROL LEFT_PARENTHESIS  &mt_left LEFT_GUI RIGHT_PARENTHESIS  &kp GREATER_THAN    &none          &none         &none         &none         &kp LS(UNDER)
+&none  &none         &kp LS(LBRC)                 &kp LBKT                                &kp RBKT                             &kp LS(RBRC)        &none          &none         &none         &none         &none          &none
+                                                  &none                                   &mo 2                                &none               &none          &mo 2         &none
             >;
 
             label = "SYM";
@@ -255,8 +255,8 @@
 
         number {
             bindings = <
-       &kp NUMBER_1  &kp N2        &kp N3            &kp N4        &kp N5                  &kp N6                 &kp N7         &kp N8             &kp N9         &kp N0
-       &none         &sk LEFT_GUI  &sk LEFT_CONTROL  &sk LEFT_GUI  &sk LA(LC(LEFT_GUI))    &sk RA(RC(RIGHT_GUI))  &sk RIGHT_GUI  &sk RIGHT_CONTROL  &sk RIGHT_ALT  &none
+       &none         &kp N2        &kp N3            &kp N4        &kp N5                  &kp N6                 &kp N7         &kp N8             &kp N9         &none
+       &kp NUMBER_1  &sk LEFT_GUI  &sk LEFT_CONTROL  &sk LEFT_GUI  &sk LA(LC(LEFT_GUI))    &sk RA(RC(RIGHT_GUI))  &sk RIGHT_GUI  &sk RIGHT_CONTROL  &sk RIGHT_ALT  &kp N0
 &none  &none         &none         &none             &none         &none                   &none                  &none          &kp COMMA          &kp PERIOD     &none   &none
                                    &none             &trans        &none                   &none                  &trans         &none
             >;
