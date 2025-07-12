@@ -158,15 +158,6 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-
-        space_backspace: space_backspace {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SPACE_BACKSPACE";
-            bindings = <&kp SPACE>, <&kp BACKSPACE>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
     };
 
     macros {
