@@ -263,8 +263,8 @@
         symbol {
             bindings = <
        &kp EXCL   &kp AT_SIGN                  &kp HASH                         &kp DOLLAR                           &kp PERCENT                                &kp CARET              &kp AMPERSAND  &kp ASTERISK       &kp PLUS       &kp QUESTION
-       &kp PIPE   &mt_left LEFT_ALT LESS_THAN  &mt_left LCTRL LEFT_PARENTHESIS  &mt_left LEFT_ALT RIGHT_PARENTHESIS  &mt_right LA(LC(LEFT_GUI)) GREATER_THAN    &kp RC(RA(RIGHT_GUI))  &kp RIGHT_GUI  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &mo 3
-&none  &kp TILDE  &kp LEFT_BRACE               &kp LBKT                         &kp RBKT                             &kp RIGHT_BRACE                            &kp EQUAL              &single_quote  &double_quote      &grave_quote   &trans        &bt BT_CLR
+       &kp EQUAL  &mt_left LEFT_ALT LESS_THAN  &mt_left LCTRL LEFT_PARENTHESIS  &mt_left LEFT_ALT RIGHT_PARENTHESIS  &mt_right LA(LC(LEFT_GUI)) GREATER_THAN    &kp RC(RA(RIGHT_GUI))  &kp RIGHT_GUI  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &mo 3
+&none  &kp TILDE  &kp LEFT_BRACE               &kp LBKT                         &kp RBKT                             &kp RIGHT_BRACE                            &grave_quote           &single_quote  &double_quote      &kp PIPE       &trans        &bt BT_CLR
                                                &sk LA(LC(LG(LEFT_SHIFT)))       &caps_word                           &kp LG(BACKSPACE)                          &none                  &trans         &none
             >;
 
