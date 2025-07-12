@@ -263,7 +263,7 @@
             bindings = <
        &kp EXCL   &kp LS(AT_SIGN)  &kp HASH              &kp LS(DOLLAR)         &kp LS(PERCENT)     &kp CARET              &kp AMPERSAND  &kp ASTERISK       &kp PLUS       &kp QUESTION
        &kp PIPE   &kp LESS_THAN    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &sk RC(RA(RIGHT_GUI))  &sk RIGHT_GUI  &sk RIGHT_CONTROL  &sk RIGHT_ALT  &kp EQUAL
-&none  &kp TILDE  &kp LEFT_BRACE   &kp LBKT              &kp RBKT               &kp RIGHT_BRACE     &none                  &double_quote  &single_quote      &grave_quote   &none         &none
+&none  &kp TILDE  &kp LEFT_BRACE   &kp LBKT              &kp RBKT               &kp RIGHT_BRACE     &none                  &double_quote  &single_quote      &grave_quote   &trans        &none
                                    &none                 &mo 2                  &none               &none                  &trans         &none
             >;
 
