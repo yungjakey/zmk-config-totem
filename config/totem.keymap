@@ -253,8 +253,8 @@
 
             bindings = <
         &kp Q  &kp W                &kp E                    &kp R                &kp T                          &kp Y                         &kp U                  &kp I                      &kp O                  &kp P
-        &kp A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt_left LC(LA(LEFT_GUI)) G    &mt_right LA(LC(LEFT_GUI)) H  &mt_right RIGHT_GUI J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &tog 1
-&trans  &kp Z  &kp X                &kp C                    &kp V                &kp B                          &kp N                         &kp M                  &comma_semicolon           &period_colon          &kp TAB  &trans
+        &kp A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt_left LC(LA(LEFT_GUI)) G    &mt_right LA(LC(LEFT_GUI)) H  &mt_right RIGHT_GUI J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &kp ESCAPE
+&trans  &kp Z  &kp X                &kp C                    &kp V                &kp B                          &kp N                         &kp M                  &comma_semicolon           &period_colon          &kp TAB     &trans
                                     &lt 2 ESCAPE             &kp BACKSPACE        &sk LEFT_SHIFT                 &sk LEFT_SHIFT                &kp SPACE              &lt 2 ENTER
             >;
         };
