@@ -261,10 +261,10 @@
 
         navigation {
             bindings = <
-       &none      &none         &none      &none          &none                   &none            &none      &none      &none      &none
-       &kp LG(A)  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI   &kp LA(LC(LEFT_GUI))    &kp LEFT         &kp DOWN   &kp UP     &kp RIGHT  &kp DELETE
-&none  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)      &kp LS(LG(Z))           &kp HOME         &kp PG_DN  &kp PG_UP  &kp END    &kp TAB     &none
-                                &none      &kp BACKSPACE  &none                   &kp RIGHT_SHIFT  &tog 1     &kp ENTER
+       &none      &none         &none      &none         &none                   &none            &none      &none      &none      &none
+       &kp LG(A)  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &kp LA(LC(LEFT_GUI))    &kp LEFT         &kp DOWN   &kp UP     &kp RIGHT  &kp DELETE
+&none  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)     &kp LS(LG(Z))           &kp HOME         &kp PG_DN  &kp PG_UP  &kp END    &kp TAB     &none
+                                &none      &trans        &none                   &kp RIGHT_SHIFT  &tog 1     &kp ENTER
             >;
 
             label = "NAV";
@@ -279,6 +279,17 @@
             >;
 
             label = "SYM";
+        };
+
+        number {
+            bindings = <
+       &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
+       &none   &none   &none   &none   &none     &none   &none   &none   &none   &none
+&none  &none   &none   &none   &none   &none     &none   &none   &none   &none   &none   &none
+                       &none   &none   &none     &none   &none   &none
+            >;
+
+            label = "NUM";
         };
     };
 };
