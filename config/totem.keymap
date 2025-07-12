@@ -246,7 +246,7 @@
        &kp EXCL   &kp AT_SIGN                  &kp HASH                         &kp DOLLAR                           &kp PERCENT                                &kp CARET              &kp AMPERSAND  &kp ASTERISK       &kp PLUS       &kp QUESTION
        &kp EQUAL  &mt_left LEFT_ALT LESS_THAN  &mt_left LCTRL LEFT_PARENTHESIS  &mt_left LEFT_ALT RIGHT_PARENTHESIS  &mt_right LA(LC(LEFT_GUI)) GREATER_THAN    &kp RC(RA(RIGHT_GUI))  &kp RIGHT_GUI  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp SLASH
 &none  &kp TILDE  &kp LEFT_BRACE               &kp LBKT                         &kp RBKT                             &kp RIGHT_BRACE                            &grave_quote           &single_quote  &double_quote      &kp PIPE       &kp BACKSLASH  &bt BT_CLR
-                                               &none                            &kp BACKSPACE                        &caps_word                                 &none                  &trans         &none
+                                               &kp ESCAPE                       &kp BACKSPACE                        &caps_word                                 &none                  &trans         &none
             >;
 
             label = "SYM";
@@ -265,10 +265,10 @@
 
         mouse {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+       &none  &none  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_DEC  &none    &none  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOL_UP  &none
+       &none  &none  &none                 &none                 &none    &none  &none       &none              &none         &none
+&none  &none  &none  &none                 &none                 &none    &none  &none       &none              &none         &none  &none
+                     &none                 &none                 &none    &none  &none       &trans
             >;
 
             label = "MOU";
