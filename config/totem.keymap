@@ -105,34 +105,6 @@
             tapping-term-ms = <200>;
         };
 
-        lt_left: lt_left {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LT_LEFT";
-            bindings = <&lt>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "balanced";
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31 32 33 34 35 37 36>;
-            require-prior-idle-ms = <100>;
-            tapping-term-ms = <250>;
-            quick-tap-ms = <150>;
-        };
-
-        lt_right: lt_right {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LT_RIGHT";
-            bindings = <&lt>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "balanced";
-            hold-trigger-on-release;
-            require-prior-idle-ms = <100>;
-            tapping-term-ms = <250>;
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 22 23 24 25 20 21 32 33 34 35 36 37>;
-            quick-tap-ms = <150>;
-        };
-
         comma_semicolon: comma_semicolon {
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA_SEMICOLON";
@@ -264,8 +236,8 @@
             bindings = <
             &kp Q  &kp W                &kp E                    &kp R                &kp T                          &kp Y                         &kp U                  &kp I                      &kp O                  &kp P
             &kp A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt_left LC(LA(LEFT_GUI)) G    &mt_right LA(LC(LEFT_GUI)) H  &mt_right RIGHT_GUI J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &kp MINUS
-&bt BT_PRV  &kp Z  &kp X                &kp C                    &kp V                &kp B                          &kp N                         &kp M                  &comma_semicolon           &period_colon          &kp ESCAPE  &bt BT_NXT
-                                        &lt 2 ESCAPE             &kp SPACE            &sk LEFT_SHIFT                 &sk LEFT_SHIFT                &lt 1 BACKSPACE        &kp ENTER
+&bt BT_PRV  &kp Z  &kp X                &kp C                    &kp V                &kp B                          &kp N                         &kp M                  &comma_semicolon           &period_colon          &kp TAB    &bt BT_NXT
+                                        &lt 2 ESCAPE             &kp SPACE            &sk LEFT_SHIFT                 &sk LEFT_SHIFT                &mo 1                  &kp ENTER
             >;
         };
 
@@ -282,24 +254,13 @@
 
         navigation {
             bindings = <
-            &kp N1     &kp N2        &kp N3     &kp N4         &kp N5                  &kp N6                            &kp N7                    &kp N8                            &kp N9                     &kp N0
-            &kp LG(A)  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI   &kp LA(LC(LEFT_GUI))    &mt_right RC(RA(RIGHT_GUI)) LEFT  &mt_right RIGHT_GUI DOWN  &mt_right RIGHT_CONTROL UP_ARROW  &mt_right RIGHT_ALT RIGHT  &kp DELETE
-&bt BT_CLR  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)      &kp LS(LG(Z))           &kp HOME                          &kp PG_DN                 &kp PG_UP                         &kp END                    &kp TAB     &none
-                                     &trans     &kp BACKSPACE  &kp LEFT_SHIFT          &kp LEFT_SHIFT                    &mo 0                     &kp ENTER
+            &kp N1     &kp N2        &kp N3     &kp N4        &kp N5                  &kp N6                            &kp N7                    &kp N8                            &kp N9                     &kp N0
+            &kp LG(A)  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &kp LA(LC(LEFT_GUI))    &mt_right RC(RA(RIGHT_GUI)) LEFT  &mt_right RIGHT_GUI DOWN  &mt_right RIGHT_CONTROL UP_ARROW  &mt_right RIGHT_ALT RIGHT  &kp DELETE
+&bt BT_CLR  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)     &kp LS(LG(Z))           &kp HOME                          &kp PG_DN                 &kp PG_UP                         &kp END                    &kp TAB     &none
+                                     &trans     &none         &none                   &kp LEFT_SHIFT                    &mo 0                     &kp ENTER
             >;
 
             label = "NAV";
-        };
-
-        function {
-            bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-
-            label = "FUN";
         };
 
         mouse {
