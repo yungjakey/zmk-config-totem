@@ -20,6 +20,7 @@
 
 &caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE LEFT_ARROW DOWN_ARROW UP_ARROW RIGHT_ARROW HOME END PAGE_DOWN PAGE_UP>; };
 
+
 / {
     combos {
         compatible = "zmk,combos";
