@@ -264,8 +264,8 @@
             bindings = <
             &kp Q  &kp W                &kp E                    &kp R                &kp T                          &kp Y                         &kp U                  &kp I                      &kp O                  &kp P
             &kp A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt_left LC(LA(LEFT_GUI)) G    &mt_right LA(LC(LEFT_GUI)) H  &mt_right RIGHT_GUI J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &kp MINUS
-&bt BT_PRV  &kp Z  &kp X                &kp C                    &kp V                &kp B                          &kp N                         &kp M                  &comma_semicolon           &period_colon          &kp TAB    &bt BT_NXT
-                                        &lt 2 ESCAPE             &kp SPACE            &sk LEFT_SHIFT                 &sk LEFT_SHIFT                &mo 1                  &kp ENTER
+&bt BT_PRV  &kp Z  &kp X                &kp C                    &kp V                &kp B                          &kp N                         &kp M                  &comma_semicolon           &period_colon          &kp ESCAPE  &bt BT_NXT
+                                        &to 2                    &kp SPACE            &sk LEFT_SHIFT                 &sk LEFT_SHIFT                &mo 1                  &kp ENTER
             >;
         };
 
@@ -282,10 +282,10 @@
 
         navigation {
             bindings = <
-            &kp N1     &kp N2        &kp N3     &kp N4        &kp N5                  &kp N6                            &kp N7                    &kp N8                            &kp N9                     &kp N0
-            &kp LG(A)  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &kp LA(LC(LEFT_GUI))    &mt_right RC(RA(RIGHT_GUI)) LEFT  &mt_right RIGHT_GUI DOWN  &mt_right RIGHT_CONTROL UP_ARROW  &mt_right RIGHT_ALT RIGHT  &kp DELETE
-&bt BT_CLR  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)     &kp LS(LG(Z))           &kp HOME                          &kp PG_DN                 &kp PG_UP                         &kp END                    &kp TAB     &none
-                                     &trans     &none         &none                   &kp LEFT_SHIFT                    &trans                    &kp ENTER
+            &kp N1     &kp N2        &kp N3     &kp N4         &kp N5                  &kp N6                            &kp N7                    &kp N8                            &kp N9                     &kp N0
+            &kp LG(A)  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI   &kp LA(LC(LEFT_GUI))    &mt_right RC(RA(RIGHT_GUI)) LEFT  &mt_right RIGHT_GUI DOWN  &mt_right RIGHT_CONTROL UP_ARROW  &mt_right RIGHT_ALT RIGHT  &kp DELETE
+&bt BT_CLR  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)      &kp LS(LG(Z))           &kp HOME                          &kp PG_DN                 &kp PG_UP                         &kp END                    &kp TAB     &none
+                                     &trans     &kp BACKSPACE  &kp LEFT_SHIFT          &kp LEFT_SHIFT                    &mo 0                     &kp ENTER
             >;
 
             label = "NAV";
