@@ -261,10 +261,10 @@
 
         symbol {
             bindings = <
-       &kp EXCL   &kp LS(AT_SIGN)  &kp HASH              &kp LS(DOLLAR)         &kp LS(PERCENT)     &kp CARET              &kp AMPERSAND  &kp ASTERISK       &kp PLUS       &kp QUESTION
-       &kp PIPE   &kp LESS_THAN    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &sk RC(RA(RIGHT_GUI))  &sk RIGHT_GUI  &sk RIGHT_CONTROL  &sk RIGHT_ALT  &kp EQUAL
-&none  &kp TILDE  &kp LEFT_BRACE   &kp LBKT              &kp RBKT               &kp RIGHT_BRACE     &none                  &double_quote  &single_quote      &grave_quote   &trans        &none
-                                   &none                 &mo 2                  &none               &none                  &trans         &none
+       &kp EXCL   &kp AT_SIGN                     &kp HASH                         &kp DOLLAR                           &kp PERCENT                                &kp CARET              &kp AMPERSAND  &kp ASTERISK       &kp PLUS       &kp QUESTION
+       &kp PIPE   &mt_left LEFT_ALT GREATER_THAN  &mt_left LCTRL LEFT_PARENTHESIS  &mt_left LEFT_ALT RIGHT_PARENTHESIS  &mt_right LA(LC(LEFT_GUI)) GREATER_THAN    &kp RC(RA(RIGHT_GUI))  &kp RIGHT_GUI  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp EQUAL
+&none  &kp TILDE  &kp LEFT_BRACE                  &kp LBKT                         &kp RBKT                             &kp RIGHT_BRACE                            &none                  &double_quote  &single_quote      &grave_quote   &trans        &none
+                                                  &none                            &mo 2                                &none                                      &none                  &trans         &none
             >;
 
             label = "SYM";
@@ -272,10 +272,10 @@
 
         navigation {
             bindings = <
-       &kp N1     &kp N2        &kp N3     &kp N4        &kp N5                  &kp N6    &kp N7     &kp N8           &kp N9     &kp N0
-       &kp LG(A)  &sk LEFT_ALT  &sk LCTRL  &sk LEFT_GUI  &sk LA(LC(LEFT_GUI))    &kp LEFT  &kp DOWN   &kp UP           &kp RIGHT  &kp DELETE
-&none  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)     &kp LS(LG(Z))           &kp HOME  &kp PG_DN  &kp PG_UP        &kp END    &kp TAB     &none
-                                &none      &trans        &none                   &none     &mo 0      &kp RIGHT_SHIFT
+       &kp N1     &kp N2        &kp N3     &kp N4        &kp N5                  &kp N6                            &kp N7                    &kp N8                            &kp N9                     &kp N0
+       &kp LG(A)  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &kp LA(LC(LEFT_GUI))    &mt_right RC(RA(RIGHT_GUI)) LEFT  &mt_right RIGHT_GUI DOWN  &mt_right RIGHT_CONTROL UP_ARROW  &mt_right RIGHT_ALT RIGHT  &kp DELETE
+&none  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)     &kp LS(LG(Z))           &kp HOME                          &kp PG_DN                 &kp PG_UP                         &kp END                    &kp TAB     &none
+                                &none      &trans        &none                   &none                             &mo 0                     &kp RIGHT_SHIFT
             >;
 
             label = "NAV";
