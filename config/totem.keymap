@@ -158,6 +158,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        slash_backslash: slash_backslash {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SLASH_BACKSLASH";
+            bindings = <&kp SLASH>, <&kp BACKSLASH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -245,7 +254,7 @@
             bindings = <
         &kp Q  &kp W                &kp E                    &kp R                &kp T                          &kp Y                         &kp U                  &kp I                      &kp O                  &kp P
         &kp A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt_left LC(LA(LEFT_GUI)) G    &mt_right LA(LC(LEFT_GUI)) H  &mt_right RIGHT_GUI J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &question_exclamation
-&trans  &kp Z  &kp X                &kp C                    &kp V                &kp B                          &kp N                         &kp M                  &comma_semicolon           &period_colon          &kp TAB                &trans
+&trans  &kp Z  &kp X                &kp C                    &kp V                &kp B                          &kp N                         &kp M                  &comma_semicolon           &period_colon          &slash_backslash       &trans
                                     &sk LEFT_SHIFT           &lt 2 ESCAPE         &kp BACKSPACE                  &kp SPACE                     &lt 1 ENTER            &sk LEFT_SHIFT
             >;
         };
@@ -263,10 +272,10 @@
 
         navigation {
             bindings = <
-       &none      &none         &none      &none         &none                   &none          &none      &none            &none      &none
-       &kp LG(A)  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &kp LA(LC(LEFT_GUI))    &kp LEFT       &kp DOWN   &kp UP           &kp RIGHT  &kp DELETE
-&none  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)     &kp LS(LG(Z))           &kp HOME       &kp PG_DN  &kp PG_UP        &kp END    &kp TAB     &none
-                                &none      &trans        &none                   &kp BACKSPACE  &mo 3      &kp RIGHT_SHIFT
+       &none      &none         &none      &none         &none                   &none     &none      &none            &none      &none
+       &kp LG(A)  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &kp LA(LC(LEFT_GUI))    &kp LEFT  &kp DOWN   &kp UP           &kp RIGHT  &none
+&none  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)     &kp LS(LG(Z))           &kp HOME  &kp PG_DN  &kp PG_UP        &kp END    &kp TAB  &none
+                                &none      &trans        &none                   &none     &mo 3      &kp RIGHT_SHIFT
             >;
 
             label = "NAV";
