@@ -275,10 +275,10 @@
 
         navigation {
             bindings = <
-       &none   &none         &none           &none         &none                   &none     &none      &none      &none      &none
-       &trans  &kp LEFT_ALT  &kp LCTRL       &kp LEFT_GUI  &kp LA(LC(LEFT_GUI))    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp ESCAPE
-&none  &none   &none         &none           &none         &none                   &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp TAB     &none
-                             &kp LEFT_SHIFT  &none         &none                   &none     &none      &none
+       &none   &none         &none      &none         &none                   &none     &none      &none      &none      &none
+       &trans  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &kp LA(LC(LEFT_GUI))    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp ESCAPE
+&none  &none   &none         &none      &none         &none                   &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp TAB     &none
+                             &none      &none         &none                   &none     &none      &none
             >;
 
             label = "NAV";
