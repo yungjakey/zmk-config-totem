@@ -244,43 +244,32 @@
 
             bindings = <
         &kp Q  &kp W                &kp E                    &kp R                &kp T                          &kp Y                         &kp U                  &kp I                      &kp O                  &kp P
-        &kp A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt_left LC(LA(LEFT_GUI)) G    &mt_right LA(LC(LEFT_GUI)) H  &mt_right RIGHT_GUI J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &to 3
-&trans  &kp Z  &kp X                &kp C                    &kp V                &kp B                          &kp N                         &kp M                  &comma_semicolon           &period_colon          &kp TAB  &trans
-                                    &lt 1 ESCAPE             &kp BACKSPACE        &sk LEFT_SHIFT                 &sk LEFT_SHIFT                &kp SPACE              &lt 1 ENTER
+        &kp A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt_left LC(LA(LEFT_GUI)) G    &mt_right LA(LC(LEFT_GUI)) H  &mt_right RIGHT_GUI J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &kp DELETE
+&trans  &kp Z  &kp X                &kp C                    &kp V                &kp B                          &kp N                         &kp M                  &comma_semicolon           &period_colon          &kp TAB     &trans
+                                    &lt 2 ESCAPE             &lt 1 BACKSPACE      &sk LEFT_SHIFT                 &sk LEFT_SHIFT                &kp SPACE              &lt 2 ENTER
             >;
-        };
-
-        symbol {
-            bindings = <
-       &kp LS(EXCL)  &kp LS(AT)                    &kp LS(POUND)                       &kp LS(DLLR)                        &kp LS(PRCNT)    &kp LS(CARET)     &kp LS(AMPS)                           &kp LS(STAR)                           &kp LS(PLUS)                     &kp LS(QMARK)
-       &mo 1         &mt_left LEFT_ALT LEFT_BRACE  &mt_left LEFT_CONTROL LEFT_BRACKET  &mt_left LEFT_GUI LEFT_PARENTHESIS  &kp LESS_THAN    &kp GREATER_THAN  &mt_right RIGHT_GUI RIGHT_PARENTHESIS  &mt_right RIGHT_CONTROL RIGHT_BRACKET  &mt_right RIGHT_ALT RIGHT_BRACE  &mo 1
-&none  &none         &none                         &none                               &none                               &none            &none             &none                                  &none                                  &none                            &none          &none
-                                                   &none                               &none                               &none            &none             &none                                  &none
-            >;
-
-            label = "SYM";
-        };
-
-        number {
-            bindings = <
-       &kp N1  &kp N2        &kp N3            &kp N4        &kp N5                  &kp N6                 &kp N7         &kp N8             &kp N9         &kp N0
-       &none   &sk LEFT_GUI  &sk LEFT_CONTROL  &sk LEFT_GUI  &sk LA(LC(LEFT_GUI))    &sk RA(RC(RIGHT_GUI))  &sk RIGHT_GUI  &sk RIGHT_CONTROL  &sk RIGHT_ALT  &none
-&none  &none   &none         &none             &none         &none                   &none                  &none          &kp COMMA          &kp PERIOD     &none   &none
-                             &none             &trans        &none                   &none                  &mo 2          &none
-            >;
-
-            label = "NUM";
         };
 
         navigation {
             bindings = <
-       &none      &none         &none       &none          &none                   &none            &none      &none      &none      &none
-       &kp LG(A)  &kp LEFT_ALT  &kp LCTRL   &kp LEFT_GUI   &kp LA(LC(LEFT_GUI))    &kp LEFT         &kp DOWN   &kp UP     &kp RIGHT  &trans
-&none  &kp LG(Z)  &kp LG(X)     &kp LG(C)   &kp LG(V)      &kp LS(LG(Z))           &kp HOME         &kp PG_DN  &kp PG_UP  &kp END    &kp TAB  &none
+       &kp N1     &kp N2        &kp N3      &kp N4         &kp N5                  &kp N6           &kp N7     &kp N8     &kp N9     &kp N0
+       &kp LG(A)  &kp LEFT_ALT  &kp LCTRL   &kp LEFT_GUI   &kp LA(LC(LEFT_GUI))    &kp LEFT         &kp DOWN   &kp UP     &kp RIGHT  &kp DELETE
+&none  &kp LG(Z)  &kp LG(X)     &kp LG(C)   &kp LG(V)      &kp LS(LG(Z))           &kp HOME         &kp PG_DN  &kp PG_UP  &kp END    &kp TAB     &none
                                 &kp ESCAPE  &kp BACKSPACE  &kp LEFT_SHIFT          &kp RIGHT_SHIFT  &kp SPACE  &kp ENTER
             >;
 
             label = "NAV";
+        };
+
+        symbol {
+            bindings = <
+       &kp LS(EXCL)   &kp LS(AT)                    &kp LS(POUND)                       &kp LS(DLLR)                        &kp LS(PRCNT)    &kp LS(CARET)     &kp LS(AMPS)                           &kp LS(STAR)                           &kp LS(PLUS)                     &kp LS(QMARK)
+       &mo 2          &mt_left LEFT_ALT LEFT_BRACE  &mt_left LEFT_CONTROL LEFT_BRACKET  &mt_left LEFT_GUI LEFT_PARENTHESIS  &kp LESS_THAN    &kp GREATER_THAN  &mt_right RIGHT_GUI RIGHT_PARENTHESIS  &mt_right RIGHT_CONTROL RIGHT_BRACKET  &mt_right RIGHT_ALT RIGHT_BRACE  &mo 2
+&none  &kp LS(TILDE)  &kp FSLH                      &kp LS(PIPE)                        &kp BSLH                            &kp MINUS        &kp LS(UNDER)     &kp GRAVE                              &kp SQT                                &kp LS(DQT)                      &none          &none
+                                                    &none                               &none                               &none            &none             &none                                  &none
+            >;
+
+            label = "SYM";
         };
     };
 };
