@@ -32,7 +32,7 @@
         rbrace {
             bindings = <&rbrace>;
             key-positions = <12 13>;
-            layers = <1>;
+            layers = <2>;
         };
 
         sbrace {
@@ -213,9 +213,9 @@
 
             bindings = <
         &kp Q  &kp W                &kp E                    &kp R                &kp T                          &kp Y                         &kp U                  &kp I                      &kp O                  &kp P
-        &kp A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt_left LC(LA(LEFT_GUI)) G    &mt_right LA(LC(LEFT_GUI)) H  &mt_right RIGHT_GUI J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &lt 3 MINUS
+        &kp A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt_left LC(LA(LEFT_GUI)) G    &mt_right LA(LC(LEFT_GUI)) H  &mt_right RIGHT_GUI J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &lt 4 MINUS
 &trans  &kp Z  &kp X                &kp C                    &kp V                &kp B                          &kp N                         &kp M                  &comma                     &period                &kp TAB      &trans
-                                    &sk LEFT_SHIFT           &lt 1 ESCAPE         &kp SPACE                      &kp SPACE                     &lt 2 ENTER            &sk RIGHT_SHIFT
+                                    &sk LEFT_SHIFT           &lt 2 ESCAPE         &kp SPACE                      &kp SPACE                     &lt 3 ENTER            &sk RIGHT_SHIFT
             >;
         };
 
@@ -224,7 +224,7 @@
         &none      &none         &none      &none         &none                   &none          &none      &none                       &none      &none
         &kp LG(A)  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &kp LA(LC(LEFT_GUI))    &kp LEFT       &kp DOWN   &kp UP                      &kp RIGHT  &kp TAB
 &trans  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)     &kp LS(LG(Z))           &kp HOME       &kp PG_DN  &kp PG_UP                   &kp END    &kp DELETE  &trans
-                                 &none      &trans        &none                   &kp BACKSPACE  &mo 5      &mt_caps_word LEFT_SHIFT 0
+                                 &none      &trans        &none                   &kp BACKSPACE  &mo 6      &mt_caps_word LEFT_SHIFT 0
             >;
 
             label = "NAV";
@@ -232,13 +232,24 @@
 
         symbol {
             bindings = <
-        &kp EXCLAMATION  &kp LS(AT)                   &kp LS(POUND)                           &kp LS(DLLR)                             &kp LS(PRCNT)                             &kp LS(CARET)                      &kp LS(AMPS)               &kp LS(STAR)               &kp LS(PLUS)           &kp RA(QUESTION)
-        &kp EQUAL        &mt_left LEFT_ALT LESS_THAN  &mt_left LEFT_CONTROL LEFT_PARENTHESIS  &mt_left LS(LEFT_GUI) RIGHT_PARENTHESIS  &mt_left LC(LA(LEFT_GUI)) GREATER_THAN    &mt_right RA(RC(RIGHT_GUI)) GRAVE  &mt_right RIGHT_GUI EQUAL  &mt_right RIGHT_CONTROL A  &mt_right RIGHT_ALT A  &lt 4 SLASH
-&trans  &kp TILDE        &kp LS(LBRC)                 &kp LBKT                                &kp RBKT                                 &kp LS(RBRC)                              &grave_quote                       &single_quote              &double_quote              &kp LS(PIPE)           &kp BSLH          &trans
-                                                      &mt_caps_word LEFT_SHIFT 0              &mo 5                                    &kp LG(SPACE)                             &none                              &trans                     &none
+        &none            &kp LS(AT)                   &kp LS(POUND)                           &kp LS(DLLR)                             &kp LS(PRCNT)                             &kp LS(CARET)                 &kp LS(AMPS)               &kp LS(STAR)                   &kp LS(PLUS)                   &none
+        &kp EXCLAMATION  &mt_left LEFT_ALT LESS_THAN  &mt_left LEFT_CONTROL LEFT_PARENTHESIS  &mt_left LS(LEFT_GUI) RIGHT_PARENTHESIS  &mt_left LC(LA(LEFT_GUI)) GREATER_THAN    &mt_right RA(RC(RGUI)) TILDE  &mt_right RIGHT_GUI EQUAL  &mt_right RIGHT_CONTROL SLASH  &mt_right RIGHT_ALT BACKSLASH  &kp QUESTION
+&trans  &none            &kp LS(LBRC)                 &kp LBKT                                &kp RBKT                                 &kp LS(RBRC)                              &grave_quote                  &single_quote              &double_quote                  &kp PIPE                       &none         &trans
+                                                      &mt_caps_word LEFT_SHIFT 0              &mo 6                                    &kp LG(SPACE)                             &none                         &trans                     &none
             >;
 
             label = "SYM";
+        };
+
+        number {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "NUM";
         };
 
         mouse {
