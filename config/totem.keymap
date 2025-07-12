@@ -264,7 +264,7 @@
        &kp EXCL   &kp LS(AT)                    &kp LS(POUND)                       &kp LS(DLLR)                        &kp LS(PRCNT)    &kp LS(CARET)     &kp LS(AMPS)                           &kp LS(STAR)                           &kp LS(PLUS)                     &kp QUESTION
        &kp UNDER  &mt_left LEFT_ALT LEFT_BRACE  &mt_left LEFT_CONTROL LEFT_BRACKET  &mt_left LEFT_GUI LEFT_PARENTHESIS  &kp LESS_THAN    &kp GREATER_THAN  &mt_right RIGHT_GUI RIGHT_PARENTHESIS  &mt_right RIGHT_CONTROL RIGHT_BRACKET  &mt_right RIGHT_ALT RIGHT_BRACE  &kp MINUS
 &none  &kp TILDE  &grave_quote                  &single_quote                       &double_quote                       &kp PIPE         &none             &none                                  &none                                  &none                            &none         &none
-                                                &none                               &kp EQUAL                           &kp EQUAL        &none             &trans                                 &none
+                                                &none                               &kp EQUAL                           &none            &none             &trans                                 &none
             >;
 
             label = "SYM";
