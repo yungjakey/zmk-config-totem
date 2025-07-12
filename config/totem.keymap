@@ -11,6 +11,7 @@
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 #define BASE 0
@@ -19,7 +20,6 @@
 #define MOO  3
 
 &caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE LEFT_ARROW DOWN_ARROW UP_ARROW RIGHT_ARROW HOME END PAGE_DOWN PAGE_UP>; };
-
 
 / {
     combos {
@@ -253,10 +253,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp Q  &kp W                &kp E                    &kp R                &kp T                          &kp Y                         &kp U                  &kp I                      &kp O                  &kp P
-        &kp A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt_left LC(LA(LEFT_GUI)) G    &mt_right LA(LC(LEFT_GUI)) H  &mt_right RIGHT_GUI J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &kp MINUS
-&trans  &kp Z  &kp X                &kp C                    &kp V                &kp B                          &kp N                         &kp M                  &comma_semicolon           &period_colon          &slash_backslash  &trans
-                                    &sk LEFT_SHIFT           &lt 2 ESCAPE         &kp BACKSPACE                  &kp SPACE                     &lt 1 ENTER            &sk LEFT_SHIFT
+            &kp Q  &kp W                &kp E                    &kp R                &kp T                          &kp Y                         &kp U                  &kp I                      &kp O                  &kp P
+            &kp A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt_left LC(LA(LEFT_GUI)) G    &mt_right LA(LC(LEFT_GUI)) H  &mt_right RIGHT_GUI J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &kp MINUS
+&bt BT_PRV  &kp Z  &kp X                &kp C                    &kp V                &kp B                          &kp N                         &kp M                  &comma_semicolon           &period_colon          &slash_backslash  &bt BT_NXT
+                                        &sk LEFT_SHIFT           &lt 2 ESCAPE         &kp BACKSPACE                  &kp SPACE                     &lt 1 ENTER            &sk LEFT_SHIFT
             >;
         };
 
@@ -264,7 +264,7 @@
             bindings = <
        &kp EXCL   &kp AT_SIGN                  &kp HASH                         &kp DOLLAR                           &kp PERCENT                                &kp CARET              &kp AMPERSAND  &kp ASTERISK       &kp PLUS       &kp QUESTION
        &kp PIPE   &mt_left LEFT_ALT LESS_THAN  &mt_left LCTRL LEFT_PARENTHESIS  &mt_left LEFT_ALT RIGHT_PARENTHESIS  &mt_right LA(LC(LEFT_GUI)) GREATER_THAN    &kp RC(RA(RIGHT_GUI))  &kp RIGHT_GUI  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &mo 3
-&none  &kp TILDE  &kp LEFT_BRACE               &kp LBKT                         &kp RBKT                             &kp RIGHT_BRACE                            &kp EQUAL              &single_quote  &double_quote      &grave_quote   &trans        &none
+&none  &kp TILDE  &kp LEFT_BRACE               &kp LBKT                         &kp RBKT                             &kp RIGHT_BRACE                            &kp EQUAL              &single_quote  &double_quote      &grave_quote   &trans        &bt BT_CLR
                                                &sk LA(LC(LG(LEFT_SHIFT)))       &caps_word                           &kp LG(BACKSPACE)                          &none                  &trans         &none
             >;
 
@@ -273,10 +273,10 @@
 
         navigation {
             bindings = <
-       &kp N1     &kp N2        &kp N3     &kp N4        &kp N5                  &kp N6                            &kp N7                    &kp N8                            &kp N9                     &kp N0
-       &mo 4      &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &kp LA(LC(LEFT_GUI))    &mt_right RC(RA(RIGHT_GUI)) LEFT  &mt_right RIGHT_GUI DOWN  &mt_right RIGHT_CONTROL UP_ARROW  &mt_right RIGHT_ALT RIGHT  &kp DELETE
-&none  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)     &kp LS(LG(Z))           &kp HOME                          &kp PG_DN                 &kp PG_UP                         &kp END                    &kp TAB     &none
-                                &none      &trans        &none                   &kp LG(SPACE)                     &caps_word                &sk RIGHT_SHIFT
+            &kp N1     &kp N2        &kp N3     &kp N4        &kp N5                  &kp N6                            &kp N7                    &kp N8                            &kp N9                     &kp N0
+            &mo 4      &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &kp LA(LC(LEFT_GUI))    &mt_right RC(RA(RIGHT_GUI)) LEFT  &mt_right RIGHT_GUI DOWN  &mt_right RIGHT_CONTROL UP_ARROW  &mt_right RIGHT_ALT RIGHT  &kp DELETE
+&bt BT_CLR  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)     &kp LS(LG(Z))           &kp HOME                          &kp PG_DN                 &kp PG_UP                         &kp END                    &kp TAB     &none
+                                     &none      &trans        &none                   &kp LG(SPACE)                     &caps_word                &sk RIGHT_SHIFT
             >;
 
             label = "NAV";
