@@ -286,10 +286,10 @@
 
         navigation {
             bindings = <
-       &none   &none         &none      &none         &none                   &none     &none      &none      &none      &none
-       &trans  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &kp LA(LC(LEFT_GUI))    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp ESCAPE
-&none  &none   &none         &none      &none         &none                   &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp TAB     &none
-                             &none      &none         &none                   &none     &none      &none
+       &none   &none         &none      &none           &none                   &none     &none      &none      &none      &none
+       &trans  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI    &kp LA(LC(LEFT_GUI))    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp ESCAPE
+&none  &none   &none         &none      &none           &none                   &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp TAB     &none
+                             &none      &kp LEFT_SHIFT  &none                   &none     &mo 5      &none
             >;
 
             label = "NAV";
@@ -298,9 +298,9 @@
         mouse {
             bindings = <
        &none   &none   &none   &none   &none     &none            &mkp LCLK     &mkp RCLK       &mkp MCLK       &none
-       &trans  &trans  &trans  &trans  &trans    &msc SCRL_RIGHT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_LEFT  &none
-&none  &none   &none   &none   &none   &none     &trans           &trans        &trans          &trans          &none  &none
-                       &none   &trans  &none     &none            &none         &none
+       &trans  &trans  &trans  &trans  &trans    &msc SCRL_RIGHT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_LEFT  &trans
+&none  &none   &none   &none   &none   &none     &trans           &trans        &trans          &trans          &trans  &none
+                       &none   &trans  &none     &none            &trans        &none
             >;
 
             label = "MOO";
