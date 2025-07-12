@@ -236,7 +236,7 @@
 
             bindings = <
         &kp Q         &kp W                &kp E                    &kp R                &kp T                          &kp Y                         &kp U                  &kp I                      &kp O                  &kp P
-        &lt_left 4 A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt_left LC(LA(LEFT_GUI)) G    &mt_right LA(LC(LEFT_GUI)) H  &mt_right RIGHT_GUI J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &lt_right 3 ESCAPE
+        &lt_left 3 A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt_left LC(LA(LEFT_GUI)) G    &mt_right LA(LC(LEFT_GUI)) H  &mt_right RIGHT_GUI J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &lt_right 2 ESCAPE
 &trans  &kp Z         &kp X                &kp C                    &kp V                &kp B                          &kp N                         &kp M                  &comma                     &period                &kp TAB             &trans
                                            &sk LEFT_SHIFT           &mo 1                &kp SPACE                      &kp SPACE                     &mo 1                  &sk RIGHT_SHIFT
             >;
@@ -247,21 +247,10 @@
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &mo 4   &trans    &trans  &mo 4   &trans
+                        &trans  &mo 3   &trans    &trans  &mo 3   &trans
             >;
 
             label = "SYM";
-        };
-
-        number {
-            bindings = <
-       &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
-       &none   &none   &none   &none   &none     &none   &none   &none   &none   &none
-&none  &none   &none   &none   &none   &none     &none   &none   &trans  &trans  &none   &none
-                       &none   &none   &none     &none   &none   &none
-            >;
-
-            label = "NUM";
         };
 
         mouse {
@@ -275,15 +264,15 @@
             label = "MOO";
         };
 
-        additional {
+        number {
             bindings = <
-       &trans         &none             &none                 &none             &none                         &none                        &none              &none                  &none              &none
-       &kp LC(LA(Q))  &kp LS(LEFT_GUI)  &kp LS(LEFT_CONTROL)  &kp LS(LEFT_GUI)  &kp LA(LC(LG(LEFT_SHIFT)))    &kp RA(RC(RG(RIGHT_SHIFT)))  &kp RS(RIGHT_GUI)  &kp LS(RIGHT_CONTROL)  &kp RS(RIGHT_ALT)  &kp K_POWER
-&none  &none          &none             &none                 &none             &none                         &none                        &none              &none                  &none              &none        &none
+       &kp LA(LC(Q))  &kp N2            &kp N3                &kp N4            &kp N5                        &kp N6                       &kp N7             &kp N8                 &kp N9             &kp K_POWER
+       &kp N1         &kp LS(LEFT_GUI)  &kp LS(LEFT_CONTROL)  &kp LS(LEFT_GUI)  &kp LA(LC(LG(LEFT_SHIFT)))    &kp RA(RC(RG(RIGHT_SHIFT)))  &kp RS(RIGHT_GUI)  &kp LS(RIGHT_CONTROL)  &kp RS(RIGHT_ALT)  &kp N0
+&none  &none          &none             &none                 &none             &none                         &none                        &none              &kp COMMA              &kp PERIOD         &none        &none
                                         &none                 &trans            &none                         &none                        &trans             &none
             >;
 
-            label = "add";
+            label = "NUM";
         };
     };
 };
