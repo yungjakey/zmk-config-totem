@@ -261,7 +261,7 @@
 
         navigation {
             bindings = <
-       &kp N1     &kp N2        &kp N3     &kp N4        &kp N5                  &kp N6           &kp N7     &kp N8     &kp N9     &kp N0
+       &none      &none         &none      &none         &kp N5                  &none            &none      &none      &none      &none
        &kp LG(A)  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &kp LA(LC(LEFT_GUI))    &kp LEFT         &kp DOWN   &kp UP     &kp RIGHT  &trans
 &none  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)     &kp LS(LG(Z))           &kp HOME         &kp PG_DN  &kp PG_UP  &kp END    &kp TAB  &none
                                 &trans     &tog 1        &none                   &kp RIGHT_SHIFT  &tog 1     &kp ENTER
@@ -279,15 +279,6 @@
             >;
 
             label = "SYM";
-        };
-
-        layer_3 {
-            bindings = <
-       &kp N1  &kp N2        &kp N3         &kp N4        &kp N5                   &kp N6                 &kp N7         &kp N8        &kp N9        &kp N0
-       &none   &kp LS(LALT)  &kp LS(RCTRL)  &kp LS(LGUI)  &kp LS(LG(LA(LCTRL)))    &kp LS(LG(LA(LCTRL)))  &kp LG(LSHFT)  &kp LG(LALT)  &kp LS(LGUI)  &none
-&none  &none   &none         &none          &none         &none                    &none                  &none          &none         &none         &none   &none
-                             &none          &none         &none                    &none                  &none          &none
-            >;
         };
     };
 };
