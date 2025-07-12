@@ -255,16 +255,16 @@
         &kp Q  &kp W                &kp E                    &kp R                &kp T                          &kp Y                         &kp U                  &kp I                      &kp O                  &kp P
         &kp A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt_left LC(LA(LEFT_GUI)) G    &mt_right LA(LC(LEFT_GUI)) H  &mt_right RIGHT_GUI J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &kp MINUS
 &trans  &kp Z  &kp X                &kp C                    &kp V                &kp B                          &kp N                         &kp M                  &comma_semicolon           &period_colon          &slash_backslash  &trans
-                                    &sk LEFT_SHIFT           &lt 2 BACKSPACE      &kp ESCAPE                     &kp SPACE                     &lt 1 ENTER            &sk LEFT_SHIFT
+                                    &sk LEFT_SHIFT           &lt 2 ESCAPE         &kp BACKSPACE                  &kp SPACE                     &lt 1 ENTER            &sk LEFT_SHIFT
             >;
         };
 
         symbol {
             bindings = <
-       &kp EXCL   &kp AT_SIGN                     &kp HASH                         &kp DOLLAR                           &kp PERCENT                                &kp CARET              &kp AMPERSAND  &kp ASTERISK       &kp PLUS       &kp QUESTION
-       &kp PIPE   &mt_left LEFT_ALT GREATER_THAN  &mt_left LCTRL LEFT_PARENTHESIS  &mt_left LEFT_ALT RIGHT_PARENTHESIS  &mt_right LA(LC(LEFT_GUI)) GREATER_THAN    &kp RC(RA(RIGHT_GUI))  &kp RIGHT_GUI  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp EQUAL
-&none  &kp TILDE  &kp LEFT_BRACE                  &kp LBKT                         &kp RBKT                             &kp RIGHT_BRACE                            &none                  &single_quote  &double_quote      &grave_quote   &none         &none
-                                                  &kp LA(LC(LG(LEFT_SHIFT)))       &mo 3                                &kp LG(BACKSPACE)                          &none                  &trans         &none
+       &kp EXCL   &kp AT_SIGN                  &kp HASH                         &kp DOLLAR                           &kp PERCENT                                &kp CARET              &kp AMPERSAND  &kp ASTERISK       &kp PLUS       &kp QUESTION
+       &kp PIPE   &mt_left LEFT_ALT LESS_THAN  &mt_left LCTRL LEFT_PARENTHESIS  &mt_left LEFT_ALT RIGHT_PARENTHESIS  &mt_right LA(LC(LEFT_GUI)) GREATER_THAN    &kp RC(RA(RIGHT_GUI))  &kp RIGHT_GUI  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &mo 3
+&none  &kp TILDE  &kp LEFT_BRACE               &kp LBKT                         &kp RBKT                             &kp RIGHT_BRACE                            &kp EQUAL              &single_quote  &double_quote      &grave_quote   &trans        &none
+                                               &sk LA(LC(LG(LEFT_SHIFT)))       &caps_word                           &kp LG(BACKSPACE)                          &none                  &trans         &none
             >;
 
             label = "SYM";
@@ -272,10 +272,10 @@
 
         navigation {
             bindings = <
-       &kp N1  &kp N2         &kp N3        &kp N4        &kp N5                  &kp N6                            &kp N7                    &kp N8                            &kp N9                     &kp N0
-       &none   &kp LEFT_ALT   &kp LCTRL     &kp LEFT_GUI  &kp LA(LC(LEFT_GUI))    &mt_right RC(RA(RIGHT_GUI)) LEFT  &mt_right RIGHT_GUI DOWN  &mt_right RIGHT_CONTROL UP_ARROW  &mt_right RIGHT_ALT RIGHT  &kp DELETE
-&none  &none   &kp LG(MINUS)  &kp LG(PLUS)  &kp LG(N0)    &none                   &kp HOME                          &kp PG_DN                 &kp PG_UP                         &kp END                    &kp TAB     &none
-                              &none         &trans        &none                   &kp LG(SPACE)                     &mo 4                     &kp RIGHT_SHIFT
+       &kp N1     &kp N2        &kp N3     &kp N4        &kp N5                  &kp N6                            &kp N7                    &kp N8                            &kp N9                     &kp N0
+       &mo 4      &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &kp LA(LC(LEFT_GUI))    &mt_right RC(RA(RIGHT_GUI)) LEFT  &mt_right RIGHT_GUI DOWN  &mt_right RIGHT_CONTROL UP_ARROW  &mt_right RIGHT_ALT RIGHT  &kp DELETE
+&none  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)     &kp LS(LG(Z))           &kp HOME                          &kp PG_DN                 &kp PG_UP                         &kp END                    &kp TAB     &none
+                                &none      &trans        &none                   &kp LG(SPACE)                     &caps_word                &sk RIGHT_SHIFT
             >;
 
             label = "NAV";
