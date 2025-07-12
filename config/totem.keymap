@@ -275,7 +275,7 @@
        &kp LS(EXCL)   &kp LS(AT)                    &kp LS(POUND)                       &kp LS(DLLR)                        &kp LS(PRCNT)    &kp LS(CARET)     &kp LS(AMPS)                           &kp LS(STAR)                           &kp LS(PLUS)                     &kp LS(QMARK)
        &kp PIPE       &mt_left LEFT_ALT LEFT_BRACE  &mt_left LEFT_CONTROL LEFT_BRACKET  &mt_left LEFT_GUI LEFT_PARENTHESIS  &kp LESS_THAN    &kp GREATER_THAN  &mt_right RIGHT_GUI RIGHT_PARENTHESIS  &mt_right RIGHT_CONTROL RIGHT_BRACKET  &mt_right RIGHT_ALT RIGHT_BRACE  &kp SLASH
 &none  &kp LS(TILDE)  &none                         &none                               &kp BSLH                            &kp MINUS        &kp LS(UNDER)     &none                                  &none                                  &none                            &none          &none
-                                                    &mo 3                               &none                               &none            &none             &none                                  &mo 3
+                                                    &none                               &none                               &mo 3            &mo 3             &none                                  &none
             >;
 
             label = "SYM";
