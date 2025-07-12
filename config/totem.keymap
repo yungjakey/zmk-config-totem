@@ -46,24 +46,6 @@
     };
 
     behaviors {
-        comma: comma {
-            compatible = "zmk,behavior-mod-morph";
-            label = "COMMA";
-            bindings = <&kp COMMA>, <&kp SEMICOLON>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        period: period {
-            compatible = "zmk,behavior-mod-morph";
-            label = "PERIOD";
-            bindings = <&kp PERIOD>, <&kp COLON>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
         double_quote: double_quote {
             compatible = "zmk,behavior-tap-dance";
             label = "DOUBLE_QUOTE";
@@ -150,13 +132,31 @@
             quick-tap-ms = <150>;
         };
 
-        shift_space: shift_space {
+        comma_semicolon: comma_semicolon {
             compatible = "zmk,behavior-mod-morph";
-            label = "SHIFT_SPACE";
-            bindings = <&kp SPACE>, <&kp BACKSPACE>;
+            label = "COMMA_SEMICOLON";
+            bindings = <&kp COMMA>, <&kp SEMICOLON>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        period_colon: period_colon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PERIOD_COLON";
+            bindings = <&kp PERIOD>, <&kp COLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        question_exclamation: question_exclamation {
+            compatible = "zmk,behavior-mod-morph";
+            label = "QUESTION_EXCLAMATION";
+            bindings = <&kp QUESTION>, <&kp EXCLAMATION>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
@@ -245,7 +245,7 @@
             bindings = <
         &kp Q  &kp W                &kp E                    &kp R                &kp T                          &kp Y                         &kp U                  &kp I                      &kp O                  &kp P
         &kp A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt_left LC(LA(LEFT_GUI)) G    &mt_right LA(LC(LEFT_GUI)) H  &mt_right RIGHT_GUI J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &tog 3
-&trans  &kp Z  &kp X                &kp C                    &kp V                &kp B                          &kp N                         &kp M                  &comma                     &period                &kp TAB  &trans
+&trans  &kp Z  &kp X                &kp C                    &kp V                &kp B                          &kp N                         &kp M                  &none                      &none                  &kp TAB  &trans
                                     &lt 1 ESCAPE             &kp BACKSPACE        &sk LEFT_SHIFT                 &sk LEFT_SHIFT                &kp SPACE              &lt 1 ENTER
             >;
         };
@@ -253,9 +253,9 @@
         symbol {
             bindings = <
        &kp LS(EXCL)  &kp LS(AT)                    &kp LS(POUND)                       &kp LS(DLLR)                        &kp LS(PRCNT)    &kp LS(CARET)     &kp LS(AMPS)                           &kp LS(STAR)                           &kp LS(PLUS)                     &kp LS(QMARK)
-       &kp EQUAL     &mt_left LEFT_ALT LEFT_BRACE  &mt_left LEFT_CONTROL LEFT_BRACKET  &mt_left LEFT_GUI LEFT_PARENTHESIS  &kp LESS_THAN    &kp GREATER_THAN  &mt_right RIGHT_GUI RIGHT_PARENTHESIS  &mt_right RIGHT_CONTROL RIGHT_BRACKET  &mt_right RIGHT_ALT RIGHT_BRACE  &kp LS(UNDER)
+       &kp EQUAL     &mt_left LEFT_ALT LEFT_BRACE  &mt_left LEFT_CONTROL LEFT_BRACKET  &mt_left LEFT_GUI LEFT_PARENTHESIS  &kp LESS_THAN    &kp GREATER_THAN  &mt_right RIGHT_GUI RIGHT_PARENTHESIS  &mt_right RIGHT_CONTROL RIGHT_BRACKET  &mt_right RIGHT_ALT RIGHT_BRACE  &kp LS(SLASH)
 &none  &none         &none                         &none                               &none                               &none            &none             &none                                  &none                                  &none                            &none          &none
-                                                   &none                               &trans                              &none            &none             &trans                                 &none
+                                                   &none                               &none                               &none            &none             &none                                  &none
             >;
 
             label = "SYM";
@@ -274,10 +274,10 @@
 
         navigation {
             bindings = <
-       &none  &none         &none      &none         &none                   &none     &none      &none      &none      &none
-       &none  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &kp LA(LC(LEFT_GUI))    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
-&none  &none  &none         &none      &none         &none                   &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp TAB  &none
-                            &none      &none         &kp LEFT_SHIFT          &none     &to 3      &kp ENTER
+       &none  &none         &none      &none         &none                   &none            &none      &none      &none      &none
+       &none  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &kp LA(LC(LEFT_GUI))    &kp LEFT         &kp DOWN   &kp UP     &kp RIGHT  &kp DELETE
+&none  &none  &none         &none      &none         &none                   &kp HOME         &kp PG_DN  &kp PG_UP  &kp END    &kp TAB     &none
+                            &none      &none         &none                   &kp RIGHT_SHIFT  &to 3      &kp ENTER
             >;
 
             label = "NAV";
