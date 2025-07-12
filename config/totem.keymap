@@ -244,8 +244,8 @@
 
             bindings = <
         &kp Q         &kp W                &kp E                    &kp R                &kp T                          &kp Y                         &kp U                  &kp I                      &kp O                  &kp P
-        &lt_left 1 A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt_left LC(LA(LEFT_GUI)) G    &mt_right LA(LC(LEFT_GUI)) H  &mt_right RIGHT_GUI J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &tog 3
-&trans  &kp Z         &kp X                &kp C                    &kp V                &kp B                          &kp N                         &kp M                  &comma_semicolon           &period_colon          &kp TAB  &trans
+        &lt_left 1 A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt_left LC(LA(LEFT_GUI)) G    &mt_right LA(LC(LEFT_GUI)) H  &mt_right RIGHT_GUI J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &kp DELETE
+&trans  &kp Z         &kp X                &kp C                    &kp V                &kp B                          &kp N                         &kp M                  &comma_semicolon           &period_colon          &kp TAB     &trans
                                            &lt 1 ESCAPE             &kp BACKSPACE        &sk LEFT_SHIFT                 &sk LEFT_SHIFT                &kp SPACE              &lt 1 ENTER
             >;
         };
@@ -274,10 +274,10 @@
 
         navigation {
             bindings = <
-       &none  &none         &none      &none          &none                   &none            &none      &none      &none      &none
-       &none  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI   &kp LA(LC(LEFT_GUI))    &kp LEFT         &kp DOWN   &kp UP     &kp RIGHT  &kp DELETE
-&none  &none  &none         &none      &none          &none                   &kp HOME         &kp PG_DN  &kp PG_UP  &kp END    &kp TAB     &none
-                            &none      &kp BACKSPACE  &kp LEFT_SHIFT          &kp RIGHT_SHIFT  &to 3      &kp ENTER
+       &none  &none         &none       &none          &none                   &none            &none      &none      &none      &none
+       &none  &kp LEFT_ALT  &kp LCTRL   &kp LEFT_GUI   &kp LA(LC(LEFT_GUI))    &kp LEFT         &kp DOWN   &kp UP     &kp RIGHT  &kp DELETE
+&none  &none  &none         &none       &none          &none                   &kp HOME         &kp PG_DN  &kp PG_UP  &kp END    &kp TAB     &none
+                            &kp ESCAPE  &kp BACKSPACE  &kp LEFT_SHIFT          &kp RIGHT_SHIFT  &kp SPACE  &kp ENTER
             >;
 
             label = "NAV";
