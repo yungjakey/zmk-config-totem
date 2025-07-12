@@ -236,9 +236,9 @@
 
             bindings = <
         &kp Q         &kp W                &kp E                    &kp R                &kp T                          &kp Y                         &kp U                  &kp I                      &kp O                  &kp P
-        &lt_left 3 A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt_left LC(LA(LEFT_GUI)) G    &mt_right LA(LC(LEFT_GUI)) H  &mt_right RIGHT_GUI J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &lt_right 2 ESCAPE
+        &lt_left 4 A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt_left LC(LA(LEFT_GUI)) G    &mt_right LA(LC(LEFT_GUI)) H  &mt_right RIGHT_GUI J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &lt_right 3 ESCAPE
 &trans  &kp Z         &kp X                &kp C                    &kp V                &kp B                          &kp N                         &kp M                  &comma                     &period                &kp TAB             &trans
-                                           &sk LEFT_SHIFT           &mo 1                &kp SPACE                      &kp SPACE                     &mo 1                  &sk RIGHT_SHIFT
+                                           &none                    &sk LEFT_SHIFT       &caps_word                     &kp SPACE                     &mo 1                  &none
             >;
         };
 
@@ -247,7 +247,7 @@
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &mo 3   &trans    &trans  &mo 3   &trans
+                        &trans  &mo 4   &trans    &trans  &mo 4   &trans
             >;
 
             label = "SYM";
@@ -273,6 +273,17 @@
             >;
 
             label = "NUM";
+        };
+
+        navigation {
+            bindings = <
+       &none  &none  &none  &none  &none    &none     &none      &none      &none      &none
+       &none  &none  &none  &none  &none    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none
+&none  &none  &none  &none  &none  &none    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none  &none
+                     &none  &none  &none    &none     &none      &none
+            >;
+
+            label = "NAV";
         };
     };
 };
