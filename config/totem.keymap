@@ -169,10 +169,10 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        space_underscore: space_underscore {
+        space_backspace: space_backspace {
             compatible = "zmk,behavior-mod-morph";
-            label = "SPACE_UNDERSCORE";
-            bindings = <&kp SPACE>, <&kp UNDERSCORE>;
+            label = "SPACE_BACKSPACE";
+            bindings = <&kp SPACE>, <&kp BACKSPACE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -273,7 +273,7 @@
             bindings = <
        &kp EXCL   &kp AT_SIGN                  &kp HASH                         &kp DOLLAR                           &kp PERCENT                                &kp CARET              &kp AMPERSAND  &kp ASTERISK       &kp PLUS       &kp QUESTION
        &kp EQUAL  &mt_left LEFT_ALT LESS_THAN  &mt_left LCTRL LEFT_PARENTHESIS  &mt_left LEFT_ALT RIGHT_PARENTHESIS  &mt_right LA(LC(LEFT_GUI)) GREATER_THAN    &kp RC(RA(RIGHT_GUI))  &kp RIGHT_GUI  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp MINUS
-&none  &kp TILDE  &kp LEFT_BRACE               &kp LBKT                         &kp RBKT                             &kp RIGHT_BRACE                            &grave_quote           &single_quote  &double_quote      &kp PIPE       &kp BACKSLASH  &none
+&none  &kp TILDE  &kp LEFT_BRACE               &kp LBKT                         &kp RBKT                             &kp RIGHT_BRACE                            &grave_quote           &single_quote  &double_quote      &kp PIPE       &none         &none
                                                &none                            &mo 3                                &none                                      &none                  &trans         &none
             >;
 
