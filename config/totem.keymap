@@ -238,7 +238,7 @@
             &kp Q  &kp W                &kp E                    &kp R                &kp T                          &kp Y                         &kp U                  &kp I                      &kp O                  &kp P
             &kp A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt_left LC(LA(LEFT_GUI)) G    &mt_right LA(LC(LEFT_GUI)) H  &mt_right RIGHT_GUI J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &kp MINUS
 &bt BT_PRV  &kp Z  &kp X                &kp C                    &kp V                &kp B                          &kp N                         &kp M                  &comma_semicolon           &period_colon          &kp TAB    &bt BT_NXT
-                                        &sk LEFT_SHIFT           &kp SPACE            &lt 2 ESCAPE                   &lt 3 ENTER                   &mo 1                  &sk RIGHT_SHIFT
+                                        &lt 2 ESCAPE             &kp SPACE            &sk LEFT_SHIFT                 &sk RIGHT_SHIFT               &mo 1                  &lt 3 ENTER
             >;
         };
 
@@ -258,7 +258,7 @@
             &kp N1     &kp N2        &kp N3     &kp N4        &kp N5                  &kp N6                            &kp N7                    &kp N8                            &kp N9                     &kp N0
             &kp LG(A)  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &kp LA(LC(LEFT_GUI))    &mt_right RC(RA(RIGHT_GUI)) LEFT  &mt_right RIGHT_GUI DOWN  &mt_right RIGHT_CONTROL UP_ARROW  &mt_right RIGHT_ALT RIGHT  &kp DELETE
 &bt BT_CLR  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)     &kp LS(LG(Z))           &kp HOME                          &kp PG_DN                 &kp PG_UP                         &kp END                    &kp TAB     &none
-                                     &none      &none         &trans                  &kp LG(ENTER)                     &mo 0                     &kp RIGHT_SHIFT
+                                     &trans     &none         &none                   &kp LG(LEFT_SHIFT)                &mo 0                     &kp LG(ENTER)
             >;
 
             label = "NAV";
@@ -266,10 +266,10 @@
 
         mouse {
             bindings = <
-       &none  &none       &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_DEC  &none            &none            &kp C_MUTE    &kp C_VOLUME_DOWN  &kp C_VOL_UP    &none
-       &none  &mkp MCLK   &mkp RCLK             &mkp LCLK             &none            &msc SCRL_RIGHT  &msc SCRL_UP  &msc SCRL_DOWN     &msc SCRL_LEFT  &none
-&none  &none  &kp LG(N0)  &kp LG(MINUS)         &kp LG(EQUAL)         &none            &kp HOME         &kp PG_DN     &kp PG_UP          &kp END         &kp TAB  &none
-                          &sk LEFT_SHIFT        &kp SPACE             &kp LA(LC(Q))    &none            &none         &trans
+       &none  &none               &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_DEC   &none                  &none            &kp K_MUTE    &kp C_VOLUME_DOWN  &kp C_VOL_UP    &none
+       &none  &mkp MCLK           &mkp RCLK             &mkp LCLK              &none                  &msc SCRL_RIGHT  &msc SCRL_UP  &msc SCRL_DOWN     &msc SCRL_LEFT  &none
+&none  &none  &kp LG(LEFT_BRACE)  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp RG(RIGHT_BRACE)    &none            &kp LG(N0)    &kp LG(MINUS)      &kp LG(EQUAL)   &kp TAB  &none
+                                  &none                 &none                  &kp LEFT_SHIFT         &none            &none         &trans
             >;
 
             label = "MOU";
