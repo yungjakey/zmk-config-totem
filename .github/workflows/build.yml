@@ -5,7 +5,13 @@ concurrency:
 on:
   push:
     branches:
-      - main
+      - develop
+  pull_request:
+    branches:
+      master
+    types: 
+      [closed]
+
   workflow_dispatch:
       
 jobs:
