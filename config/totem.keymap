@@ -44,7 +44,6 @@
         caps {
             bindings = <&caps_word>;
             key-positions = <32 37>;
-        };
     };
 
     behaviors {
