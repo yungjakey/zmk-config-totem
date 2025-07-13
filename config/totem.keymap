@@ -238,7 +238,7 @@
             &kp Q  &kp W                &kp E                    &kp R                &kp T                          &kp Y                         &kp U                  &kp I                      &kp O                  &kp P
             &kp A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt_left LC(LA(LEFT_GUI)) G    &mt_right LA(LC(LEFT_GUI)) H  &mt_right RIGHT_GUI J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &kp MINUS
 &bt BT_PRV  &kp Z  &kp X                &kp C                    &kp V                &kp B                          &kp N                         &kp M                  &comma_semicolon           &period_colon          &kp TAB    &bt BT_NXT
-                                        &kp BACKSPACE            &lt 2 RETURN         &kp SPACE                      &kp SPACE                     &lt 1 ESCAPE           &td_caps
+                                        &td_caps                 &lt 2 BACKSPACE      &kp SPACE                      &kp SPACE                     &lt 1 RETURN           &td_caps
             >;
         };
 
@@ -247,7 +247,7 @@
        &kp EXCL   &kp AT_SIGN                  &kp HASH                         &kp DOLLAR                           &kp PERCENT                                &kp CARET              &kp AMPERSAND  &kp ASTERISK       &kp PLUS       &kp QUESTION
        &kp EQUAL  &mt_left LEFT_ALT LESS_THAN  &mt_left LCTRL LEFT_PARENTHESIS  &mt_left LEFT_ALT RIGHT_PARENTHESIS  &mt_right LA(LC(LEFT_GUI)) GREATER_THAN    &kp RC(RA(RIGHT_GUI))  &kp RIGHT_GUI  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp SLASH
 &none  &kp TILDE  &kp LEFT_BRACE               &kp LBKT                         &kp RBKT                             &kp RIGHT_BRACE                            &grave_quote           &single_quote  &double_quote      &kp PIPE       &kp BACKSLASH  &bt BT_CLR
-                                               &kp LA(BACKSPACE)                &mo 3                                &none                                      &none                  &trans         &none
+                                               &caps_word                       &mo 3                                &none                                      &none                  &trans         &none
             >;
 
             label = "SYM";
