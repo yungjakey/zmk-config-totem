@@ -142,6 +142,18 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        lt_caps_word: lt_caps_word {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_CAPS_WORD";
+            bindings = <&mo>, <&caps_word>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <100>;
+            flavor = "tap-preferred";
+        };
     };
 
     macros {
