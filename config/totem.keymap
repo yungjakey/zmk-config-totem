@@ -49,9 +49,9 @@
             layers = <0>;
         };
 
-        df_escape {
+        escape {
             bindings = <&kp ESCAPE>;
-            key-positions = <12 13>;
+            key-positions = <16 17>;
         };
     };
 
