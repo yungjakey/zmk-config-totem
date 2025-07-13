@@ -272,10 +272,10 @@
 
         mouse {
             bindings = <
-       &none  &none       &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_DEC  &none     &none            &kp K_MUTE    &kp C_VOLUME_DOWN  &kp C_VOL_UP    &none
-       &none  &mkp MCLK   &mkp RCLK             &mkp LCLK             &none     &msc SCRL_RIGHT  &msc SCRL_UP  &msc SCRL_DOWN     &msc SCRL_LEFT  &none
-&none  &none  &kp LG(N0)  &kp LG(MINUS)         &kp LG(EQUAL)         &none     &none            &none         &kp COMMA          &kp PERIOD      &none  &none
-                          &none                 &none                 &trans    &trans           &none         &none
+       &none  &none       &kp C_BRIGHTNESS_DEC  &kp C_BRI_INC  &none     &none            &kp K_MUTE    &kp C_VOLUME_DOWN  &kp C_VOL_UP    &none
+       &none  &mkp MCLK   &mkp RCLK             &mkp LCLK      &none     &msc SCRL_RIGHT  &msc SCRL_UP  &msc SCRL_DOWN     &msc SCRL_LEFT  &none
+&none  &none  &kp LG(N0)  &kp LG(MINUS)         &kp LG(EQUAL)  &none     &none            &none         &kp COMMA          &kp PERIOD      &none  &none
+                          &none                 &none          &trans    &trans           &none         &none
             >;
 
             label = "MOU";
