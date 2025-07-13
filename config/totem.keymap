@@ -268,8 +268,8 @@
             bindings = <
        &none  &none               &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_DEC   &none                  &none            &kp K_MUTE    &kp C_VOLUME_DOWN  &kp C_VOL_UP    &none
        &none  &kp LG(N0)          &kp LG(MINUS)         &kp LG(EQUAL)          &none                  &msc SCRL_RIGHT  &msc SCRL_UP  &msc SCRL_DOWN     &msc SCRL_LEFT  &none
-&none  &none  &kp LG(LEFT_BRACE)  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp RG(RIGHT_BRACE)    &none            &none         &none              &none           &none  &none
-                                  &mkp RCLK             &mkp LCLK              &kp LEFT_SHIFT         &none            &none         &trans
+&none  &none  &kp LG(LEFT_BRACE)  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp RG(RIGHT_BRACE)    &none            &mkp LCLK     &mkp RCLK          &mkp MCLK       &none  &none
+                                  &none                 &none                  &none                  &none            &none         &trans
             >;
 
             label = "MOU";
