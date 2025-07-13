@@ -134,15 +134,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        shift_backspace: shift_backspace {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SHIFT_BACKSPACE";
-            bindings = <&kp BACKSPACE>, <&kp LA(BACKSPACE)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
         mt_sk: mt_sk {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_SK";
@@ -158,6 +149,24 @@
             label = "TD_CAPS";
             #binding-cells = <0>;
             bindings = <&mt_sk LEFT_SHIFT LEFT_SHIFT>, <&caps_word>;
+        };
+
+        shift_delete: shift_delete {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SHIFT_DELETE";
+            bindings = <&kp DELETE>, <&kp LA(DELETE)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        shift_backspace: shift_backspace {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SHIFT_BACKSPACE";
+            bindings = <&kp BACKSPACE>, <&kp LA(BACKSPACE)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
@@ -247,7 +256,7 @@
             &kp Q  &kp W                &kp E                    &kp R                &kp T                          &kp Y                         &kp U                  &kp I                      &kp O                  &kp P
             &kp A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt_left LC(LA(LEFT_GUI)) G    &mt_right LA(LC(LEFT_GUI)) H  &mt_right RIGHT_GUI J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &kp MINUS
 &bt BT_PRV  &kp Z  &kp X                &kp C                    &kp V                &kp B                          &kp N                         &kp M                  &comma_semicolon           &period_colon          &kp TAB    &bt BT_NXT
-                                        &lt 2 ESCAPE             &td_caps             &kp SPACE                      &kp SPACE                     &shift_backspace       &lt 1 ENTER
+                                        &lt 2 ESCAPE             &td_caps             &kp SPACE                      &kp SPACE                     &none                  &lt 1 ENTER
             >;
         };
 
