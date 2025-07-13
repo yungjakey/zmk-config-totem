@@ -22,6 +22,8 @@
 
 &caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE LEFT_ARROW DOWN_ARROW UP_ARROW RIGHT_ARROW HOME END PAGE_DOWN PAGE_UP>; };
 
+&mt { tapping-term-ms = <150>; };
+
 / {
     combos {
         compatible = "zmk,combos";
