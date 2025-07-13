@@ -22,6 +22,8 @@
 
 &caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE LEFT_ARROW DOWN_ARROW UP_ARROW RIGHT_ARROW HOME END PAGE_DOWN PAGE_UP>; };
 
+&mt { tapping-term-ms = <150>; };
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -45,6 +47,11 @@
             bindings = <&caps_word>;
             key-positions = <32 37>;
             layers = <0>;
+        };
+
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <16 17>;
         };
     };
 
@@ -98,15 +105,6 @@
             quick-tap-ms = <150>;
         };
 
-        mt_caps_word: mt_caps_word {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MT_CAPS_WORD";
-            bindings = <&kp>, <&caps_word>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
         comma_semicolon: comma_semicolon {
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA_SEMICOLON";
@@ -143,13 +141,21 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        space_backspace: space_backspace {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SPACE_BACKSPACE";
-            bindings = <&kp SPACE>, <&kp BACKSPACE>;
+        mt_sk: mt_sk {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_SK";
+            bindings = <&kp>, <&sk>;
 
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+        };
+
+        td_caps: td_caps {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_CAPS";
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&mt_sk LEFT_SHIFT LEFT_SHIFT>, <&caps_word>;
         };
     };
 
@@ -236,10 +242,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp Q  &kp W                &kp E                    &kp R                &kp T                          &kp Y                         &kp U                  &kp I                      &kp O                  &kp P
-            &kp A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D  &mt_left LEFT_GUI F  &mt_left LC(LA(LEFT_GUI)) G    &mt_right LA(LC(LEFT_GUI)) H  &mt_right RIGHT_GUI J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &kp MINUS
-&bt BT_PRV  &kp Z  &kp X                &kp C                    &kp V                &kp B                          &kp N                         &kp M                  &comma_semicolon           &period_colon          &kp TAB    &bt BT_NXT
-                                        &sk LEFT_SHIFT           &lt 2 ESCAPE         &mt LA(BACKSPACE) BACKSPACE    &kp SPACE                     &lt 1 RETURN           &sk LEFT_SHIFT
+            &kp Q  &kp W                &kp E                         &kp R                &kp T                          &kp Y                         &kp U                  &kp I                           &kp O                  &kp P
+            &kp A  &mt_left LEFT_ALT S  &mt_left LEFT_CONTROL D       &mt_left LEFT_GUI F  &mt_left LC(LA(LEFT_GUI)) G    &mt_right LA(LC(LEFT_GUI)) H  &mt_right RIGHT_GUI J  &mt_right RIGHT_CONTROL K       &mt_right RIGHT_ALT L  &kp MINUS
+&bt BT_PRV  &kp Z  &kp X                &kp C                         &kp V                &kp B                          &kp N                         &kp M                  &comma_semicolon                &period_colon          &kp TAB    &bt BT_NXT
+                                        &mt_sk LEFT_SHIFT LEFT_SHIFT  &lt 2 BACKSPACE      &kp SPACE                      &kp SPACE                     &lt 1 RETURN           &mt_sk RIGHT_SHIFT RIGHT_SHIFT
             >;
         };
 
@@ -248,7 +254,7 @@
        &kp EXCL   &kp AT_SIGN                  &kp HASH                         &kp DOLLAR                           &kp PERCENT                                &kp CARET              &kp AMPERSAND  &kp ASTERISK       &kp PLUS       &kp QUESTION
        &kp EQUAL  &mt_left LEFT_ALT LESS_THAN  &mt_left LCTRL LEFT_PARENTHESIS  &mt_left LEFT_ALT RIGHT_PARENTHESIS  &mt_right LA(LC(LEFT_GUI)) GREATER_THAN    &kp RC(RA(RIGHT_GUI))  &kp RIGHT_GUI  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp SLASH
 &none  &kp TILDE  &kp LEFT_BRACE               &kp LBKT                         &kp RBKT                             &kp RIGHT_BRACE                            &grave_quote           &single_quote  &double_quote      &kp PIPE       &kp BACKSLASH  &bt BT_CLR
-                                               &caps_word                       &mo 3                                &kp LG(BACKSPACE)                          &none                  &trans         &none
+                                               &caps_word                       &kp LA(BACKSPACE)                    &none                                      &none                  &trans         &none
             >;
 
             label = "SYM";
@@ -257,9 +263,9 @@
         navigation {
             bindings = <
             &kp N1     &kp N2        &kp N3     &kp N4        &kp N5                  &kp N6                            &kp N7                    &kp N8                            &kp N9                     &kp N0
-            &kp LG(A)  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &kp LA(LC(LEFT_GUI))    &mt_right RC(RA(RIGHT_GUI)) LEFT  &mt_right RIGHT_GUI DOWN  &mt_right RIGHT_CONTROL UP_ARROW  &mt_right RIGHT_ALT RIGHT  &mt LA(DELETE) DELETE
+            &kp LG(A)  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &kp LA(LC(LEFT_GUI))    &mt_right RC(RA(RIGHT_GUI)) LEFT  &mt_right RIGHT_GUI DOWN  &mt_right RIGHT_CONTROL UP_ARROW  &mt_right RIGHT_ALT RIGHT  &mt DELETE RA(DELETE)
 &bt BT_CLR  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)     &kp LS(LG(Z))           &kp HOME                          &kp PG_DN                 &kp PG_UP                         &kp END                    &kp TAB                &none
-                                     &none      &trans        &none                   &kp LG(SPACE)                     &mo 3                     &kp RIGHT_SHIFT
+                                     &none      &trans        &kp BACKSPACE           &none                             &kp LA(BACKSPACE)         &kp RIGHT_SHIFT
             >;
 
             label = "NAV";
