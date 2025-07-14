@@ -52,7 +52,7 @@
         };
 
         select_line {
-            bindings = <&kp LA(BACKSPACE)>;
+            bindings = <&select_line>;
             key-positions = <12 13>;
             layers = <0>;
         };
