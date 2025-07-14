@@ -275,7 +275,7 @@
 
         navigation {
             bindings = <
-            &none      &none         &none      &none         &none                   &none                             &none                     &none                             &none                      &none
+            &kp N1     &kp N2        &kp N3     &kp N4        &kp N5                  &kp N6                            &kp N7                    &kp N8                            &kp N9                     &kp N0
             &kp LG(A)  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &kp LA(LC(LEFT_GUI))    &mt_right RC(RA(RIGHT_GUI)) LEFT  &mt_right RIGHT_GUI DOWN  &mt_right RIGHT_CONTROL UP_ARROW  &mt_right RIGHT_ALT RIGHT  &mt DELETE RA(DELETE)
 &bt BT_CLR  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)     &kp LS(LG(Z))           &kp HOME                          &kp PG_DN                 &kp PG_UP                         &kp END                    &kp TAB                &none
                                      &none      &none         &none                   &none                             &none                     &none
@@ -286,10 +286,10 @@
 
         number {
             bindings = <
-       &kp N1  &kp N2    &kp N3     &kp N4    &kp N5              &kp N6             &kp N7    &kp N8     &kp N9    &kp N0
-       &none   &kp LALT  &kp RCTRL  &kp LGUI  &kp LG(LC(LALT))    &kp LG(LA(LCTRL))  &kp RGUI  &kp RCTRL  &kp RALT  &none
-&none  &none   &none     &none      &none     &none               &none              &none     &kp COMMA  &kp DOT   &none   &none
-                         &none      &trans    &none               &none              &trans    &none
+       &kp F1   &kp F2    &kp F3      &kp F4        &kp F5              &kp F6                &kp F7                &kp F8     &kp F9    &kp F10
+       &kp F11  &kp LALT  &kp RCTRL   &kp LGUI      &kp LG(LC(LALT))    &kp LG(LA(LCTRL))     &kp RGUI              &kp RCTRL  &kp RALT  &kp F12
+&none  &none    &none     &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP        &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp COMMA  &kp DOT   &none    &none
+                          &none       &trans        &none               &none                 &trans                &none
             >;
 
             label = "NUM";
