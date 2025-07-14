@@ -169,6 +169,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        mt_kt: mt_kt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_KT";
+            bindings = <&kp>, <&kt>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     macros {
@@ -284,7 +293,7 @@
             &kp N1     &kp N2        &kp N3     &kp N4        &kp N5                  &kp N6                            &kp N7                    &kp N8                            &kp N9                     &kp N0
             &kp LG(A)  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &kp LA(LC(LEFT_GUI))    &mt_right RC(RA(RIGHT_GUI)) LEFT  &mt_right RIGHT_GUI DOWN  &mt_right RIGHT_CONTROL UP_ARROW  &mt_right RIGHT_ALT RIGHT  &kp LA(DELETE)
 &bt BT_CLR  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)     &kp LS(LG(Z))           &kp HOME                          &kp PG_DN                 &kp PG_UP                         &kp END                    &kp TAB         &none
-                                     &none      &trans        &none                   &none                             &lt 3 LA(BACKSPACE)       &none
+                                     &none      &trans        &none                   &kp LG(SPACE)                     &lt 3 LA(BACKSPACE)       &mt_kt LEFT_SHIFT LEFT_SHIFT
             >;
 
             label = "NAV";
