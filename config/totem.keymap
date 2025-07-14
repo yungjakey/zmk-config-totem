@@ -192,7 +192,7 @@
         gquote: gquote {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp LEFT &kp LEFT &kp LEFT &kp ENTER &kp ENTER &kp UP_ARROW>;
+            bindings = <&kp GRAVE &kp GRAVE &kp GRAVE &kp LS(ENTER) &kp LS(ENTER) &kp GRAVE &kp GRAVE &kp GRAVE &kp LEFT &kp LEFT &kp LEFT &kp UP_ARROW>;
             label = "GQUOTE";
         };
 
