@@ -155,6 +155,15 @@
             #binding-cells = <0>;
             bindings = <&mt_sk LEFT_SHIFT LEFT_SHIFT>, <&caps_word>;
         };
+
+        backspace_delete: backspace_delete {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BACKSPACE_DELETE";
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
