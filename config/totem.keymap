@@ -267,7 +267,7 @@
 
         navigation {
             bindings = <
-            &kp N1     &kp N2        &kp N3     &kp N4        &kp N5                  &kp N6                            &kp N7                    &kp N8                            &kp N9                     &kp N0
+            &none      &none         &none      &none         &none                   &none                             &none                     &none                             &none                      &none
             &kp LG(A)  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &kp LA(LC(LEFT_GUI))    &mt_right RC(RA(RIGHT_GUI)) LEFT  &mt_right RIGHT_GUI DOWN  &mt_right RIGHT_CONTROL UP_ARROW  &mt_right RIGHT_ALT RIGHT  &mt DELETE RA(DELETE)
 &bt BT_CLR  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)     &kp LS(LG(Z))           &kp HOME                          &kp PG_DN                 &kp PG_UP                         &kp END                    &kp TAB                &none
                                      &none      &trans        &none                   &none                             &lt 0 LA(BACKSPACE)       &kp RIGHT_SHIFT
