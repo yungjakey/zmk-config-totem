@@ -30,21 +30,25 @@
         rbrace {
             bindings = <&rbrace>;
             key-positions = <12 13>;
+            layers = <1>;
         };
 
         sbrace {
             bindings = <&sbrace>;
             key-positions = <23 24>;
+            layers = <1>;
         };
 
         cbrace {
             bindings = <&cbrace>;
             key-positions = <22 25>;
+            layers = <1>;
         };
 
         escape {
             bindings = <&kp ESCAPE>;
             key-positions = <16 17>;
+            layers = <0>;
         };
 
         delete_word_backward {
