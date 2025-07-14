@@ -46,6 +46,11 @@
             bindings = <&kp ESCAPE>;
             key-positions = <16 17>;
         };
+
+        delete_word_backward {
+            bindings = <&kp LA(BACKSPACE)>;
+            key-positions = <12 13>;
+        };
     };
 
     behaviors {
