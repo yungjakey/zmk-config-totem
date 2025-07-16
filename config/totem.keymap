@@ -50,12 +50,6 @@
             key-positions = <16 17>;
             layers = <0>;
         };
-
-        select_line {
-            bindings = <&select_line>;
-            key-positions = <12 13 11>;
-            layers = <0>;
-        };
     };
 
     behaviors {
