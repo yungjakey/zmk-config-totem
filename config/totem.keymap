@@ -53,7 +53,7 @@
 
         select_line {
             bindings = <&select_line>;
-            key-positions = <12 13>;
+            key-positions = <12 13 11>;
             layers = <0>;
         };
     };
