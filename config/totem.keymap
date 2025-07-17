@@ -50,6 +50,11 @@
             key-positions = <16 17>;
             layers = <0>;
         };
+
+        delete_word {
+            bindings = <&kp LA(BACKSPACE)>;
+            key-positions = <33 36>;
+        };
     };
 
     behaviors {
