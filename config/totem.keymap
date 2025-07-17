@@ -53,7 +53,7 @@
 
         delete_word {
             bindings = <&kp LA(BACKSPACE)>;
-            key-positions = <33 36>;
+            key-positions = <17 18>;
         };
     };
 
