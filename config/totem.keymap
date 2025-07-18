@@ -51,11 +51,6 @@
             layers = <0>;
         };
 
-        delete_word {
-            bindings = <&kp LA(BACKSPACE)>;
-            key-positions = <17 18>;
-        };
-
         clear_bluetooth {
             bindings = <&bt BT_CLR>;
             key-positions = <20 31>;
