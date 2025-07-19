@@ -278,31 +278,21 @@
 
         symbol {
             bindings = <
-       &kp EXCL       &kp AT_SIGN   &kp HASH   &kp DOLLAR    &kp PERCENT    &kp CARET     &kp AMPERSAND  &kp ASTERISK       &kp PLUS       &kp QUESTION
-       &kp LESS_THAN  &sk LEFT_ALT  &sk LCTRL  &sk LEFT_GUI  &none          &none         &sk RIGHT_GUI  &sk RIGHT_CONTROL  &sk RIGHT_ALT  &kp GREATER_THAN
-&none  &kp TILDE      &kp LS(LBRC)  &kp LBKT   &kp LS(LPAR)  &kp LS(LT)     &grave_quote  &single_quote  &double_quote      &kp PIPE       &kp BACKSLASH     &none
-                                    &none      &mo 3         &kp UNDER      &none         &mo 2          &none
+       &kp EXCL   &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT     &kp CARET     &kp AMPERSAND  &kp ASTERISK       &kp PLUS       &kp QUESTION
+       &kp EQUAL  &kp LS(LT)    &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(GT)      &none         &sk RIGHT_GUI  &sk RIGHT_CONTROL  &sk RIGHT_ALT  &kp GREATER_THAN
+&none  &kp TILDE  &kp LS(LBRC)  &kp LBKT      &kp RBKT      &kp LS(RBRC)    &grave_quote  &single_quote  &double_quote      &kp PIPE       &kp BACKSLASH     &none
+                                &none         &mo 2         &kp UNDER       &none         &mo 0          &none
             >;
 
             label = "SYM";
         };
 
-        number {
-            label = "NUM";
-            bindings = <
-            &kp N1     &kp N2        &kp N3         &kp N4        &kp N5           &kp N6                            &kp N7        &kp N8                        &kp N9        &kp N0
-            &kp LG(A)  &kp LS(LALT)  &kp LS(LCTRL)  &kp LS(LGUI)  &none            &mt_right RC(RA(RIGHT_GUI)) LEFT  &kp LS(RGUI)  &kp LS(RCTRL)                 &kp LS(RALT)  &backspace_delete
-&bt BT_PRV  &kp LG(Z)  &kp LG(X)     &kp LG(C)      &kp LG(V)     &kp LS(LG(Z))    &none                             &none         &none                         &none         &none              &none
-                                     &none          &trans        &none            &kp LG(SPACE)                     &lt 2 ENTER   &mt_kt LEFT_SHIFT LEFT_SHIFT
-            >;
-        };
-
         navigation {
             bindings = <
-       &none         &none         &none      &none         &none    &none                             &none                     &none                             &none                      &none
-       &select_line  &sk LEFT_ALT  &sk LCTRL  &sk LEFT_GUI  &none    &mt_right RC(RA(RIGHT_GUI)) LEFT  &mt_right RIGHT_GUI DOWN  &mt_right RIGHT_CONTROL UP_ARROW  &mt_right RIGHT_ALT RIGHT  &backspace_delete
-&none  &none         &none         &none      &none         &none    &kp HOME                          &kp PG_DN                 &kp PG_UP                         &kp END                    &kp TAB            &none
-                                   &none      &none         &none    &none                             &none                     &none
+       &kp N1     &kp N2        &kp N3     &kp N4        &kp N5           &kp N6                            &kp N7                    &kp N8                            &kp N9                     &kp N0
+       &kp LG(A)  &sk LEFT_ALT  &sk LCTRL  &sk LEFT_GUI  &none            &mt_right RC(RA(RIGHT_GUI)) LEFT  &mt_right RIGHT_GUI DOWN  &mt_right RIGHT_CONTROL UP_ARROW  &mt_right RIGHT_ALT RIGHT  &backspace_delete
+&none  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)     &kp LS(LG(Z))    &kp HOME                          &kp PG_DN                 &kp PG_UP                         &kp END                    &kp TAB            &none
+                                &none      &none         &none            &none                             &none                     &none
             >;
 
             label = "NAV";
