@@ -279,9 +279,9 @@
         symbol {
             bindings = <
        &kp EXCL   &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT     &kp CARET     &kp AMPERSAND  &kp ASTERISK       &kp PLUS       &kp QUESTION
-       &kp EQUAL  &kp LS(LT)    &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(GT)      &none         &sk RIGHT_GUI  &sk RIGHT_CONTROL  &sk RIGHT_ALT  &kp GREATER_THAN
-&none  &kp TILDE  &kp LS(LBRC)  &kp LBKT      &kp RBKT      &kp LS(RBRC)    &grave_quote  &single_quote  &double_quote      &kp PIPE       &kp BACKSLASH     &none
-                                &none         &mo 2         &kp UNDER       &none         &mo 0          &none
+       &kp EQUAL  &kp LS(LT)    &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(GT)      &none         &sk RIGHT_GUI  &sk RIGHT_CONTROL  &sk RIGHT_ALT  &kp SLASH
+&none  &kp TILDE  &kp LS(LBRC)  &kp LBKT      &kp RBKT      &kp LS(RBRC)    &grave_quote  &single_quote  &double_quote      &kp PIPE       &kp BACKSLASH  &none
+                                &kp MINUS     &mo 2         &kp UNDER       &none         &trans         &none
             >;
 
             label = "SYM";
