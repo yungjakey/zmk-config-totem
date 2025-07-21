@@ -45,7 +45,7 @@
         escape {
             bindings = <&kp ESCAPE>;
             key-positions = <16 17>;
-            layers = <1>;
+            layers = <2>;
         };
 
         clear_bluetooth {
@@ -278,7 +278,7 @@
        &kp Q  &kp W  &kp E     &kp R            &kp T        &kp Y      &kp U         &kp I             &kp O          &kp P
        &kp A  &kp S  &kp D     &kp F            &kp G        &kp H      &kp J         &kp K             &kp L          &kp MINUS
 &none  &kp Z  &kp X  &kp C     &kp V            &kp B        &kp N      &kp M         &comma_semicolon  &period_colon  &slash_backslash  &none
-                     &td_caps  &lt 2 BACKSPACE  &kp SPACE    &kp SPACE  &lt 2 RETURN  &td_caps
+                     &td_caps  &lt 3 BACKSPACE  &kp SPACE    &kp SPACE  &lt 3 RETURN  &td_caps
             >;
         };
 
@@ -287,7 +287,7 @@
        &kp LS(EXCL)  &kp LS(AT)          &kp LS(POUND)               &kp LS(DLLR)                &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)   &kp LS(PLUS)  &kp LS(QMARK)
        &kp EQUAL     &mt LALT LESS_THAN  &mt LCTRL LEFT_PARENTHESIS  &mt LGUI RIGHT_PARENTHESIS  &kp LS(GT)       &kp PIPE       &sk LGUI       &sk LCTRL      &sk LALT      &none
 &none  &kp TILDE     &kp LS(LBRC)        &kp LBKT                    &kp RBKT                    &kp LS(RBRC)     &grave_quote   &single_quote  &double_quote  &none         &none          &none
-                                         &kp MINUS                   &lt 1 LG(ENTER)             &kp UNDER        &none          &trans         &none
+                                         &kp MINUS                   &lt 2 LG(ENTER)             &kp UNDER        &none          &trans         &none
             >;
 
             label = "SYM";
@@ -298,7 +298,7 @@
        &kp N1     &kp N2     &kp N3     &kp N4     &kp N5           &kp N6         &kp N7               &kp N8                        &kp N9     &kp N0
        &kp LG(A)  &sk LALT   &sk LCTRL  &sk LGUI   &select_line     &kp LEFT       &kp DOWN             &kp UP                        &kp RIGHT  &backspace_delete
 &none  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))    &kp HOME       &kp PG_DN            &kp PG_UP                     &kp END    &kp TAB            &none
-                             &none      &trans     &none            &kp LG(SPACE)  &lt 1 LA(BACKSPACE)  &mt_sk LEFT_SHIFT LEFT_SHIFT
+                             &none      &trans     &none            &kp LG(SPACE)  &lt 2 LA(BACKSPACE)  &mt_sk LEFT_SHIFT LEFT_SHIFT
             >;
 
             label = "NAV";
