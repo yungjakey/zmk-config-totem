@@ -30,19 +30,16 @@
         rbrace {
             bindings = <&rbrace>;
             key-positions = <12 13>;
-            layers = <1>;
         };
 
         sbrace {
             bindings = <&sbrace>;
             key-positions = <23 24>;
-            layers = <1>;
         };
 
         cbrace {
             bindings = <&cbrace>;
             key-positions = <22 25>;
-            layers = <1>;
         };
 
         escape {
@@ -278,44 +275,20 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-              &kp Q  &kp W  &kp E     &kp R                &kp T        &kp Y      &kp U         &kp I             &kp O          &kp P
-              &kp A  &kp S  &kp D     &kp F                &kp G        &kp H      &kp J         &kp K             &kp L          &backspace_delete
-&kp LA(LEFT)  &kp Z  &kp X  &kp C     &kp V                &kp B        &kp N      &kp M         &comma_semicolon  &period_colon  &kp TAB            &kp LA(RIGHT)
-                            &td_caps  &lt 2 LA(BACKSPACE)  &kp SPACE    &kp SPACE  &lt 1 RETURN  &td_caps
+       &kp Q  &kp W  &kp E     &kp R                &kp T        &kp Y      &kp U         &kp I             &kp O          &kp P
+       &kp A  &kp S  &kp D     &kp F                &kp G        &kp H      &kp J         &kp K             &kp L          &backspace_delete
+&none  &kp Z  &kp X  &kp C     &kp V                &kp B        &kp N      &kp M         &comma_semicolon  &period_colon  &kp TAB            &none
+                     &td_caps  &lt 0 LA(BACKSPACE)  &kp SPACE    &kp SPACE  &lt 0 RETURN  &td_caps
             >;
         };
 
-        symbol {
+        layer_1 {
             bindings = <
-       &kp EXCL   &kp AT_SIGN                  &kp HASH                         &kp DOLLAR                           &kp PERCENT                 &kp CARET     &kp AMPERSAND  &kp ASTERISK       &kp PLUS       &kp QUESTION
-       &kp EQUAL  &mt_left LEFT_ALT LESS_THAN  &mt_left LCTRL LEFT_PARENTHESIS  &mt_left LEFT_ALT RIGHT_PARENTHESIS  &kp LA(LC(GREATER_THAN))    &none         &sk RIGHT_GUI  &sk RIGHT_CONTROL  &sk RIGHT_ALT  &kp SLASH
-&none  &kp TILDE  &kp LEFT_BRACE               &kp LBKT                         &kp RBKT                             &kp RIGHT_BRACE             &grave_quote  &single_quote  &double_quote      &kp PIPE       &kp BACKSLASH  &bt BT_NXT
-                                               &sk LA(LC(LEFT_GUI))             &lt 3 MINUS                          &kp UNDER                   &none         &trans         &none
+        &trans  &trans    &trans     &trans    &trans    &trans  &trans    &trans     &trans    &trans
+        &trans  &kp LALT  &kp LCTRL  &kp LGUI  &trans    &trans  &kp LGUI  &kp LCTRL  &kp LALT  &trans
+&trans  &trans  &trans    &trans     &trans    &trans    &trans  &trans    &trans     &trans    &trans  &trans
+                          &trans     &trans    &trans    &trans  &trans    &trans
             >;
-
-            label = "SYM";
-        };
-
-        navigation {
-            bindings = <
-            &kp N1     &kp N2        &kp N3     &kp N4        &kp N5           &kp N6            &kp N7                    &kp N8                            &kp N9                     &kp N0
-            &kp LG(A)  &sk LEFT_ALT  &sk LCTRL  &sk LEFT_GUI  &select_line     &kp RC(RA(LEFT))  &mt_right RIGHT_GUI DOWN  &mt_right RIGHT_CONTROL UP_ARROW  &mt_right RIGHT_ALT RIGHT  &backspace_delete
-&bt BT_PRV  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)     &kp LS(LG(Z))    &kp HOME          &kp PG_DN                 &kp PG_UP                         &kp END                    &kp TAB            &none
-                                     &none      &trans        &none            &kp LG(SPACE)     &lt 3 ENTER               &mt_kt LEFT_SHIFT LEFT_SHIFT
-            >;
-
-            label = "NAV";
-        };
-
-        function {
-            bindings = <
-       &kp F1                &kp F2                &kp F3         &kp F4         &kp F5                  &kp F6                 &kp F7        &kp F8           &kp F9        &kp F10
-       &kp F11               &sk LS(LALT)          &sk LS(RCTRL)  &sk LS(LGUI)   &sk LG(LC(LS(LALT)))    &sk LG(LA(LS(LCTRL)))  &sk LS(RGUI)  &sk LS(RCTRL)    &sk LS(RALT)  &kp F12
-&none  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp LG(EQUAL)  &kp LG(MINUS)  &kp LG(N0)              &kp K_MUTE             &kp C_VOL_DN  &kp C_VOLUME_UP  &none         &none    &none
-                                                   &none          &trans         &none                   &none                  &trans        &none
-            >;
-
-            label = "FUN";
         };
     };
 };
