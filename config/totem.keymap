@@ -284,10 +284,10 @@
 
         right {
             bindings = <
-       &kp LS(EXCL)  &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &none  &none     &none      &none     &none
-       &kp EQUAL     &kp LS(LT)    &kp LS(LPAR)   &kp LS(RPAR)  &kp LS(GT)       &none  &kp LGUI  &kp LCTRL  &kp LALT  &none
-&none  &kp TILDE     &kp LS(LBRC)  &kp LBKT       &kp RBKT      &kp LS(RBRC)     &none  &none     &none      &none     &none  &none
-                                   &none          &mo 3         &kp UNDER        &none  &trans    &none
+       &kp LS(EXCL)  &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &none         &none          &none          &none     &none
+       &kp EQUAL     &kp LS(LT)    &kp LS(LPAR)   &kp LS(RPAR)  &kp LS(GT)       &none         &kp LGUI       &kp LCTRL      &kp LALT  &none
+&none  &kp TILDE     &kp LS(LBRC)  &kp LBKT       &kp RBKT      &kp LS(RBRC)     &grave_quote  &double_quote  &single_quote  &none     &none  &none
+                                   &none          &mo 3         &kp UNDER        &none         &trans         &none
             >;
 
             label = "RIGHT";
@@ -295,10 +295,10 @@
 
         left {
             bindings = <
-       &none  &none     &none      &none     &none    &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)   &kp LS(PLUS)  &kp LS(QMARK)
-       &none  &kp LALT  &kp LCTRL  &kp LGUI  &none    &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT     &kp SLASH
-&none  &none  &none     &none      &none     &none    &grave_quote   &double_quote  &single_quote  &kp PIPE      &kp BACKSLASH  &none
-                        &none      &trans    &none    &kp MINUS      &mo 3          &none
+       &none      &none      &none      &none      &none            &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(PLUS)  &kp LS(QMARK)
+       &kp LG(A)  &kp LALT   &kp LCTRL  &kp LGUI   &none            &kp LEFT       &kp DOWN      &kp UP        &kp RIGHT     &kp SLASH
+&none  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))    &kp HOME       &kp PG_DN     &kp PG_UP     &kp END       &kp BACKSLASH  &none
+                             &none      &trans     &none            &kp MINUS      &mo 3         &none
             >;
 
             label = "LEFT";
