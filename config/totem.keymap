@@ -275,22 +275,11 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp Q  &kp W  &kp E     &kp R                &kp T        &kp Y          &kp U         &kp I             &kp O          &kp P
-       &kp A  &kp S  &kp D     &kp F                &kp G        &kp H          &kp J         &kp K             &kp L          &backspace_delete
-&none  &kp Z  &kp X  &kp C     &kp V                &kp B        &kp N          &kp M         &comma_semicolon  &period_colon  &kp TAB            &none
-                     &td_caps  &lt 3 LA(BACKSPACE)  &kp SPACE    &kp BACKSPACE  &lt 2 RETURN  &td_caps
+       &kp Q  &kp W  &kp E     &kp R                &kp T        &kp Y      &kp U         &kp I             &kp O          &kp P
+       &kp A  &kp S  &kp D     &kp F                &kp G        &kp H      &kp J         &kp K             &kp L          &backspace_delete
+&none  &kp Z  &kp X  &kp C     &kp V                &kp B        &kp N      &kp M         &comma_semicolon  &period_colon  &kp TAB            &none
+                     &td_caps  &lt 2 LA(BACKSPACE)  &kp SPACE    &kp SPACE  &lt 1 RETURN  &td_caps
             >;
-        };
-
-        template {
-            bindings = <
-        &trans  &trans    &trans     &trans    &trans    &trans  &trans    &trans     &trans    &trans
-        &trans  &kp LALT  &kp LCTRL  &kp LGUI  &trans    &trans  &kp LGUI  &kp LCTRL  &kp LALT  &trans
-&trans  &trans  &trans    &trans     &trans    &trans    &trans  &trans    &trans     &trans    &trans  &trans
-                          &trans     &trans    &trans    &trans  &trans    &trans
-            >;
-
-            label = "TMPL";
         };
 
         right {
@@ -298,7 +287,7 @@
        &kp LS(EXCL)  &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &none  &none     &none      &none     &none
        &kp EQUAL     &kp LS(LT)    &kp LS(LPAR)   &kp LS(RPAR)  &kp LS(GT)       &none  &kp LGUI  &kp LCTRL  &kp LALT  &none
 &none  &kp TILDE     &kp LS(LBRC)  &kp LBKT       &kp RBKT      &kp LS(RBRC)     &none  &none     &none      &none     &none  &none
-                                   &none          &mo 0         &kp UNDER        &none  &trans    &none
+                                   &none          &mo 3         &kp UNDER        &none  &trans    &none
             >;
 
             label = "RIGHT";
@@ -309,10 +298,21 @@
        &none  &none     &none      &none     &none    &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)   &kp LS(PLUS)  &kp LS(QMARK)
        &none  &kp LALT  &kp LCTRL  &kp LGUI  &none    &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT     &kp SLASH
 &none  &none  &none     &none      &none     &none    &grave_quote   &double_quote  &single_quote  &kp PIPE      &kp BACKSLASH  &none
-                        &none      &trans    &none    &kp MINUS      &mo 0          &none
+                        &none      &trans    &none    &kp MINUS      &mo 3          &none
             >;
 
             label = "LEFT";
+        };
+
+        middle {
+            bindings = <
+       &kp N1  &kp N2    &kp N3     &kp N4    &kp N5    &kp N6  &kp N7    &kp N8     &kp N9    &kp N0
+       &none   &kp LALT  &kp LCTRL  &kp LGUI  &none     &none   &kp LGUI  &kp LCTRL  &kp LALT  &none
+&none  &none   &none     &none      &none     &none     &none   &none     &none      &none     &none   &none
+                         &none      &trans    &none     &none   &trans    &none
+            >;
+
+            label = "MID";
         };
     };
 };
