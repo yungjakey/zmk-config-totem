@@ -287,7 +287,7 @@
        &kp LS(EXCL)  &kp LS(AT)          &kp LS(POUND)               &kp LS(DLLR)                &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)   &kp LS(PLUS)  &kp LS(QMARK)
        &kp EQUAL     &mt LALT LESS_THAN  &mt LCTRL LEFT_PARENTHESIS  &mt LGUI RIGHT_PARENTHESIS  &kp LS(GT)       &none          &sk LGUI       &sk LCTRL      &sk LALT      &kp FSLH
 &none  &kp TILDE     &kp LS(LBRC)        &kp LBKT                    &kp RBKT                    &kp LS(RBRC)     &grave_quote   &double_quote  &single_quote  &kp LS(PIPE)  &kp BSLH       &none
-                                         &none                       &mo 0                       &kp UNDER        &none          &trans         &none
+                                         &none                       &lt 0 MINUS                 &kp UNDER        &none          &trans         &none
             >;
 
             label = "SYM";
@@ -295,10 +295,10 @@
 
         navigation {
             bindings = <
-       &kp N1     &kp N2     &kp N3     &kp N4     &kp N5           &kp N6    &kp N7     &kp N8     &kp N9     &kp N0
-       &kp LG(A)  &kp LALT   &kp LCTRL  &kp LGUI   &select_line     &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &slash_backslash
-&none  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp TAB           &none
-                             &none      &trans     &none            &none     &mo 0      &none
+       &kp N1     &kp N2     &kp N3     &kp N4     &kp N5           &kp N6         &kp N7     &kp N8                        &kp N9     &kp N0
+       &kp LG(A)  &kp LALT   &kp LCTRL  &kp LGUI   &select_line     &kp LEFT       &kp DOWN   &kp UP                        &kp RIGHT  &slash_backslash
+&none  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))    &kp HOME       &kp PG_DN  &kp PG_UP                     &kp END    &kp TAB           &none
+                             &none      &trans     &none            &kp LG(SPACE)  &mo 0      &mt_sk LEFT_SHIFT LEFT_SHIFT
             >;
 
             label = "NAV";
