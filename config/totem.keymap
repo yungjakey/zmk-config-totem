@@ -311,10 +311,10 @@
 
         layer_4 {
             bindings = <
-       &none  &none     &none      &none     &none    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(PLUS)  &kp LS(QMARK)
-       &none  &kp LALT  &kp LCTRL  &kp LGUI  &none    &none          &kp SQT       &kp LS(DQT)   &kp GRAVE     &kp SLASH
-&none  &none  &none     &none      &none     &none    &none          &none         &none         &none         &kp BACKSLASH  &none
-                        &none      &trans    &none    &kp MINUS      &none         &none
+       &none  &none     &none      &none     &none    &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)   &kp LS(PLUS)  &kp LS(QMARK)
+       &none  &kp LALT  &kp LCTRL  &kp LGUI  &none    &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT     &kp SLASH
+&none  &none  &none     &none      &none     &none    &grave_quote   &double_quote  &single_quote  &kp PIPE      &kp BACKSLASH  &none
+                        &none      &trans    &none    &kp MINUS      &none          &none
             >;
         };
     };
