@@ -295,10 +295,10 @@
 
         left {
             bindings = <
-       &none      &none      &none      &none      &none            &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(PLUS)  &kp LS(QMARK)
-       &kp LG(A)  &kp LALT   &kp LCTRL  &kp LGUI   &none            &kp LEFT       &kp DOWN      &kp UP        &kp RIGHT     &backspace_delete
-&none  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))    &kp HOME       &kp PG_DN     &kp PG_UP     &kp END       &kp TAB            &none
-                             &none      &trans     &none            &kp MINUS      &mo 3         &none
+       &none      &none      &none      &none      &none            &none      &none      &none      &none      &none
+       &kp LG(A)  &kp LALT   &kp LCTRL  &kp LGUI   &select_line     &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &backspace_delete
+&none  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))    &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp TAB            &none
+                             &none      &trans     &none            &kp MINUS  &mo 3      &none
             >;
 
             label = "LEFT";
