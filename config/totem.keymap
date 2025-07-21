@@ -287,7 +287,7 @@
        &kp LS(EXCL)  &kp LS(AT)          &kp LS(POUND)               &kp LS(DLLR)                &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)   &kp LS(PLUS)  &kp LS(QMARK)
        &kp EQUAL     &mt LALT LESS_THAN  &mt LCTRL LEFT_PARENTHESIS  &mt LGUI RIGHT_PARENTHESIS  &kp LS(GT)       &none          &sk LGUI       &sk LCTRL      &sk LALT      &kp FSLH
 &none  &kp TILDE     &kp LS(LBRC)        &kp LBKT                    &kp RBKT                    &kp LS(RBRC)     &grave_quote   &double_quote  &single_quote  &kp LS(PIPE)  &kp BSLH       &none
-                                         &none                       &lt 0 MINUS                 &kp UNDER        &none          &trans         &none
+                                         &kp MINUS                   &lt 0 LG(ENTER)             &kp UNDER        &none          &trans         &none
             >;
 
             label = "SYM";
