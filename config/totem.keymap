@@ -276,7 +276,7 @@
 
             bindings = <
        &kp Q  &kp W  &kp E     &kp R                &kp T        &kp Y      &kp U         &kp I             &kp O          &kp P
-       &kp A  &kp S  &kp D     &kp F                &kp G        &kp H      &kp J         &kp K             &kp L          &lt 1 MINUS
+       &kp A  &kp S  &kp D     &kp F                &kp G        &kp H      &kp J         &kp K             &kp L          &kp MINUS
 &none  &kp Z  &kp X  &kp C     &kp V                &kp B        &kp N      &kp M         &comma_semicolon  &period_colon  &slash_backslash  &none
                      &td_caps  &lt 2 LA(BACKSPACE)  &kp SPACE    &kp SPACE  &lt 1 RETURN  &td_caps
             >;
@@ -296,8 +296,8 @@
         navigation {
             bindings = <
        &kp N1     &kp N2     &kp N3     &kp N4     &kp N5           &kp N6         &kp N7               &kp N8                        &kp N9     &kp N0
-       &kp LG(A)  &kp LALT   &kp LCTRL  &kp LGUI   &select_line     &kp LEFT       &kp DOWN             &kp UP                        &kp RIGHT  &slash_backslash
-&none  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))    &kp HOME       &kp PG_DN            &kp PG_UP                     &kp END    &kp TAB           &none
+       &kp LG(A)  &kp LALT   &kp LCTRL  &kp LGUI   &select_line     &kp LEFT       &kp DOWN             &kp UP                        &kp RIGHT  &kp DELETE
+&none  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))    &kp HOME       &kp PG_DN            &kp PG_UP                     &kp END    &kp TAB     &none
                              &none      &trans     &none            &kp LG(SPACE)  &lt 0 LA(BACKSPACE)  &mt_sk LEFT_SHIFT LEFT_SHIFT
             >;
 
