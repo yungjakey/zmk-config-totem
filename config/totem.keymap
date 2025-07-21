@@ -290,5 +290,14 @@
                           &trans     &trans    &trans    &trans  &trans    &trans
             >;
         };
+
+        layer_2 {
+            bindings = <
+        &trans  &trans    &trans     &trans    &trans    &trans    &trans     &trans     &trans     &trans
+        &trans  &kp LALT  &kp LCTRL  &kp LGUI  &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
+&trans  &trans  &trans    &trans     &trans    &trans    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans  &trans
+                          &trans     &trans    &trans    &trans    &trans     &trans
+            >;
+        };
     };
 };
