@@ -48,7 +48,7 @@
         escape {
             bindings = <&kp ESCAPE>;
             key-positions = <16 17>;
-            layers = <2>;
+            layers = <0>;
         };
 
         clear_bluetooth {
