@@ -257,8 +257,8 @@
         symbol {
             bindings = <
        &kp LS(EXCL)  &kp LS(AT)          &kp LS(POUND)               &kp LS(DLLR)                &kp LS(PRCNT)                 &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)   &kp LS(PLUS)  &kp LS(QMARK)
-       &kp PIPE      &mt LALT LESS_THAN  &mt LCTRL LEFT_PARENTHESIS  &mt LGUI RIGHT_PARENTHESIS  &kp LS(GT)                    &none          &sk LGUI       &sk LCTRL      &sk LALT      &none
-&none  &kp TILDE     &kp LS(LBRC)        &kp LBKT                    &kp RBKT                    &kp LS(RBRC)                  &none          &single_quote  &double_quote  &grave_quote  &none          &none
+       &kp PIPE      &mt LALT LESS_THAN  &mt LCTRL LEFT_PARENTHESIS  &mt LGUI RIGHT_PARENTHESIS  &kp LS(GT)                    &none          &sk LGUI       &sk LCTRL      &sk LALT      &kp MINUS
+&none  &kp TILDE     &kp LS(LBRC)        &kp LBKT                    &kp RBKT                    &kp LS(RBRC)                  &none          &single_quote  &double_quote  &grave_quote  &kp PIPE       &none
                                          &kp EQUAL                   &lt 3 LG(EQUAL)             &mt LC(LA(LEFT_GUI)) UNDER    &none          &trans         &none
             >;
 
