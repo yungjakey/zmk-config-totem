@@ -256,10 +256,10 @@
 
         symbol {
             bindings = <
-       &kp LS(EXCL)  &kp LS(AT)          &kp LS(POUND)               &kp LS(DLLR)                &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)   &kp LS(PLUS)  &kp LS(QMARK)
-       &kp PIPE      &mt LALT LESS_THAN  &mt LCTRL LEFT_PARENTHESIS  &mt LGUI RIGHT_PARENTHESIS  &kp LS(GT)       &none          &sk LGUI       &sk LCTRL      &sk LALT      &none
-&none  &kp TILDE     &kp LS(LBRC)        &kp LBKT                    &kp RBKT                    &kp LS(RBRC)     &none          &single_quote  &double_quote  &grave_quote  &none          &none
-                                         &kp MINUS                   &lt 2 LG(EQUAL)             &kp UNDER        &none          &trans         &none
+       &kp LS(EXCL)  &kp LS(AT)          &kp LS(POUND)               &kp LS(DLLR)                &kp LS(PRCNT)                 &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)   &kp LS(PLUS)  &kp LS(QMARK)
+       &kp PIPE      &mt LALT LESS_THAN  &mt LCTRL LEFT_PARENTHESIS  &mt LGUI RIGHT_PARENTHESIS  &kp LS(GT)                    &none          &sk LGUI       &sk LCTRL      &sk LALT      &none
+&none  &kp TILDE     &kp LS(LBRC)        &kp LBKT                    &kp RBKT                    &kp LS(RBRC)                  &none          &single_quote  &double_quote  &grave_quote  &none          &none
+                                         &kp MINUS                   &lt 2 LG(EQUAL)             &mt LC(LA(LEFT_GUI)) UNDER    &none          &trans         &none
             >;
 
             label = "SYM";
@@ -267,10 +267,10 @@
 
         navigation {
             bindings = <
-       &kp N1     &kp N2     &kp N3     &kp N4     &kp N5           &kp N6         &kp N7               &kp N8     &kp N9     &kp N0
-       &kp LG(A)  &sk LALT   &sk LCTRL  &sk LGUI   &select_line     &kp LEFT       &kp DOWN             &kp UP     &kp RIGHT  &backspace_delete
-&none  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))    &kp HOME       &kp PG_DN            &kp PG_UP  &kp END    &kp TAB            &none
-                             &none      &trans     &none            &kp LG(SPACE)  &lt 2 LA(BACKSPACE)  &none
+       &kp N1     &kp N2     &kp N3     &kp N4     &kp N5           &kp N6                          &kp N7     &kp N8     &kp N9     &kp N0
+       &kp LG(A)  &sk LALT   &sk LCTRL  &sk LGUI   &select_line     &kp LEFT                        &kp DOWN   &kp UP     &kp RIGHT  &backspace_delete
+&none  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))    &kp HOME                        &kp PG_DN  &kp PG_UP  &kp END    &kp TAB            &none
+                             &none      &trans     &none            &mt LC(LA(LEFT_GUI)) LG(SPACE)  &none      &td_shift
             >;
 
             label = "NAV";
