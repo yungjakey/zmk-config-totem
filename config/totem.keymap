@@ -257,9 +257,9 @@
         symbol {
             bindings = <
        &kp LS(EXCL)  &kp LS(AT)          &kp LS(POUND)               &kp LS(DLLR)                &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)   &kp LS(PLUS)  &kp LS(QMARK)
-       &kp EQUAL     &mt LALT LESS_THAN  &mt LCTRL LEFT_PARENTHESIS  &mt LGUI RIGHT_PARENTHESIS  &kp LS(GT)       &kp PIPE       &sk LGUI       &sk LCTRL      &sk LALT      &none
-&none  &kp TILDE     &kp LS(LBRC)        &kp LBKT                    &kp RBKT                    &kp LS(RBRC)     &grave_quote   &single_quote  &double_quote  &none         &none          &none
-                                         &kp MINUS                   &lt 2 LG(ENTER)             &kp UNDER        &none          &trans         &none
+       &kp PIPE      &mt LALT LESS_THAN  &mt LCTRL LEFT_PARENTHESIS  &mt LGUI RIGHT_PARENTHESIS  &kp LS(GT)       &none          &sk LGUI       &sk LCTRL      &sk LALT      &none
+&none  &kp TILDE     &kp LS(LBRC)        &kp LBKT                    &kp RBKT                    &kp LS(RBRC)     &none          &single_quote  &double_quote  &grave_quote  &none          &none
+                                         &kp MINUS                   &lt 2 LG(EQUAL)             &kp UNDER        &none          &trans         &none
             >;
 
             label = "SYM";
