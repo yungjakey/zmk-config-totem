@@ -152,11 +152,22 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        td_sk_cw: td_sk_cw {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_SK_CW";
-            #binding-cells = <0>;
+        left_shift_caps: left_shift_caps {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LEFT_SHIFT_CAPS";
             bindings = <&sk LEFT_SHIFT>, <&caps_word>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
+        };
+
+        right_shift_caps: right_shift_caps {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RIGHT_SHIFT_CAPS";
+            bindings = <&sk RIGHT_SHIFT>, <&caps_word>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
         };
     };
 
@@ -250,10 +261,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp Q  &kp W  &kp E      &kp R            &kp T        &kp Y      &kp U         &kp I             &kp O          &kp P
-                &kp A  &kp S  &kp D      &kp F            &kp G        &kp H      &kp J         &kp K             &kp L          &mt LA(LC(LEFT_COMMAND)) LA(BACKSPACE)
-&lt 4 LS(HOME)  &kp Z  &kp X  &kp C      &kp V            &kp B        &kp N      &kp M         &comma_semicolon  &period_colon  &kp TAB                                 &lt 4 LS(END)
-                              &td_sk_cw  &lt 2 BACKSPACE  &kp SPACE    &kp SPACE  &lt 1 RETURN  &td_sk_cw
+                &kp Q  &kp W  &kp E             &kp R            &kp T        &kp Y      &kp U         &kp I              &kp O          &kp P
+                &kp A  &kp S  &kp D             &kp F            &kp G        &kp H      &kp J         &kp K              &kp L          &mt LA(LC(LEFT_COMMAND)) LA(BACKSPACE)
+&lt 4 LS(HOME)  &kp Z  &kp X  &kp C             &kp V            &kp B        &kp N      &kp M         &comma_semicolon   &period_colon  &kp TAB                                 &lt 4 LS(END)
+                              &left_shift_caps  &lt 2 BACKSPACE  &kp SPACE    &kp SPACE  &lt 1 RETURN  &right_shift_caps
             >;
         };
 
