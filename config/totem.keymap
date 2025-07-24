@@ -159,6 +159,7 @@
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         right_shift_caps: right_shift_caps {
@@ -168,6 +169,7 @@
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
