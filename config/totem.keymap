@@ -26,6 +26,8 @@
 
 &mt { tapping-term-ms = <150>; };
 
+&sk { quick-release; };
+
 / {
     combos {
         compatible = "zmk,combos";
