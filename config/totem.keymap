@@ -293,9 +293,9 @@
 
         symbol {
             bindings = <
-            &kp LS(EXCL)  &kp LS(AT)          &kp LS(POUND)               &kp LS(DLLR)                &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(PLUS)  &kp LS(QMARK)
-            &kp MINUS     &mt LALT LESS_THAN  &mt LCTRL LEFT_PARENTHESIS  &mt LGUI RIGHT_PARENTHESIS  &kp LS(GT)       &kp PIPE       &sk LGUI      &sk LCTRL     &sk LALT      &grave_quote
-&bt BT_PRV  &kp TILDE     &kp LS(LBRC)        &kp LBKT                    &kp RBKT                    &kp LS(RBRC)     &none          &none         &none         &none         &trans         &bt BT_NXT
+            &kp LS(EXCL)  &kp LS(AT)          &kp LS(POUND)               &kp LS(DLLR)                &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)   &kp LS(PLUS)   &kp LS(QMARK)
+            &kp MINUS     &mt LALT LESS_THAN  &mt LCTRL LEFT_PARENTHESIS  &mt LGUI RIGHT_PARENTHESIS  &kp LS(GT)       &kp PIPE       &sk LGUI      &sk LCTRL      &sk LALT       &grave_quote
+&bt BT_PRV  &kp TILDE     &kp LS(LBRC)        &kp LBKT                    &kp RBKT                    &kp LS(RBRC)     &kp LG(N)      &kp LG(M)     &kp LG(COMMA)  &kp LG(COMMA)  &kp LG(SLASH)  &bt BT_NXT
                                               &kp EQUAL                   &lt 3 BACKSPACE             &kp UNDER        &none          &trans        &none
             >;
 
