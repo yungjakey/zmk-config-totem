@@ -286,17 +286,17 @@
             bindings = <
                 &kp Q  &kp W  &kp E        &kp R            &kp T        &kp Y      &kp U         &kp I             &kp O          &kp P
                 &kp A  &kp S  &kp D        &kp F            &kp G        &kp H      &kp J         &kp K             &kp L          &reverse_quotes
-&lt 4 LS(HOME)  &kp Z  &kp X  &kp C        &kp V            &kp B        &kp N      &kp M         &comma_semicolon  &period_colon  &kp TAB          &lt 4 LS(END)
+&lt 4 LS(HOME)  &kp Z  &kp X  &kp C        &kp V            &kp B        &kp N      &kp M         &comma_semicolon  &period_colon  &slash_backslash  &lt 4 LS(END)
                               &td_sk_caps  &lt 2 BACKSPACE  &kp SPACE    &kp SPACE  &lt 1 RETURN  &td_sk_caps
             >;
         };
 
         symbol {
             bindings = <
-            &kp LS(EXCL)  &kp LS(AT)          &kp LS(POUND)               &kp LS(DLLR)                &kp LS(PRCNT)    &kp LS(CARET)         &kp LS(AMPS)   &kp LS(STAR)   &kp LS(PLUS)  &kp LS(QMARK)
-            &kp MINUS     &mt LALT LESS_THAN  &mt LCTRL LEFT_PARENTHESIS  &mt LGUI RIGHT_PARENTHESIS  &kp LS(GT)       &sk LA(LC(LEFT_GUI))  &sk LGUI       &sk LCTRL      &sk LALT      &kp SLASH
-&bt BT_PRV  &kp TILDE     &kp LS(LBRC)        &kp LBKT                    &kp RBKT                    &kp LS(RBRC)     &grave_quote          &single_quote  &double_quote  &kp PIPE      &kp BACKSLASH  &bt BT_NXT
-                                              &kp EQUAL                   &lt 3 BACKSPACE             &kp UNDER        &none                 &trans         &none
+            &kp LS(EXCL)  &kp LS(AT)          &kp LS(POUND)               &kp LS(DLLR)                &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(PLUS)  &kp LS(QMARK)
+            &kp MINUS     &mt LALT LESS_THAN  &mt LCTRL LEFT_PARENTHESIS  &mt LGUI RIGHT_PARENTHESIS  &kp LS(GT)       &kp PIPE       &sk LGUI      &sk LCTRL     &sk LALT      &grave_quote
+&bt BT_PRV  &kp TILDE     &kp LS(LBRC)        &kp LBKT                    &kp RBKT                    &kp LS(RBRC)     &none          &none         &none         &none         &trans         &bt BT_NXT
+                                              &kp EQUAL                   &lt 3 BACKSPACE             &kp UNDER        &none          &trans        &none
             >;
 
             label = "SYM";
