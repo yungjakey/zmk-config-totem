@@ -183,6 +183,15 @@
             #binding-cells = <0>;
             bindings = <&mt_sk LEFT_SHIFT LEFT_SHIFT>, <&caps_word>;
         };
+
+        reverse_quotes: reverse_quotes {
+            compatible = "zmk,behavior-mod-morph";
+            label = "REVERSE_QUOTES";
+            bindings = <&double_quote>, <&single_quote>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -276,8 +285,8 @@
 
             bindings = <
                 &kp Q  &kp W  &kp E        &kp R            &kp T        &kp Y      &kp U         &kp I             &kp O          &kp P
-                &kp A  &kp S  &kp D        &kp F            &kp G        &kp H      &kp J         &kp K             &kp L          &kp LA(BACKSPACE)
-&lt 4 LS(HOME)  &kp Z  &kp X  &kp C        &kp V            &kp B        &kp N      &kp M         &comma_semicolon  &period_colon  &kp TAB            &lt 4 LS(END)
+                &kp A  &kp S  &kp D        &kp F            &kp G        &kp H      &kp J         &kp K             &kp L          &reverse_quotes
+&lt 4 LS(HOME)  &kp Z  &kp X  &kp C        &kp V            &kp B        &kp N      &kp M         &comma_semicolon  &period_colon  &kp TAB          &lt 4 LS(END)
                               &td_sk_caps  &lt 2 BACKSPACE  &kp SPACE    &kp SPACE  &lt 1 RETURN  &td_sk_caps
             >;
         };
