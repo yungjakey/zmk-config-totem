@@ -330,10 +330,10 @@
 
         symbol {
             bindings = <
-            &kp LS(EXCL)  &kp LS(AT)          &kp LS(POUND)               &kp LS(DLLR)                &kp LS(PRCNT)    &kp LS(CARET)          &kp LS(AMPS)   &kp LS(STAR)   &kp LS(PLUS)  &kp LS(QMARK)
-            &kp MINUS     &mt LALT LESS_THAN  &mt LCTRL LEFT_PARENTHESIS  &mt LGUI RIGHT_PARENTHESIS  &kp LS(GT)       &sk RA(RC(RIGHT_GUI))  &sk LGUI       &sk LCTRL      &sk LALT      &kp SLASH
-&bt BT_PRV  &kp TILDE     &kp LS(LBRC)        &kp LBKT                    &kp RBKT                    &kp LS(RBRC)     &grave_quote           &double_quote  &single_quote  &kp LG(PIPE)  &kp BACKSLASH  &bt BT_NXT
-                                              &kp EQUAL                   &lt 3 BACKSPACE             &kp UNDER        &none                  &trans         &none
+       &kp LS(EXCL)  &kp LS(AT)          &kp LS(POUND)               &kp LS(DLLR)                &kp LS(PRCNT)    &kp LS(CARET)          &kp LS(AMPS)   &kp LS(STAR)   &kp LS(PLUS)  &kp LS(QMARK)
+       &kp MINUS     &mt LALT LESS_THAN  &mt LCTRL LEFT_PARENTHESIS  &mt LGUI RIGHT_PARENTHESIS  &kp LS(GT)       &sk RA(RC(RIGHT_GUI))  &sk LGUI       &sk LCTRL      &sk LALT      &kp SLASH
+&none  &kp TILDE     &kp LS(LBRC)        &kp LBKT                    &kp RBKT                    &kp LS(RBRC)     &grave_quote           &single_quote  &double_quote  &kp LG(PIPE)  &kp BACKSLASH  &none
+                                         &kp EQUAL                   &lt 3 BACKSPACE             &kp UNDER        &none                  &trans         &none
             >;
 
             label = "SYM";
@@ -352,10 +352,10 @@
 
         function {
             bindings = <
-       &kp F1         &kp F2        &kp F3                &kp F4                &kp F5     &kp F6   &kp F7        &kp F8           &kp F9        &kp F10
-       &kp LG(MINUS)  &kp LS(LALT)  &kp LS(LCTRL)         &kp LS(LGUI)          &kp F11    &kp F12  &kp LS(LGUI)  &kp LS(LCTRL)    &kp LS(LALT)  &kp LG(EQUAL)
-&none  &none          &none         &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none      &none    &kp K_MUTE    &kp C_VOLUME_UP  &kp C_VOL_DN  &none          &none
-                                    &none                 &trans                &none      &none    &trans        &none
+            &kp F1         &kp F2        &kp F3                &kp F4                &kp F5     &kp F6   &kp F7        &kp F8           &kp F9        &kp F10
+            &kp LG(MINUS)  &kp LS(LALT)  &kp LS(LCTRL)         &kp LS(LGUI)          &kp F11    &kp F12  &kp LS(LGUI)  &kp LS(LCTRL)    &kp LS(LALT)  &kp LG(EQUAL)
+&bt BT_PRV  &none          &none         &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none      &none    &kp K_MUTE    &kp C_VOLUME_UP  &kp C_VOL_DN  &none          &bt BT_NXT
+                                         &none                 &trans                &none      &none    &trans        &none
             >;
 
             label = "FUN";
