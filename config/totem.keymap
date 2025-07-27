@@ -376,7 +376,7 @@
             bindings = <
         &kp LA(LC(LG(Q)))  &kp LA(LG(LC(W)))  &kp LA(LG(LC(E)))  &kp LA(LG(LC(R)))          &kp LA(LC(LG(T)))        &kp LA(LC(LG(Y)))      &kp LA(LC(LG(U)))      &kp LA(LG(LC(I)))      &kp LA(LC(LG(O)))       &kp LA(LG(LC(P)))
         &kp LA(LG(LC(A)))  &kp LA(LC(LG(S)))  &kp LA(LC(LG(D)))  &kp LA(LC(LG(F)))          &kp LA(LC(LG(G)))        &kp LA(LC(LG(H)))      &kp LA(LC(LG(J)))      &kp LA(LC(LG(K)))      &kp LA(LC(LG(L)))       &kp LA(LC(LG(SEMICOLON)))
-&trans  &kp LA(LC(LG(Z)))  &kp LA(LC(LG(X)))  &kp LA(LC(LG(C)))  &kp LA(LC(LG(V)))          &kp LA(LG(LC(B)))        &kp LA(LC(LG(N)))      &kp LA(LC(LG(M)))      &kp LA(LC(LG(COMMA)))  &kp LA(LC(LG(PERIOD)))  &kp LA(LC(LG(TAB)))        &trans
+&trans  &kp LA(LC(LG(Z)))  &kp LA(LC(LG(X)))  &kp LA(LC(LG(C)))  &kp LA(LC(LG(V)))          &kp LA(LG(LC(B)))        &kp LA(LC(LG(N)))      &kp LA(LC(LG(M)))      &kp LA(LC(LG(COMMA)))  &kp LA(LC(LG(PERIOD)))  &kp LA(LC(LG(SLASH)))      &trans
                                               &trans             &kp LA(LC(LG(BACKSPACE)))  &kp LA(LC(LG(SPACE)))    &kp LA(LC(LG(SPACE)))  &kp LA(LC(LG(ENTER)))  &trans
             >;
 
