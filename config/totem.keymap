@@ -35,11 +35,13 @@
         rbrace {
             bindings = <&rbrace>;
             key-positions = <12 13>;
+            layers = <1>;
         };
 
         sbrace {
             bindings = <&sbrace>;
             key-positions = <23 24>;
+            layers = <1>;
         };
 
         cbrace {
@@ -50,7 +52,7 @@
         escape {
             bindings = <&kp ESCAPE>;
             key-positions = <16 17>;
-            layers = <0>;
+            layers = <1>;
         };
 
         clear_bluetooth {
@@ -70,17 +72,17 @@
 
         ue {
             bindings = <&ue>;
-            key-positions = <26 27>;
+            key-positions = <27 28>;
         };
 
         oe {
             bindings = <&oe>;
-            key-positions = <28 27>;
+            key-positions = <28 29>;
         };
 
         ss {
             bindings = <&ss>;
-            key-positions = <24 25>;
+            key-positions = <23 22>;
         };
     };
 
