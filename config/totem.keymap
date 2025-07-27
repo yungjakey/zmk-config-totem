@@ -209,21 +209,21 @@
         dquote2: dquote {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DOUBLE_QUOTES &kp DOUBLE_QUOTES &kp LEFT>;
+            bindings = <&kp DOUBLE_QUOTES &kp DOUBLE_QUOTES &kp SPACE &kp LEFT>;
             label = "DQUOTE";
         };
 
         squote2: squote {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SINGLE_QUOTE &kp SINGLE_QUOTE &kp LEFT>;
+            bindings = <&kp SINGLE_QUOTE &kp SINGLE_QUOTE &kp SPACE &kp LEFT>;
             label = "SQUOTE";
         };
 
         gquote2: gquote {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp LEFT &kp LEFT &kp LEFT>;
+            bindings = <&kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp SPACE &kp LEFT &kp LEFT &kp LEFT>;
             label = "GQUOTE";
         };
 
