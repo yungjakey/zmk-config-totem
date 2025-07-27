@@ -268,14 +268,14 @@
             label = "AE";
         };
 
-        u: u {
+        ue: u {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp DOUBLE_QUOTES &kp U>;
             label = "U";
         };
 
-        o: o {
+        oe: o {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp DOUBLE_QUOTES &kp O>;
@@ -354,8 +354,8 @@
 
         umlauts {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &ue     &trans  &oe     &trans
+        &ae     &ss     &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
