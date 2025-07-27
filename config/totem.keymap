@@ -260,6 +260,34 @@
             bindings = <&kp HOME &kp LS(END)>;
             label = "SELECT_LINE";
         };
+
+        ae: ae {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOUBLE_QUOTES &kp A>;
+            label = "AE";
+        };
+
+        u: u {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOUBLE_QUOTES &kp U>;
+            label = "U";
+        };
+
+        o: o {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOUBLE_QUOTES &kp O>;
+            label = "O";
+        };
+
+        ss: ss {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(S)>;
+            label = "SS";
+        };
     };
 
     keymap {
@@ -286,7 +314,7 @@
             bindings = <
                &kp Q  &kp W  &kp E        &kp R            &kp T        &kp Y      &kp U         &kp I             &kp O          &kp P
                &kp A  &kp S  &kp D        &kp F            &kp G        &kp H      &kp J         &kp K             &kp L          &reverse_quotes
-&lt 4 LA(DEL)  &kp Z  &kp X  &kp C        &kp V            &kp B        &kp N      &kp M         &comma_semicolon  &period_colon  &slash_backslash  &lt 4 LA(BACKSPACE)
+&lt 5 LA(DEL)  &kp Z  &kp X  &kp C        &kp V            &kp B        &kp N      &kp M         &comma_semicolon  &period_colon  &slash_backslash  &lt 5 LA(BACKSPACE)
                              &td_sk_caps  &lt 2 BACKSPACE  &kp SPACE    &kp SPACE  &lt 1 RETURN  &td_sk_caps
             >;
         };
@@ -322,6 +350,17 @@
             >;
 
             label = "FUN";
+        };
+
+        umlauts {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "UML";
         };
 
         windows {
