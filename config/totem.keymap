@@ -65,22 +65,22 @@
 
         ae {
             bindings = <&ae>;
-            key-positions = <10 34>;
+            key-positions = <10 11>;
         };
 
         ue {
             bindings = <&ue>;
-            key-positions = <6 34>;
+            key-positions = <6 7>;
         };
 
         oe {
             bindings = <&oe>;
-            key-positions = <11 34>;
+            key-positions = <7 8>;
         };
 
         ss {
             bindings = <&ss>;
-            key-positions = <11 34>;
+            key-positions = <11 12>;
         };
     };
 
