@@ -47,6 +47,7 @@
         cbrace {
             bindings = <&cbrace>;
             key-positions = <22 25>;
+            layers = <1>;
         };
 
         escape {
@@ -67,11 +68,13 @@
         ae {
             bindings = <&ae>;
             key-positions = <23 24>;
+            layers = <0>;
         };
 
         ue {
             bindings = <&ue>;
             key-positions = <27 28>;
+            layers = <0>;
         };
 
         oe {
@@ -82,6 +85,7 @@
         ss {
             bindings = <&ss>;
             key-positions = <23 22>;
+            layers = <0>;
         };
     };
 
