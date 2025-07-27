@@ -69,21 +69,21 @@
             compatible = "zmk,behavior-tap-dance";
             label = "DOUBLE_QUOTE";
             #binding-cells = <0>;
-            bindings = <&kp DOUBLE_QUOTES>, <&dquote2>;
+            bindings = <&dquote1>, <&dquote2>;
         };
 
         single_quote: single_quote {
             compatible = "zmk,behavior-tap-dance";
             label = "SINGLE_QUOTE";
             #binding-cells = <0>;
-            bindings = <&kp SQT>, <&squote2>;
+            bindings = <&squote1>, <&squote2>;
         };
 
         grave_quote: grave_quote {
             compatible = "zmk,behavior-tap-dance";
             label = "GRAVE_QUOTE";
             #binding-cells = <0>;
-            bindings = <&kp GRAVE>, <&gquote2>;
+            bindings = <&gquote1>, <&gquote2>;
         };
 
         mt_left: mt_left {
