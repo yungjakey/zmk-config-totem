@@ -384,7 +384,7 @@
             bindings = <
        &kp LS(EXCL)  &kp LS(AT)          &kp LS(POUND)               &kp LS(DLLR)                &kp LS(PRCNT)    &kp LS(CARET)          &kp LS(AMPS)   &kp LS(STAR)   &kp LS(PLUS)  &kp LS(QMARK)
        &kp MINUS     &mt LALT LESS_THAN  &mt LCTRL LEFT_PARENTHESIS  &mt LGUI RIGHT_PARENTHESIS  &kp LS(GT)       &sk RA(RC(RIGHT_GUI))  &sk LGUI       &sk LCTRL      &sk LALT      &kp SLASH
-&none  &kp TILDE     &kp LS(LBRC)        &kp LBKT                    &kp RBKT                    &kp LS(RBRC)     &grave_quote           &single_quote  &double_quote  &kp LG(PIPE)  &kp BACKSLASH  &none
+&none  &kp TILDE     &kp LS(LBRC)        &kp LBKT                    &kp RBKT                    &kp LS(RBRC)     &grave_quote           &single_quote  &double_quote  &kp PIPE      &kp BACKSLASH  &none
                                          &kp EQUAL                   &lt 3 BACKSPACE             &kp UNDER        &none                  &trans         &none
             >;
 
