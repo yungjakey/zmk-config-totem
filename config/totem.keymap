@@ -72,13 +72,13 @@
         };
 
         cueUE {
-            bindings = <&none>;
+            bindings = <&ueUE>;
             key-positions = <27 28>;
             layers = <0>;
         };
 
         coeOE {
-            bindings = <&none>;
+            bindings = <&oeOE>;
             key-positions = <28 29>;
         };
 
@@ -212,7 +212,25 @@
         aeAE: aeAE {
             compatible = "zmk,behavior-mod-morph";
             label = "AEAE";
-            bindings = <&ae>, <&AE>;
+            bindings = <&aelower>, <&AEupper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ueUE: ueUE {
+            compatible = "zmk,behavior-mod-morph";
+            label = "UEUE";
+            bindings = <&uelower>, <&UEupper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        oeOE: oeOE {
+            compatible = "zmk,behavior-mod-morph";
+            label = "OEOE";
+            bindings = <&oelower>, <&OEupper>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -290,18 +308,46 @@
             label = "SS";
         };
 
-        ae: ae {
+        aelower: aelower {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(U) &kp A>;
-            label = "AE";
+            label = "AELOWER";
         };
 
-        AE: AE {
+        AEupper: AEupper {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(U) &kp LS(A)>;
-            label = "AE";
+            label = "AEUPPER";
+        };
+
+        uelower: uelower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(U) &kp U>;
+            label = "UELOWER";
+        };
+
+        UEupper: UEupper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(U) &kp LS(U)>;
+            label = "UEUPPER";
+        };
+
+        oelower: oelower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(U) &kp O>;
+            label = "OELOWER";
+        };
+
+        OEupper: OEupper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(U) &kp LS(O)>;
+            label = "OEUPPER";
         };
     };
 
