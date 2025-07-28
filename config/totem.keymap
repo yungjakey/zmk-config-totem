@@ -212,7 +212,7 @@
         ueUE: ueUE {
             compatible = "zmk,behavior-mod-morph";
             label = "UEUE";
-            bindings = <&ue>, <&ueUE>;
+            bindings = <&uelower>, <&ueUE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -221,7 +221,7 @@
         aeAE: aeAE {
             compatible = "zmk,behavior-mod-morph";
             label = "AEAE";
-            bindings = <&ae>, <&aeAE>;
+            bindings = <&aelower>, <&aeAE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -230,7 +230,7 @@
         oeOE: oeOE {
             compatible = "zmk,behavior-mod-morph";
             label = "OEOE";
-            bindings = <&oe>, <&oeOE>;
+            bindings = <&oelower>, <&oeOE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -301,21 +301,21 @@
             label = "SELECT_LINE";
         };
 
-        ae: ae {
+        aelower: ae {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(U) &kp A>;
             label = "AE";
         };
 
-        ue: u {
+        uelower: u {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(U) &kp U>;
             label = "U";
         };
 
-        oe: o {
+        oelower: o {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(U) &kp O>;
