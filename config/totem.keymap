@@ -280,6 +280,20 @@
             bindings = <&kp LA(S)>;
             label = "SS";
         };
+
+        ae: ae {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "AE";
+        };
+
+        AE: AE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "AE";
+        };
     };
 
     keymap {
