@@ -333,21 +333,21 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(U) &kp U>;
-            label = "UE";
+            label = "ue";
         };
 
         oe: oe {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(U) &kp O>;
-            label = "OE";
+            label = "oe";
         };
 
         ae: ae {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(U) &kp A>;
-            label = "AE";
+            label = "ae";
         };
     };
 
