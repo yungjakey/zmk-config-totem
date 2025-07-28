@@ -65,19 +65,19 @@
             key-positions = <32 37>;
         };
 
-        ae {
-            bindings = <&none>;
+        caeAE {
+            bindings = <&aeAE>;
             key-positions = <23 24>;
             layers = <0>;
         };
 
-        ue {
+        cueUE {
             bindings = <&none>;
             key-positions = <27 28>;
             layers = <0>;
         };
 
-        oe {
+        coeOE {
             bindings = <&none>;
             key-positions = <28 29>;
         };
@@ -208,6 +208,15 @@
             #binding-cells = <0>;
             bindings = <&mt_sk LEFT_SHIFT LEFT_SHIFT>, <&caps_word>;
         };
+
+        aeAE: aeAE {
+            compatible = "zmk,behavior-mod-morph";
+            label = "AEAE";
+            bindings = <&ae>, <&AE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -284,14 +293,14 @@
         ae: ae {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp LA(U) &kp A>;
             label = "AE";
         };
 
         AE: AE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp LA(U) &kp LS(A)>;
             label = "AE";
         };
     };
