@@ -66,19 +66,19 @@
         };
 
         ae {
-            bindings = <&aeAE>;
+            bindings = <&none>;
             key-positions = <23 24>;
             layers = <0>;
         };
 
         ue {
-            bindings = <&ueUE>;
+            bindings = <&none>;
             key-positions = <27 28>;
             layers = <0>;
         };
 
         oe {
-            bindings = <&oeOE>;
+            bindings = <&none>;
             key-positions = <28 29>;
         };
 
@@ -208,33 +208,6 @@
             #binding-cells = <0>;
             bindings = <&mt_sk LEFT_SHIFT LEFT_SHIFT>, <&caps_word>;
         };
-
-        ueUE: ueUE {
-            compatible = "zmk,behavior-mod-morph";
-            label = "UEUE";
-            bindings = <&uelower>, <&UE>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        aeAE: aeAE {
-            compatible = "zmk,behavior-mod-morph";
-            label = "AEAE";
-            bindings = <&aelower>, <&AE>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        oeOE: oeOE {
-            compatible = "zmk,behavior-mod-morph";
-            label = "OEOE";
-            bindings = <&oelower>, <&OE>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
     };
 
     macros {
@@ -306,48 +279,6 @@
             #binding-cells = <0>;
             bindings = <&kp LA(S)>;
             label = "SS";
-        };
-
-        UE: UE {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(U) &kp LS(U)>;
-            label = "UE";
-        };
-
-        OE: OE {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(U) &kp LS(O)>;
-            label = "OE";
-        };
-
-        AE: AE {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(U) &kp LS(A)>;
-            label = "AE";
-        };
-
-        ue: ue {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(U) &kp U>;
-            label = "ue";
-        };
-
-        oe: oe {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(U) &kp O>;
-            label = "oe";
-        };
-
-        ae: ae {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(U) &kp A>;
-            label = "ae";
         };
     };
 
