@@ -212,7 +212,7 @@
         ueUE: ueUE {
             compatible = "zmk,behavior-mod-morph";
             label = "UEUE";
-            bindings = <&uelower>, <&ueUE>;
+            bindings = <&uelower>, <&UE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -221,7 +221,7 @@
         aeAE: aeAE {
             compatible = "zmk,behavior-mod-morph";
             label = "AEAE";
-            bindings = <&aelower>, <&aeAE>;
+            bindings = <&aelower>, <&AE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -230,7 +230,7 @@
         oeOE: oeOE {
             compatible = "zmk,behavior-mod-morph";
             label = "OEOE";
-            bindings = <&oelower>, <&oeOE>;
+            bindings = <&oelower>, <&OE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
