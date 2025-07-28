@@ -94,21 +94,21 @@
             compatible = "zmk,behavior-tap-dance";
             label = "DOUBLE_QUOTE";
             #binding-cells = <0>;
-            bindings = <&dquote1>, <&dquote2>;
+            bindings = <&kp DOUBLE_QUOTES>, <&dquote2>;
         };
 
         single_quote: single_quote {
             compatible = "zmk,behavior-tap-dance";
             label = "SINGLE_QUOTE";
             #binding-cells = <0>;
-            bindings = <&squote1>, <&squote2>;
+            bindings = <&kp SINGLE_QUOTE>, <&squote2>;
         };
 
         grave_quote: grave_quote {
             compatible = "zmk,behavior-tap-dance";
             label = "GRAVE_QUOTE";
             #binding-cells = <0>;
-            bindings = <&gquote1>, <&gquote2>;
+            bindings = <&kp GRAVE>, <&gquote2>;
         };
 
         mt_left: mt_left {
@@ -214,21 +214,21 @@
         dquote2: dquote {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DOUBLE_QUOTES &kp DOUBLE_QUOTES &kp SPACE &kp LEFT>;
+            bindings = <&kp DOUBLE_QUOTES &kp DOUBLE_QUOTES &kp LEFT>;
             label = "DQUOTE";
         };
 
         squote2: squote {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SINGLE_QUOTE &kp SINGLE_QUOTE &kp SPACE &kp LEFT>;
+            bindings = <&kp SINGLE_QUOTE &kp SINGLE_QUOTE &kp LEFT>;
             label = "SQUOTE";
         };
 
         gquote2: gquote {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp SPACE &kp LEFT &kp LEFT &kp LEFT>;
+            bindings = <&kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp LEFT &kp LEFT &kp LEFT>;
             label = "GQUOTE";
         };
 
@@ -277,21 +277,21 @@
         ae: ae {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DOUBLE_QUOTES &kp A>;
+            bindings = <&kp LA(U) &kp A>;
             label = "AE";
         };
 
         ue: u {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DOUBLE_QUOTES &kp U>;
+            bindings = <&kp LA(U) &kp U>;
             label = "U";
         };
 
         oe: o {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DOUBLE_QUOTES &kp O>;
+            bindings = <&kp LA(U) &kp O>;
             label = "O";
         };
 
@@ -300,27 +300,6 @@
             #binding-cells = <0>;
             bindings = <&kp LA(S)>;
             label = "SS";
-        };
-
-        dquote1: dquote1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp DOUBLE_QUOTES &kp SPACE>;
-            label = "DQUOTE1";
-        };
-
-        squote1: squote1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SINGLE_QUOTE &kp SPACE>;
-            label = "SQUOTE1";
-        };
-
-        gquote1: gquote1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp GRAVE &kp SPACE>;
-            label = "GQUOTE1";
         };
     };
 
