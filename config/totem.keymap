@@ -66,19 +66,19 @@
         };
 
         ae {
-            bindings = <&ae>;
+            bindings = <&aeAE>;
             key-positions = <23 24>;
             layers = <0>;
         };
 
         ue {
-            bindings = <&ue>;
+            bindings = <&ueUE>;
             key-positions = <27 28>;
             layers = <0>;
         };
 
         oe {
-            bindings = <&oe>;
+            bindings = <&oeOE>;
             key-positions = <28 29>;
         };
 
@@ -208,6 +208,33 @@
             #binding-cells = <0>;
             bindings = <&mt_sk LEFT_SHIFT LEFT_SHIFT>, <&caps_word>;
         };
+
+        ueUE: ueUE {
+            compatible = "zmk,behavior-mod-morph";
+            label = "UEUE";
+            bindings = <&ue>, <&ueUE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        aeAE: aeAE {
+            compatible = "zmk,behavior-mod-morph";
+            label = "AEAE";
+            bindings = <&ae>, <&aeAE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        oeOE: oeOE {
+            compatible = "zmk,behavior-mod-morph";
+            label = "OEOE";
+            bindings = <&oe>, <&oeOE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -300,6 +327,27 @@
             #binding-cells = <0>;
             bindings = <&kp LA(S)>;
             label = "SS";
+        };
+
+        UE: UE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(U) &kp LS(U)>;
+            label = "UE";
+        };
+
+        OE: OE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(U) &kp LS(O)>;
+            label = "OE";
+        };
+
+        AE: AE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(U) &kp LS(A)>;
+            label = "AE";
         };
     };
 
