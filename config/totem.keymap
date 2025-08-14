@@ -206,7 +206,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_SK_CAPS";
             #binding-cells = <0>;
-            bindings = <&mt_sk LEFT_SHIFT LEFT_SHIFT>, <&caps_word>;
+            bindings = <&sk LEFT_SHIFT>, <&caps_word>;
         };
 
         aeAE: aeAE {
