@@ -32,24 +32,6 @@
     combos {
         compatible = "zmk,combos";
 
-        rbrace {
-            bindings = <&rbrace>;
-            key-positions = <12 13>;
-            layers = <1>;
-        };
-
-        sbrace {
-            bindings = <&sbrace>;
-            key-positions = <23 24>;
-            layers = <1>;
-        };
-
-        cbrace {
-            bindings = <&cbrace>;
-            key-positions = <22 25>;
-            layers = <1>;
-        };
-
         escape {
             bindings = <&kp ESCAPE>;
             key-positions = <16 17>;
@@ -63,29 +45,6 @@
         caps_word {
             bindings = <&caps_word>;
             key-positions = <32 37>;
-        };
-
-        caeAE {
-            bindings = <&aeAE>;
-            key-positions = <23 24>;
-            layers = <0>;
-        };
-
-        cueUE {
-            bindings = <&ueUE>;
-            key-positions = <27 28>;
-            layers = <0>;
-        };
-
-        coeOE {
-            bindings = <&oeOE>;
-            key-positions = <28 29>;
-        };
-
-        ss {
-            bindings = <&ss>;
-            key-positions = <23 22>;
-            layers = <0>;
         };
 
         cag {
@@ -212,33 +171,6 @@
             label = "TD_SK_CAPS";
             #binding-cells = <0>;
             bindings = <&sk LEFT_SHIFT>, <&caps_word>;
-        };
-
-        aeAE: aeAE {
-            compatible = "zmk,behavior-mod-morph";
-            label = "AEAE";
-            bindings = <&aelower>, <&AEupper>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        ueUE: ueUE {
-            compatible = "zmk,behavior-mod-morph";
-            label = "UEUE";
-            bindings = <&uelower>, <&UEupper>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        oeOE: oeOE {
-            compatible = "zmk,behavior-mod-morph";
-            label = "OEOE";
-            bindings = <&oelower>, <&OEupper>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
