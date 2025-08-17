@@ -373,10 +373,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp Q  &kp W  &kp E        &kp R            &kp T        &kp Y      &kp U         &kp I             &kp O          &kp P
-                &kp A  &kp S  &kp D        &kp F            &kp G        &kp H      &kp J         &kp K             &kp L          &kp LA(BACKSPACE)
-&lt 4 LA(LEFT)  &kp Z  &kp X  &kp C        &kp V            &kp B        &kp N      &kp M         &comma_semicolon  &period_colon  &kp TAB            &lt 4 LA(RIGHT)
-                              &td_sk_caps  &lt 2 BACKSPACE  &kp SPACE    &kp SPACE  &lt 1 RETURN  &td_sk_caps
+                &kp Q  &kp W  &kp E        &kp R            &kp T                   &kp Y      &kp U         &kp I             &kp O          &kp P
+                &kp A  &kp S  &kp D        &kp F            &kp G                   &kp H      &kp J         &kp K             &kp L          &kp LA(BACKSPACE)
+&lt 3 LA(LEFT)  &kp Z  &kp X  &kp C        &kp V            &kp B                   &kp N      &kp M         &comma_semicolon  &period_colon  &kp TAB            &lt 3 LA(RIGHT)
+                              &td_sk_caps  &lt 2 BACKSPACE  &sk LC(LA(LEFT_GUI))    &kp SPACE  &lt 1 RETURN  &td_sk_caps
             >;
         };
 
@@ -411,17 +411,6 @@
             >;
 
             label = "FUN";
-        };
-
-        windows {
-            bindings = <
-        &kp LA(LC(LG(Q)))  &kp LA(LG(LC(W)))  &kp LA(LG(LC(E)))  &kp LA(LG(LC(R)))          &kp LA(LC(LG(T)))        &kp LA(LC(LG(Y)))      &kp LA(LC(LG(U)))      &kp LA(LG(LC(I)))      &kp LA(LC(LG(O)))       &kp LA(LG(LC(P)))
-        &kp LA(LG(LC(A)))  &kp LA(LC(LG(S)))  &kp LA(LC(LG(D)))  &kp LA(LC(LG(F)))          &kp LA(LC(LG(G)))        &kp LA(LC(LG(H)))      &kp LA(LC(LG(J)))      &kp LA(LC(LG(K)))      &kp LA(LC(LG(L)))       &kp LA(LC(LG(SEMICOLON)))
-&trans  &kp LA(LC(LG(Z)))  &kp LA(LC(LG(X)))  &kp LA(LC(LG(C)))  &kp LA(LC(LG(V)))          &kp LA(LG(LC(B)))        &kp LA(LC(LG(N)))      &kp LA(LC(LG(M)))      &kp LA(LC(LG(COMMA)))  &kp LA(LC(LG(PERIOD)))  &kp LA(LC(LG(SLASH)))      &trans
-                                              &trans             &kp LA(LC(LG(BACKSPACE)))  &kp LA(LC(LG(SPACE)))    &kp LA(LC(LG(SPACE)))  &kp LA(LC(LG(ENTER)))  &trans
-            >;
-
-            label = "WIN";
         };
     };
 };
