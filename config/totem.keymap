@@ -129,10 +129,10 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        backspace_delete: backspace_delete {
+        delete_word: delete_word {
             compatible = "zmk,behavior-mod-morph";
-            label = "BACKSPACE_DELETE";
-            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+            label = "DELETE_WORD";
+            bindings = <&kp LA(BACKSPACE)>, <&kp LA(DELETE)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
