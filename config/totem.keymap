@@ -192,7 +192,7 @@
         gquote2: gquote {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp LEFT &kp LEFT &kp LEFT>;
+            bindings = <&kp GRAVE &kp GRAVE &kp LEFT>;
             label = "GQUOTE";
         };
 
@@ -320,7 +320,7 @@
         symbol {
             bindings = <
        &kp LS(EXCL)  &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)       &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)   &kp LS(PLUS)  &kp LS(QMARK)
-       &kp MINUS     &kp LS(LBRC)  &kp LBKT       &kp RBKT           &kp LS(RBRC)     &kp LG(H)      &sk LGUI       &sk LCTRL      &sk LALT      &kp BACKSLASH
+       &kp MINUS     &kp LS(LBRC)  &kp LBKT       &kp RBKT           &kp LS(RBRC)     &kp LG(H)      &sk LGUI       &sk LCTRL      &sk LALT      &kp SLASH
 &none  &kp TILDE     &kp LS(LT)    &kp LS(LPAR)   &kp LS(RPAR)       &kp LS(GT)       &grave_quote   &single_quote  &double_quote  &kp PIPE      &kp BACKSLASH  &none
                                    &kp EQUAL      &kp LG(BACKSPACE)  &kp UNDER        &none          &trans         &none
             >;
