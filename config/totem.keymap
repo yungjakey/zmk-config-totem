@@ -304,7 +304,7 @@
             bindings = <
                              &kp Q  &kp W  &kp E                &kp R            &kp T      &kp Y      &kp U         &kp I                &kp O          &kp P
                              &kp A  &kp S  &kp D                &kp F            &kp G      &kp H      &kp J         &kp K                &kp L          &mt LA(LC(LEFT_GUI)) LA(BACKSPACE)
-&lt 4 LA(LC(LG(BACKSPACE)))  &kp Z  &kp X  &kp C                &kp V            &kp B      &kp N      &kp M         &comma_semicolon     &period_colon  &kp TAB                             &lt 4 LA(LC(LG(SPACE)))
+&lt 4 LA(LC(LG(BACKSPACE)))  &kp Z  &kp X  &kp C                &kp V            &kp B      &kp N      &kp M         &comma_semicolon     &period_colon  &kp TAB                             &lt 4 LA(LC(LG(RETURN)))
                                            &sk_shift_caps_word  &lt 2 BACKSPACE  &kp DEL    &kp SPACE  &lt 1 RETURN  &sk_shift_caps_word
             >;
         };
