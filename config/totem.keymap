@@ -13,6 +13,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define BASE 0
 #define NAV  1
@@ -322,10 +323,10 @@
 
         navigation {
             bindings = <
-              &kp RG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp LG(T)        &kp LG(Y)      &kp LG(U)         &kp LG(I)                     &kp LG(O)  &kp LG(P)
-              &kp LG(A)  &sk LALT   &sk LCTRL  &sk LGUI   &kp LG(G)        &kp LEFT       &kp DOWN          &kp UP                        &kp RIGHT  &kp LA(DELETE)
-&kp LS(HOME)  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))    &kp HOME       &kp PG_DN         &kp PG_UP                     &kp END    &kp TAB         &kp LS(END)
-                                    &none      &trans     &none            &kp LG(SPACE)  &lt 3 LG(RETURN)  &mt_kt LEFT_SHIFT LEFT_SHIFT
+              &kp RG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp LG(T)        &msc SCRL_RIGHT  &msc SCRL_UP      &msc SCRL_DOWN                &msc SCRL_RIGHT  &kp LG(P)
+              &kp LG(A)  &sk LALT   &sk LCTRL  &sk LGUI   &kp LG(G)        &kp LEFT         &kp DOWN          &kp UP                        &kp RIGHT        &kp LA(DELETE)
+&kp LS(HOME)  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))    &kp HOME         &kp PG_DN         &kp PG_UP                     &kp END          &kp TAB         &kp LS(END)
+                                    &none      &trans     &none            &kp LG(SPACE)    &lt 3 LG(RETURN)  &mt_kt LEFT_SHIFT LEFT_SHIFT
             >;
 
             label = "NAV";
