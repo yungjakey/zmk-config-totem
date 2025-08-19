@@ -345,10 +345,10 @@
 
         function {
             bindings = <
-               &kp F1      &kp F2   &kp F3        &kp F4        &kp F5        &kp F6      &kp F7            &kp F8                 &kp F9   &kp F10
-               &bt BT_PRV  &none    &kp C_BRI_DN  &kp C_BRI_UP  &sys_reset    &kp C_MUTE  &kp LS(C_VOL_UP)  &kp LS(C_VOLUME_DOWN)  &none    &bt BT_NXT
-&kp LG(LC(Q))  &kp F11     &kp F12  &kp F13       &kp F14       &kp F15       &kp F16     &kp F17           &kp F18                &kp F19  &kp F20     &kp LG(LS(Q))
-                                    &trans        &trans        &trans        &trans      &trans            &trans
+               &kp F1      &kp F2                &kp F3         &kp F4                 &kp F5        &kp F6      &kp F7      &kp F8             &kp F9        &kp F10
+               &bt BT_PRV  &kp C_BRIGHTNESS_DEC  &kp C_BRI_INC  &kp C_BRIGHTNESS_AUTO  &sys_reset    &sys_reset  &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOL_UP  &bt BT_NXT
+&kp LG(LC(Q))  &kp F11     &kp F12               &kp F13        &kp F14                &kp F15       &kp F16     &kp F17     &kp F18            &kp F19       &kp F20     &kp LG(LS(Q))
+                                                 &trans         &trans                 &trans        &trans      &trans      &trans
             >;
 
             label = "FUN";
