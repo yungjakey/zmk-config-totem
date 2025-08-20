@@ -20,10 +20,7 @@
 #define SYM  2
 #define MOO  3
 
-&caps_word {
-    continue-list = <UNDERSCORE BACKSPACE DELETE LEFT_ARROW DOWN_ARROW UP_ARROW RIGHT_ARROW HOME END PAGE_DOWN PAGE_UP>;
-    mods = <(MOD_RSFT|MOD_LSFT)>;
-};
+&caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE LEFT_ARROW DOWN_ARROW UP_ARROW RIGHT_ARROW HOME END PAGE_DOWN PAGE_UP>; };
 
 &mt { tapping-term-ms = <150>; };
 
@@ -112,33 +109,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        question_exclamation: question_exclamation {
-            compatible = "zmk,behavior-mod-morph";
-            label = "QUESTION_EXCLAMATION";
-            bindings = <&kp QUESTION>, <&kp EXCLAMATION>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        slash_backslash: slash_backslash {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SLASH_BACKSLASH";
-            bindings = <&kp SLASH>, <&kp BACKSLASH>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        delete_word: delete_word {
-            compatible = "zmk,behavior-mod-morph";
-            label = "DELETE_WORD";
-            bindings = <&kp LA(BACKSPACE)>, <&kp LA(DELETE)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
         mt_kt: mt_kt {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_KT";
@@ -146,24 +116,6 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-        };
-
-        mt_sk: mt_sk {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MT_SK";
-            bindings = <&kp>, <&sk>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <198>;
-        };
-
-        sk_shift_caps_word: sk_shift_caps_word {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SK_SHIFT_CAPS_WORD";
-            bindings = <&sk LEFT_SHIFT>, <&caps_word>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
@@ -303,10 +255,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                          &kp Q  &kp W  &kp E                &kp R            &kp T                              &kp Y      &kp U         &kp I                &kp O          &kp P
-                          &kp A  &kp S  &kp D                &kp F            &kp G                              &kp H      &kp J         &kp K                &kp L          &mt LA(LC(LEFT_GUI)) LA(BACKSPACE)
-&lt 4 LA(LC(LG(ESCAPE)))  &kp Z  &kp X  &kp C                &kp V            &kp B                              &kp N      &kp M         &comma_semicolon     &period_colon  &kp TAB                             &lt 4 LA(LC(LG(RETURN)))
-                                        &sk_shift_caps_word  &lt 2 BACKSPACE  &mt LA(LC(LEFT_COMMAND)) DELETE    &kp SPACE  &lt 1 RETURN  &sk_shift_caps_word
+                          &kp Q  &kp W  &kp E           &kp R            &kp T                              &kp Y      &kp U         &kp I             &kp O          &kp P
+                          &kp A  &kp S  &kp D           &kp F            &kp G                              &kp H      &kp J         &kp K             &kp L          &mt LA(LC(LEFT_GUI)) LA(BACKSPACE)
+&lt 4 LA(LC(LG(ESCAPE)))  &kp Z  &kp X  &kp C           &kp V            &kp B                              &kp N      &kp M         &comma_semicolon  &period_colon  &kp TAB                             &lt 4 LA(LC(LG(RETURN)))
+                                        &sk LEFT_SHIFT  &lt 2 BACKSPACE  &mt LA(LC(LEFT_COMMAND)) DELETE    &kp SPACE  &lt 1 RETURN  &sk RIGHT_SHIFT
             >;
         };
 
