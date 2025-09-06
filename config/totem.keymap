@@ -38,16 +38,6 @@
             bindings = <&bt BT_CLR>;
             key-positions = <20 31>;
         };
-
-        lbracket {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <21 22>;
-        };
-
-        rbracket {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <29 30>;
-        };
     };
 
     behaviors {
@@ -264,10 +254,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                      &kp Q  &kp W  &kp E           &kp R            &kp T           &kp Y      &kp U         &kp I             &kp O          &kp P
-                      &kp A  &kp S  &kp D           &kp F            &kp G           &kp H      &kp J         &kp K             &kp L          &mt LA(LC(LEFT_GUI)) LA(BACKSPACE)
-&sk LA(LC(LEFT_GUI))  &kp Z  &kp X  &kp C           &kp V            &kp B           &kp N      &kp M         &comma_semicolon  &period_colon  &kp TAB                             &sk LC(B)
-                                    &sk LEFT_SHIFT  &lt 2 BACKSPACE  &lt 4 DELETE    &kp SPACE  &lt 1 RETURN  &sk RIGHT_SHIFT
+                                   &kp Q        &kp W  &kp E           &kp R            &kp T           &kp Y      &kp U         &kp I             &kp O          &kp P
+                                   &kp A        &kp S  &kp D           &kp F            &kp G           &kp H      &kp J         &kp K             &kp L          &kp LA(BACKSPACE)
+&mt LC(LA(LEFT_GUI)) LEFT_BRACKET  &mt RCTRL Z  &kp X  &kp C           &kp V            &kp B           &kp N      &kp M         &comma_semicolon  &period_colon  &mt RCTRL TAB      &mt LC(LA(LEFT_GUI)) RIGHT_BRACKET
+                                                       &sk LEFT_SHIFT  &lt 2 BACKSPACE  &lt 4 DELETE    &kp SPACE  &lt 1 RETURN  &sk RIGHT_SHIFT
             >;
         };
 
