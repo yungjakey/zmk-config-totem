@@ -38,6 +38,16 @@
             bindings = <&bt BT_CLR>;
             key-positions = <20 31>;
         };
+
+        lbracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <21 22>;
+        };
+
+        rbracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <29 30>;
+        };
     };
 
     behaviors {
