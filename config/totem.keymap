@@ -264,9 +264,9 @@
         symbol {
             bindings = <
            &kp LS(EXCL)  &kp LS(AT)                  &kp LS(POUND)                          &kp LS(DLLR)                            &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)       &kp LS(STAR)               &kp LS(PLUS)         &kp LS(QMARK)
-           &kp MINUS     &mt LS(LEFT_ALT) LESS_THAN  &mt LS(LEFT_CONTROL) LEFT_PARENTHESIS  &mt LS(LEFT_COMMAND) RIGHT_PARENTHESIS  &kp LS(GT)       &kp LEFT       &mt LEFT_GUI DOWN  &mt LEFT_CONTROL UP_ARROW  &mt RIGHT_ALT RIGHT  &kp SLASH
-&kp TILDE  &kp LG(Z)     &none                       &none                                  &none                                   &none            &kp GRAVE      &single_quote      &double_quote              &kp PIPE             &none          &kp BACKSLASH
-                                                     &kp EQUAL                              &none                                   &kp UNDER        &none          &trans             &none
+           &kp MINUS     &mt LS(LEFT_ALT) LESS_THAN  &mt LS(LEFT_CONTROL) LEFT_PARENTHESIS  &mt LS(LEFT_COMMAND) RIGHT_PARENTHESIS  &kp LS(GT)       &kp LEFT       &mt LEFT_GUI DOWN  &mt LEFT_CONTROL UP_ARROW  &mt RIGHT_ALT RIGHT  &kp LA(DELETE)
+&kp TILDE  &kp LG(Z)     &kp LG(X)                   &kp LG(C)                              &kp LG(V)                               &kp LS(LG(Z))    &kp GRAVE      &single_quote      &double_quote              &kp PIPE             &kp SLASH       &kp BACKSLASH
+                                                     &kp EQUAL                              &trans                                  &kp UNDER        &none          &trans             &none
             >;
 
             label = "SYM";
