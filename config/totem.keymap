@@ -30,7 +30,7 @@
         compatible = "zmk,combos";
 
         escape {
-            bindings = <&delete_word>;
+            bindings = <&delete_fb>;
             key-positions = <16 17>;
         };
 
@@ -110,9 +110,18 @@
             tapping-term-ms = <200>;
         };
 
-        delete_word: delete_word {
+        delete_fb: delete_fb {
             compatible = "zmk,behavior-mod-morph";
-            label = "DELETE_WORD";
+            label = "DELETE_FB";
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        delete_word_fb: delete_word_fb {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DELETE_WORD_FB";
             bindings = <&kp LA(BACKSPACE)>, <&kp LA(DELETE)>;
 
             #binding-cells = <0>;
