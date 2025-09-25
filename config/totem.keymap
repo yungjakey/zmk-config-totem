@@ -30,7 +30,7 @@
         compatible = "zmk,combos";
 
         escape {
-            bindings = <&kp ESCAPE>;
+            bindings = <&kp LA(BACKSPACE)>;
             key-positions = <16 17>;
         };
 
