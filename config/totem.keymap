@@ -30,7 +30,7 @@
         compatible = "zmk,combos";
 
         escape {
-            bindings = <&kp ESCAPE>;
+            bindings = <&delete_word>;
             key-positions = <16 17>;
         };
 
@@ -53,13 +53,6 @@
             label = "SINGLE_QUOTE";
             #binding-cells = <0>;
             bindings = <&kp SINGLE_QUOTE>, <&squote2>;
-        };
-
-        grave_quote: grave_quote {
-            compatible = "zmk,behavior-tap-dance";
-            label = "GRAVE_QUOTE";
-            #binding-cells = <0>;
-            bindings = <&kp GRAVE>, <&gquote2>;
         };
 
         mt_left: mt_left {
@@ -116,6 +109,15 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        delete_word: delete_word {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DELETE_WORD";
+            bindings = <&kp LA(BACKSPACE)>, <&kp LA(DELETE)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -131,13 +133,6 @@
             #binding-cells = <0>;
             bindings = <&kp SINGLE_QUOTE &kp SINGLE_QUOTE &kp LEFT>;
             label = "SQUOTE";
-        };
-
-        gquote2: gquote {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp GRAVE &kp GRAVE &kp LEFT>;
-            label = "GQUOTE";
         };
 
         rbrace: lbrace {
@@ -174,62 +169,6 @@
             bindings = <&kp MINUS &kp GREATER_THAN>;
             label = "RARROW";
         };
-
-        select_line: select_line {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp HOME &kp LS(END)>;
-            label = "SELECT_LINE";
-        };
-
-        ss: ss {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(S)>;
-            label = "SS";
-        };
-
-        aelower: aelower {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(U) &kp A>;
-            label = "AELOWER";
-        };
-
-        AEupper: AEupper {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(U) &kp LS(A)>;
-            label = "AEUPPER";
-        };
-
-        uelower: uelower {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(U) &kp U>;
-            label = "UELOWER";
-        };
-
-        UEupper: UEupper {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(U) &kp LS(U)>;
-            label = "UEUPPER";
-        };
-
-        oelower: oelower {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(U) &kp O>;
-            label = "OELOWER";
-        };
-
-        OEupper: OEupper {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(U) &kp LS(O)>;
-            label = "OEUPPER";
-        };
     };
 
     keymap {
@@ -255,8 +194,8 @@
 
             bindings = <
                         &kp Q  &kp W  &kp E           &kp R            &kp T           &kp Y      &kp U         &kp I             &kp O          &kp P
-                        &kp A  &kp S  &kp D           &kp F            &kp G           &kp H      &kp J         &kp K             &kp L          &mt LA(LC(LEFT_GUI)) LA(BACKSPACE)
-&mt LCTRL LEFT_BRACKET  &kp Z  &kp X  &kp C           &kp V            &kp B           &kp N      &kp M         &comma_semicolon  &period_colon  &kp TAB                             &mt RCTRL RIGHT_BRACKET
+                        &kp A  &kp S  &kp D           &kp F            &kp G           &kp H      &kp J         &kp K             &kp L          &mt LA(LC(LEFT_GUI)) LA(ESCAPE)
+&mt LCTRL LEFT_BRACKET  &kp Z  &kp X  &kp C           &kp V            &kp B           &kp N      &kp M         &comma_semicolon  &period_colon  &kp TAB                          &mt RCTRL RIGHT_BRACKET
                                       &sk LEFT_SHIFT  &lt 2 BACKSPACE  &lt 4 DELETE    &kp SPACE  &lt 1 RETURN  &sk RIGHT_SHIFT
             >;
         };
@@ -265,7 +204,7 @@
             bindings = <
          &kp LS(EXCL)  &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)         &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)   &kp LS(PLUS)  &kp LS(QMARK)
          &kp MINUS     &kp LS(LT)    &kp LS(LPAR)   &kp LS(RPAR)         &kp LS(GT)       &caps_word     &sk LGUI       &sk LCTRL      &sk LALT      &kp SLASH
-&larrow  &kp TILDE     &kp LS(LBRC)  &kp LBKT       &kp RBKT             &kp LS(RBRC)     &grave_quote   &single_quote  &double_quote  &kp PIPE      &kp BACKSLASH  &rarrow
+&larrow  &kp TILDE     &kp LS(LBRC)  &kp LBKT       &kp RBKT             &kp LS(RBRC)     &none          &single_quote  &double_quote  &kp PIPE      &kp BACKSLASH  &rarrow
                                      &kp EQUAL      &lt 3 LG(BACKSPACE)  &kp UNDER        &none          &trans         &none
             >;
 
