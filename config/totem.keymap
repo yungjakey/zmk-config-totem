@@ -30,14 +30,21 @@
     combos {
         compatible = "zmk,combos";
 
-        escape {
-            bindings = <&delete_word_fb>;
-            key-positions = <16 17>;
-        };
-
         clear_bluetooth {
             bindings = <&bt BT_CLR>;
             key-positions = <20 31>;
+        };
+
+        delete_word_forward {
+            bindings = <&kp LA(DELETE)>;
+            key-positions = <16 17>;
+            layers = <2>;
+        };
+
+        delete_word_backward {
+            bindings = <&kp LA(BACKSPACE)>;
+            key-positions = <16 17>;
+            layers = <0>;
         };
     };
 
@@ -109,33 +116,6 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-        };
-
-        delete_fb: delete_fb {
-            compatible = "zmk,behavior-mod-morph";
-            label = "DELETE_FB";
-            bindings = <&kp BACKSPACE>, <&kp DELETE>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        delete_word_fb: delete_word_fb {
-            compatible = "zmk,behavior-mod-morph";
-            label = "DELETE_WORD_FB";
-            bindings = <&kp LA(BACKSPACE)>, <&kp LA(DELETE)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        glt: glt {
-            compatible = "zmk,behavior-hold-tap";
-            label = "GLT";
-            bindings = <&lt>, <&none>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
         };
     };
 
