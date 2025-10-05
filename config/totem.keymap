@@ -256,15 +256,26 @@
             label = "RIGHT";
         };
 
-        navigation {
+        navigation_main {
             bindings = <
-       &none  &none     &none      &none     &none    &none     &none      &kp TAB    &kp LS(TAB)  &none
-       &none  &kp LALT  &kp LCTRL  &kp LGUI  &none    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT    &none
-&none  &none  &none     &none      &none     &none    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END      &none  &none
-                        &none      &none     &none    &none     &none      &none
+       &none  &none     &none      &none     &none    &none     &none     &kp TAB  &kp LS(TAB)  &none
+       &mo 4  &kp LALT  &kp LCTRL  &kp LGUI  &none    &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT    &trans
+&none  &none  &none     &none      &none     &none    &none     &none     &none    &none        &none   &none
+                        &none      &none     &none    &none     &none     &none
             >;
 
-            label = "NAV";
+            label = "NAV1";
+        };
+
+        navigation_aux {
+            bindings = <
+       &none   &none   &none   &none   &none    &none     &none      &none      &none    &none
+       &trans  &trans  &trans  &trans  &none    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END  &trans
+&none  &none   &none   &none   &none   &none    &none     &none      &none      &none    &none   &none
+                       &none   &none   &none    &none     &none      &none
+            >;
+
+            label = "NAV2";
         };
     };
 };
