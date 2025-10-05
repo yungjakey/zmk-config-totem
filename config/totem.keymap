@@ -236,10 +236,10 @@
 
         left {
             bindings = <
-       &none  &none  &none  &none   &none    &none  &none  &none  &none  &none
-       &none  &none  &none  &none   &none    &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none   &none    &none  &none  &none  &none  &none  &none
-                     &none  &trans  &none    &none  &none  &none
+       &none  &none     &none      &none     &none    &none  &none  &none  &none  &none
+       &none  &kp LALT  &kp LCTRL  &kp LGUI  &none    &none  &none  &none  &none  &none
+&none  &none  &none     &none      &none     &none    &none  &none  &none  &none  &none  &none
+                        &none      &trans    &none    &none  &none  &none
             >;
 
             label = "LEFT";
@@ -247,10 +247,10 @@
 
         right {
             bindings = <
-       &none  &none  &none  &none  &none    &none  &none   &none  &none  &none
-       &none  &none  &none  &none  &none    &none  &none   &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none   &none  &none  &none  &none
-                     &none  &none  &none    &none  &trans  &none
+       &none  &none  &none  &none  &none    &none  &none     &none      &none     &none
+       &none  &none  &none  &none  &none    &none  &kp RGUI  &kp RCTRL  &kp RALT  &none
+&none  &none  &none  &none  &none  &none    &none  &none     &none      &none     &none  &none
+                     &none  &none  &none    &none  &trans    &none
             >;
 
             label = "RIGHT";
