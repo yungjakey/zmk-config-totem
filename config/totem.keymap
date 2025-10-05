@@ -181,7 +181,7 @@
 
             bindings = <
            &kp Q  &kp W  &kp E           &kp R            &kp T    &kp Y      &kp U        &kp I             &kp O          &kp P
-           &kp A  &kp S  &kp D           &kp F            &kp G    &kp H      &kp J        &kp K             &kp L          &kp SINGLE_QUOTE
+           &kp A  &kp S  &kp D           &kp F            &kp G    &kp H      &kp J        &kp K             &kp L          &kp ESCAPE
 &kp GRAVE  &kp Z  &kp X  &kp C           &kp V            &kp B    &kp N      &kp M        &comma_semicolon  &period_colon  &slash_backslash  &quotes
                          &sk LEFT_SHIFT  &lt 1 BACKSPACE  &none    &kp SPACE  &lt 2 ENTER  &sk LEFT_SHIFT
             >;
@@ -191,7 +191,7 @@
             bindings = <
        &none      &none      &none      &none      &none            &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(PLUS)  &kp LS(QMARK)
        &kp LG(A)  &sk LALT   &sk LCTRL  &sk LGUI   &kp LG(G)        &kp LEFT       &kp DOWN      &kp UP        &kp RIGHT     &none
-&none  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))    &kp GRAVE      &kp SQT       &kp LS(DQT)   &kp LS(PIPE)  &kp BSLH       &none
+&none  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))    &kp HOME       &kp PG_DN     &kp PG_UP     &kp END       &none          &none
                              &none      &trans     &none            &none          &mo 3         &none
             >;
 
