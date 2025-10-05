@@ -199,8 +199,8 @@
         left {
             bindings = <
        &none      &none      &none      &none      &none            &none       &none            &kp TAB        &kp LS(TAB)  &none
-       &kp LG(A)  &sk LALT   &sk LCTRL  &sk LGUI   &kp LG(G)        &kp LEFT    &kp DOWN         &kp UP         &kp RIGHT    &none
-&none  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))    &kp HOME    &kp PG_DN        &kp PG_UP      &kp END      &none  &rarrow
+       &kp LG(A)  &sk LALT   &sk LCTRL  &sk LGUI   &kp LG(G)        &kp LEFT    &kp DOWN         &kp UP         &kp RIGHT    &kp QUESTION
+&none  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))    &kp HOME    &kp PG_DN        &kp PG_UP      &kp END      &none         &rarrow
                              &none      &trans     &none            &caps_word  &lt 3 LG(SPACE)  &kp LG(ENTER)
             >;
 
@@ -210,7 +210,7 @@
         right {
             bindings = <
          &none     &kp LS(AT)    &kp LS(POUND)      &kp LS(DLLR)      &kp LS(PRCNT)    &none      &none      &none          &none           &none
-         &kp EXCL  &kp LS(LBRC)  &kp LBKT           &kp RBKT          &kp LS(RBRC)     &kp LG(H)  &sk RGUI   &sk RCTRL      &sk RALT        &kp QUESTION
+         &kp EXCL  &kp LS(LBRC)  &kp LBKT           &kp RBKT          &kp LS(RBRC)     &kp LG(H)  &sk RGUI   &sk RCTRL      &sk RALT        &none
 &larrow  &none     &kp LS(LT)    &kp LS(LPAR)       &kp LS(RPAR)      &kp LS(GT)       &kp LG(N)  &kp LG(M)  &kp LG(COMMA)  &kp LG(PERIOD)  &kp LG(SLASH)  &none
                                  &kp LG(BACKSPACE)  &lt 3 LG(ESCAPE)  &caps_word       &none      &trans     &none
             >;
