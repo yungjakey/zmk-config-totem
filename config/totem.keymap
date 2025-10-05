@@ -225,10 +225,10 @@
 
         left {
             bindings = <
-       &none      &none      &none      &none      &none            &none      &none             &kp TAB     &kp LS(TAB)  &none
-       &kp LG(A)  &sk LALT   &sk LCTRL  &sk LGUI   &kp LG(LS(A))    &kp LEFT   &kp DOWN          &kp UP      &kp RIGHT    &none
-&none  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))    &kp HOME   &kp PG_DN         &kp PG_UP   &kp END      &none  &rarrow
-                             &none      &trans     &none            &kp MINUS  &lt 3 LG(RETURN)  &caps_word
+       &none      &none      &none      &none      &none            &none     &none             &kp TAB     &kp LS(TAB)  &none
+       &kp LG(A)  &sk LALT   &sk LCTRL  &sk LGUI   &kp LG(LS(A))    &kp LEFT  &kp DOWN          &kp UP      &kp RIGHT    &none
+&none  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))    &kp HOME  &kp PG_DN         &kp PG_UP   &kp END      &none  &rarrow
+                             &none      &trans     &none            &none     &lt 3 LG(RETURN)  &caps_word
             >;
 
             label = "LEFT";
@@ -236,10 +236,10 @@
 
         right {
             bindings = <
-          &kp LCTRL  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)         &kp LS(PRCNT)    &none      &kp LS(AMPS)  &kp LS(STAR)  &none     &none
-          &kp EQUAL  &kp LS(LT)  &kp LS(LPAR)   &kp LS(RPAR)         &kp LS(GT)       &kp LG(H)  &sk RGUI      &sk RCTRL     &sk RALT  &none
-&kp EXCL  &none      &none       &none          &none                &none            &none      &none         &none         &none     &none  &none
-                                 &caps_word     &lt 3 LG(BACKSPACE)  &kp UNDER        &none      &trans        &none
+       &kp EXCL      &kp LS(AT)  &kp CARET     &kp LS(DLLR)         &kp LS(PRCNT)    &none      &kp LS(LCTRL)  &kp LS(STAR)  &none       &kp QUESTION
+       &kp EQUAL     &none       &kp LS(LPAR)  &kp LS(RPAR)         &none            &kp LG(H)  &sk RGUI       &sk RCTRL     &sk RALT    &kp BACKSLASH
+&none  &kp QUESTION  &none       &none         &none                &none            &none      &none          &kp LS(LT)    &kp LS(GT)  &kp SLASH      &none
+                                 &caps_word    &lt 3 LG(BACKSPACE)  &kp UNDER        &none      &trans         &none
             >;
 
             label = "RIGHT";
