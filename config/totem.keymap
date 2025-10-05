@@ -61,34 +61,6 @@
             bindings = <&kp SINGLE_QUOTE>, <&squote2>;
         };
 
-        mt_left: mt_left {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MT_LEFT";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "balanced";
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31 32 33 34 35 37 36>;
-            require-prior-idle-ms = <100>;
-            tapping-term-ms = <250>;
-            quick-tap-ms = <150>;
-        };
-
-        mt_right: mt_right {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MT_RIGHT";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "balanced";
-            hold-trigger-on-release;
-            require-prior-idle-ms = <100>;
-            tapping-term-ms = <250>;
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 22 23 24 25 20 21 32 33 34 35 36 37>;
-            quick-tap-ms = <150>;
-        };
-
         comma_semicolon: comma_semicolon {
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA_SEMICOLON";
@@ -107,38 +79,10 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        mt_kt: mt_kt {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MT_KT";
-            bindings = <&kp>, <&kt>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
-        cmd_tab: cmd_tab {
-            compatible = "zmk,behavior-mod-morph";
-            label = "CMD_TAB";
-            bindings = <&kp TAB>, <&kp LA(LC(TAB))>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RGUI|MOD_LGUI)>;
-            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        scmd_tab: scmd_tab {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SCMD_TAB";
-            bindings = <&kp LS(TAB)>, <&kp LA(LC(LS(TAB)))>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RGUI|MOD_LGUI)>;
-        };
-
         colon_semicolon: colon_semicolon {
             compatible = "zmk,behavior-mod-morph";
             label = "COLON_SEMICOLON";
-            bindings = <&kp COLON>, <&comma_semicolon>;
+            bindings = <&kp COLON>, <&kp SEMI>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -148,6 +92,15 @@
             compatible = "zmk,behavior-mod-morph";
             label = "SLASH_BACKSLASH";
             bindings = <&kp SLASH>, <&kp BACKSLASH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        quotes: quotes {
+            compatible = "zmk,behavior-mod-morph";
+            label = "QUOTES";
+            bindings = <&double_quote>, <&single_quote>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -227,18 +180,18 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                        &kp Q  &kp W  &kp E           &kp R            &kp T    &kp Y      &kp U        &kp I             &kp O          &kp P
-                        &kp A  &kp S  &kp D           &kp F            &kp G    &kp H      &kp J        &kp K             &kp L          &lt 0 ESCAPE
-&mt LCTRL LEFT_BRACKET  &kp Z  &kp X  &kp C           &kp V            &kp B    &kp N      &kp M        &comma_semicolon  &period_colon  &slash_backslash  &mt RCTRL RIGHT_BRACKET
-                                      &sk LEFT_SHIFT  &lt 1 BACKSPACE  &none    &kp SPACE  &lt 2 ENTER  &sk LEFT_SHIFT
+           &kp Q  &kp W  &kp E           &kp R            &kp T    &kp Y      &kp U        &kp I             &kp O          &kp P
+           &kp A  &kp S  &kp D           &kp F            &kp G    &kp H      &kp J        &kp K             &kp L          &kp SINGLE_QUOTE
+&kp GRAVE  &kp Z  &kp X  &kp C           &kp V            &kp B    &kp N      &kp M        &comma_semicolon  &period_colon  &slash_backslash  &mt RCTRL RIGHT_BRACKET
+                         &sk LEFT_SHIFT  &lt 1 BACKSPACE  &none    &kp SPACE  &lt 2 ENTER  &sk LEFT_SHIFT
             >;
         };
 
         left {
             bindings = <
        &none  &none     &none      &none     &none    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(PLUS)  &kp LS(QMARK)
-       &none  &kp LALT  &kp LCTRL  &kp LGUI  &none    &kp LEFT       &kp DOWN      &kp UP        &kp RIGHT     &none
-&none  &none  &none     &none      &none     &none    &kp HOME       &kp PG_DN     &kp PG_UP     &kp END       &none          &none
+       &none  &sk LALT  &sk LCTRL  &sk LGUI  &none    &kp LEFT       &kp DOWN      &kp UP        &kp RIGHT     &none
+&none  &none  &none     &none      &none     &none    &kp GRAVE      &kp SQT       &kp LS(DQT)   &kp LS(PIPE)  &kp BSLH       &none
                         &none      &trans    &none    &none          &mo 3         &none
             >;
 
@@ -248,7 +201,7 @@
         right {
             bindings = <
        &kp LS(EXCL)   &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &none  &none     &none      &none     &none
-       &kp MINUS      &kp LS(LT)    &kp LS(LPAR)   &kp LS(RPAR)  &kp LS(GT)       &none  &kp RGUI  &kp RCTRL  &kp RALT  &none
+       &kp MINUS      &kp LS(LT)    &kp LS(LPAR)   &kp LS(RPAR)  &kp LS(GT)       &none  &sk RGUI  &sk RCTRL  &sk RALT  &none
 &none  &kp LS(TILDE)  &kp LS(LBRC)  &kp LBKT       &kp RBKT      &kp LS(RBRC)     &none  &none     &none      &none     &none  &none
                                     &kp EQUAL      &mo 3         &kp LS(UNDER)    &none  &trans    &none
             >;
@@ -259,10 +212,10 @@
         middle {
             label = "MID";
             bindings = <
-       &none  &none     &none      &none     &none    &none  &none     &none      &none     &none
-       &none  &kp LALT  &kp LCTRL  &kp LGUI  &none    &none  &kp RGUI  &kp RCTRL  &kp RALT  &none
-&none  &none  &none     &none      &none     &none    &none  &none     &none      &none     &none  &none
-                        &none      &trans    &none    &none  &trans    &none
+       &kp N1  &kp N2    &kp N3     &kp N4    &kp N5    &kp N6  &kp N7    &kp N8     &kp N9    &kp N0
+       &none   &kp LALT  &kp LCTRL  &kp LGUI  &none     &none   &kp RGUI  &kp RCTRL  &kp RALT  &none
+&none  &none   &none     &none      &none     &none     &none   &none     &none      &none     &none   &none
+                         &none      &trans    &none     &none   &trans    &none
             >;
         };
     };
