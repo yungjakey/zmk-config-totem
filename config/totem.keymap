@@ -207,19 +207,19 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-          &kp Q  &kp W  &kp E              &kp R         &kp T             &kp Y           &kp U        &kp I             &kp O          &kp P
-          &kp A  &kp S  &kp D              &kp F         &kp G             &kp H           &kp J        &kp K             &kp L          &quote_grave
-&kp LBKT  &kp Z  &kp X  &kp C              &kp V         &kp B             &kp N           &kp M        &comma_semicolon  &period_colon  &none         &kp RBKT
-                        &backspace_delete  &lt 1 ESCAPE  &sk LEFT_SHIFT    &sk LEFT_SHIFT  &lt 2 SPACE  &kp ENTER
+          &kp Q  &kp W  &kp E           &kp R            &kp T        &kp Y      &kp U        &kp I             &kp O          &kp P
+          &kp A  &kp S  &kp D           &kp F            &kp G        &kp H      &kp J        &kp K             &kp L          &mt ESCAPE LA(LC(LEFT_COMMAND))
+&kp LBKT  &kp Z  &kp X  &kp C           &kp V            &kp B        &kp N      &kp M        &comma_semicolon  &period_colon  &kp SLASH                        &kp RBKT
+                        &sk LEFT_SHIFT  &lt 1 BACKSPACE  &kp SPACE    &kp SPACE  &lt 2 ENTER  &sk LEFT_SHIFT
             >;
         };
 
         left {
             bindings = <
-       &none      &none      &none      &none      &none            &kp LS(CARET)  &kp LS(AMPS)     &kp TAB        &kp LS(TAB)  &kp QUESTION
-       &kp LG(A)  &sk LALT   &sk LCTRL  &sk LGUI   &kp LG(G)        &kp LEFT       &kp DOWN         &kp UP         &kp RIGHT    &none
-&none  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))    &kp HOME       &kp PG_DN        &kp PG_UP      &kp END      &none         &rarrow
-                             &none      &trans     &none            &caps_word     &lt 3 LG(SPACE)  &kp LG(ENTER)
+       &none      &none      &none      &none      &none            &none      &none             &kp TAB     &kp LS(TAB)  &none
+       &kp LG(A)  &sk LALT   &sk LCTRL  &sk LGUI   &kp LG(LS(A))    &kp LEFT   &kp DOWN          &kp UP      &kp RIGHT    &none
+&none  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))    &kp HOME   &kp PG_DN         &kp PG_UP   &kp END      &none  &rarrow
+                             &none      &trans     &none            &kp MINUS  &lt 3 LG(RETURN)  &caps_word
             >;
 
             label = "LEFT";
@@ -227,10 +227,10 @@
 
         right {
             bindings = <
-         &kp EXCL   &kp LS(AT)  &kp LS(POUND)      &kp LS(DLLR)      &kp LS(PRCNT)    &none      &none     &none      &none     &none
-         &kp EQUAL  &kp LS(LT)  &kp LS(LPAR)       &kp LS(RPAR)      &kp LS(GT)       &kp LG(H)  &sk RGUI  &sk RCTRL  &sk RALT  &none
-&larrow  &kp TILDE  &none       &none              &none             &none            &none      &none     &none      &none     &none  &none
-                                &kp LG(BACKSPACE)  &lt 3 LG(ESCAPE)  &caps_word       &none      &trans    &none
+         &kp EXCL  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)         &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &none     &kp LS(QMARK)
+         &none     &kp LS(LT)  &kp LS(LPAR)   &kp LS(RPAR)         &kp LS(GT)       &kp LG(H)      &sk RGUI      &sk RCTRL     &sk RALT  &kp SLASH
+&larrow  &none     &none       &none          &none                &none            &none          &none         &none         &none     &none          &none
+                               &caps_word     &lt 3 LG(BACKSPACE)  &kp UNDER        &none          &trans        &none
             >;
 
             label = "RIGHT";
