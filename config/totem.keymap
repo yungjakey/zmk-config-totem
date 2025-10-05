@@ -136,6 +136,15 @@
             #binding-cells = <0>;
             mods = <(MOD_RGUI|MOD_LGUI)>;
         };
+
+        colon_semicolon: colon_semicolon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COLON_SEMICOLON";
+            bindings = <&kp COLON>, <&comma_semicolon>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -212,8 +221,8 @@
 
             bindings = <
                         &kp Q  &kp W  &kp E           &kp R            &kp T           &kp Y      &kp U         &kp I             &kp O          &kp P
-                        &kp A  &kp S  &kp D           &kp F            &kp G           &kp H      &kp J         &kp K             &kp L          &mt LA(LC(LEFT_GUI)) ESCAPE
-&mt LCTRL LEFT_BRACKET  &kp Z  &kp X  &kp C           &kp V            &kp B           &kp N      &kp M         &comma_semicolon  &period_colon  &cmd_tab                     &mt RCTRL RIGHT_BRACKET
+                        &kp A  &kp S  &kp D           &kp F            &kp G           &kp H      &kp J         &kp K             &kp L          &kp LA(LC(SEMI))
+&mt LCTRL LEFT_BRACKET  &kp Z  &kp X  &kp C           &kp V            &kp B           &kp N      &kp M         &comma_semicolon  &period_colon  &cmd_tab          &mt RCTRL RIGHT_BRACKET
                                       &sk LEFT_SHIFT  &lt 2 BACKSPACE  &lt 4 DELETE    &kp SPACE  &lt 1 RETURN  &sk RIGHT_SHIFT
             >;
         };
