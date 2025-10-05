@@ -207,10 +207,10 @@
 
         left {
             bindings = <
-       &none      &none      &none      &none      &none            &none       &none            &kp TAB        &kp LS(TAB)  &none
-       &kp LG(A)  &sk LALT   &sk LCTRL  &sk LGUI   &kp LG(G)        &kp LEFT    &kp DOWN         &kp UP         &kp RIGHT    &none
-&none  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))    &kp HOME    &kp PG_DN        &kp PG_UP      &kp END      &kp PIPE  &rarrow
-                             &none      &trans     &none            &caps_word  &lt 3 LG(SPACE)  &kp LG(ENTER)
+       &none      &none      &none      &none      &none            &kp LS(CARET)  &kp LS(AMPS)     &kp TAB        &kp LS(TAB)  &kp QUESTION
+       &kp LG(A)  &sk LALT   &sk LCTRL  &sk LGUI   &kp LG(G)        &kp LEFT       &kp DOWN         &kp UP         &kp RIGHT    &none
+&none  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))    &kp HOME       &kp PG_DN        &kp PG_UP      &kp END      &none         &rarrow
+                             &none      &trans     &none            &caps_word     &lt 3 LG(SPACE)  &kp LG(ENTER)
             >;
 
             label = "LEFT";
@@ -219,7 +219,7 @@
         right {
             bindings = <
          &kp EXCL   &kp LS(AT)    &kp LS(POUND)      &kp LS(DLLR)      &kp LS(PRCNT)    &none      &none      &none          &none           &none
-         &none      &kp LS(LBRC)  &kp LBKT           &kp RBKT          &kp LS(RBRC)     &kp LG(H)  &sk RGUI   &sk RCTRL      &sk RALT        &kp QUESTION
+         &none      &kp LS(LBRC)  &kp LBKT           &kp RBKT          &kp LS(RBRC)     &kp LG(H)  &sk RGUI   &sk RCTRL      &sk RALT        &none
 &larrow  &kp EQUAL  &kp LS(LT)    &kp LS(LPAR)       &kp LS(RPAR)      &kp LS(GT)       &kp LG(N)  &kp LG(M)  &kp LG(COMMA)  &kp LG(PERIOD)  &kp LG(SLASH)  &none
                                   &kp LG(BACKSPACE)  &lt 3 LG(ESCAPE)  &caps_word       &none      &trans     &none
             >;
@@ -230,8 +230,8 @@
         middle {
             label = "MID";
             bindings = <
-       &none         &kp N2      &kp N3        &kp N4        &kp N5        &kp N6  &kp N7    &kp N8     &kp N9      &none
-       &kp NUMBER_1  &kp LALT    &kp LCTRL     &kp LGUI      &none         &none   &kp RGUI  &kp RCTRL  &kp RALT    &kp N0
+       &kp NUMBER_1  &kp N2      &kp N3        &kp N4        &kp N5        &kp N6  &kp N7    &kp N8     &kp N9      &none
+       &none         &kp LALT    &kp LCTRL     &kp LGUI      &none         &none   &kp RGUI  &kp RCTRL  &kp RALT    &none
 &none  &kp EQUAL     &kp LS(LT)  &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(GT)    &none   &none     &kp COMMA  &kp PERIOD  &kp SLASH  &none
                                  &none         &trans        &none         &none   &trans    &none
             >;
