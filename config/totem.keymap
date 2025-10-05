@@ -192,7 +192,7 @@
        &none      &none      &none      &none      &none            &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(PLUS)  &kp LS(QMARK)
        &kp LG(A)  &sk LALT   &sk LCTRL  &sk LGUI   &kp LG(G)        &kp LEFT       &kp DOWN      &kp UP        &kp RIGHT     &none
 &none  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))    &kp HOME       &kp PG_DN     &kp PG_UP     &kp END       &kp PIPE       &none
-                             &none      &trans     &none            &none          &lt 3 UNDER   &none
+                             &none      &trans     &none            &caps_word     &lt 3 UNDER   &none
             >;
 
             label = "LEFT";
@@ -201,9 +201,9 @@
         right {
             bindings = <
        &kp LS(EXCL)  &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &none      &none      &none          &none           &none
-       &kp EQUAL     &kp LS(LT)    &kp LS(LPAR)   &kp LS(RPAR)  &kp LS(GT)       &none      &sk RGUI   &sk RCTRL      &sk RALT        &caps_word
+       &kp EQUAL     &kp LS(LT)    &kp LS(LPAR)   &kp LS(RPAR)  &kp LS(GT)       &kp LG(H)  &sk RGUI   &sk RCTRL      &sk RALT        &kp LG(SEMI)
 &none  &none         &kp LS(LBRC)  &kp LBKT       &kp RBKT      &kp LS(RBRC)     &kp LG(N)  &kp LG(M)  &kp LG(COMMA)  &kp LG(PERIOD)  &kp LG(SLASH)  &none
-                                   &none          &lt 3 MINUS   &none            &none      &trans     &none
+                                   &none          &lt 3 MINUS   &caps_word       &none      &trans     &none
             >;
 
             label = "RIGHT";
