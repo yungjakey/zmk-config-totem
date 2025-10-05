@@ -105,6 +105,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        backspace_delete: backspace_delete {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BACKSPACE_DELETE";
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -180,19 +189,19 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp Q  &kp W  &kp E          &kp R         &kp T             &kp Y           &kp U        &kp I             &kp O          &kp P
-           &kp A  &kp S  &kp D          &kp F         &kp G             &kp H           &kp J        &kp K             &kp L          &mt LA(LC(LEFT_GUI)) MINUS
-&kp GRAVE  &kp Z  &kp X  &kp C          &kp V         &kp B             &kp N           &kp M        &comma_semicolon  &period_colon  &slash_backslash            &quotes
-                         &kp BACKSPACE  &lt 1 ESCAPE  &sk LEFT_SHIFT    &sk LEFT_SHIFT  &lt 2 SPACE  &kp ENTER
+           &kp Q  &kp W  &kp E              &kp R         &kp T             &kp Y           &kp U        &kp I             &kp O          &kp P
+           &kp A  &kp S  &kp D              &kp F         &kp G             &kp H           &kp J        &kp K             &kp L          &mt LA(LC(LEFT_GUI)) MINUS
+&kp GRAVE  &kp Z  &kp X  &kp C              &kp V         &kp B             &kp N           &kp M        &comma_semicolon  &period_colon  &slash_backslash            &quotes
+                         &backspace_delete  &lt 1 ESCAPE  &sk LEFT_SHIFT    &sk LEFT_SHIFT  &lt 2 SPACE  &kp ENTER
             >;
         };
 
         left {
             bindings = <
-       &none      &none      &none      &none      &none            &kp LS(CARET)  &kp LS(AMPS)     &kp LS(STAR)  &kp LS(PLUS)  &kp LS(QMARK)
-       &kp LG(A)  &sk LALT   &sk LCTRL  &sk LGUI   &kp LG(G)        &kp LEFT       &kp DOWN         &kp UP        &kp RIGHT     &kp TAB
-&none  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))    &kp HOME       &kp PG_DN        &kp PG_UP     &kp END       &kp PIPE       &rarrow
-                             &none      &trans     &none            &caps_word     &lt 3 LG(SPACE)  &none
+       &none      &none      &none      &none      &none            &kp LS(CARET)  &kp LS(AMPS)     &kp LS(STAR)   &kp LS(PLUS)  &kp LS(QMARK)
+       &kp LG(A)  &sk LALT   &sk LCTRL  &sk LGUI   &kp LG(G)        &kp LEFT       &kp DOWN         &kp UP         &kp RIGHT     &kp TAB
+&none  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))    &kp HOME       &kp PG_DN        &kp PG_UP      &kp END       &kp PIPE       &rarrow
+                             &none      &trans     &none            &caps_word     &lt 3 LG(SPACE)  &kp LG(ENTER)
             >;
 
             label = "LEFT";
@@ -200,10 +209,10 @@
 
         right {
             bindings = <
-         &kp LS(EXCL)  &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)      &kp LS(PRCNT)    &none      &none      &none          &none           &none
-         &kp EQUAL     &kp LS(LBRC)  &kp LBKT       &kp RBKT          &kp LS(RBRC)     &kp LG(H)  &sk RGUI   &sk RCTRL      &sk RALT        &kp LG(SEMI)
-&larrow  &none         &kp LS(LT)    &kp LS(LPAR)   &kp LS(RPAR)      &kp LS(GT)       &kp LG(N)  &kp LG(M)  &kp LG(COMMA)  &kp LG(PERIOD)  &kp LG(SLASH)  &none
-                                     &kp DELETE     &lt 3 LG(ESCAPE)  &caps_word       &none      &trans     &none
+         &kp LS(EXCL)  &kp LS(AT)    &kp LS(POUND)      &kp LS(DLLR)      &kp LS(PRCNT)    &none      &none      &none          &none           &none
+         &kp EQUAL     &kp LS(LBRC)  &kp LBKT           &kp RBKT          &kp LS(RBRC)     &kp LG(H)  &sk RGUI   &sk RCTRL      &sk RALT        &kp LG(SEMI)
+&larrow  &none         &kp LS(LT)    &kp LS(LPAR)       &kp LS(RPAR)      &kp LS(GT)       &kp LG(N)  &kp LG(M)  &kp LG(COMMA)  &kp LG(PERIOD)  &kp LG(SLASH)  &none
+                                     &kp LG(BACKSPACE)  &lt 3 LG(ESCAPE)  &caps_word       &none      &trans     &none
             >;
 
             label = "RIGHT";
