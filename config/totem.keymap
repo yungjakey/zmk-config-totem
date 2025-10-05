@@ -208,8 +208,8 @@
 
             bindings = <
           &kp Q  &kp W  &kp E              &kp R         &kp T             &kp Y           &kp U        &kp I             &kp O          &kp P
-          &kp A  &kp S  &kp D              &kp F         &kp G             &kp H           &kp J        &kp K             &kp L          &minus_plus
-&kp LBKT  &kp Z  &kp X  &kp C              &kp V         &kp B             &kp N           &kp M        &comma_semicolon  &period_colon  &slash_backslash  &kp RBKT
+          &kp A  &kp S  &kp D              &kp F         &kp G             &kp H           &kp J        &kp K             &kp L          &quote_grave
+&kp LBKT  &kp Z  &kp X  &kp C              &kp V         &kp B             &kp N           &kp M        &comma_semicolon  &period_colon  &none         &kp RBKT
                         &backspace_delete  &lt 1 ESCAPE  &sk LEFT_SHIFT    &sk LEFT_SHIFT  &lt 2 SPACE  &kp ENTER
             >;
         };
@@ -227,10 +227,10 @@
 
         right {
             bindings = <
-         &kp EXCL   &kp LS(AT)  &kp LS(POUND)      &kp LS(DLLR)      &kp LS(PRCNT)    &none      &none      &none          &none           &none
-         &kp EQUAL  &kp LS(LT)  &kp LS(LPAR)       &kp LS(RPAR)      &kp LS(GT)       &kp LG(H)  &sk RGUI   &sk RCTRL      &sk RALT        &none
-&larrow  &none      &none       &none              &none             &none            &kp LG(N)  &kp LG(M)  &kp LG(COMMA)  &kp LG(PERIOD)  &kp LG(SLASH)  &none
-                                &kp LG(BACKSPACE)  &lt 3 LG(ESCAPE)  &caps_word       &none      &trans     &none
+         &kp EXCL   &kp LS(AT)  &kp LS(POUND)      &kp LS(DLLR)      &kp LS(PRCNT)    &none      &none     &none      &none     &none
+         &kp EQUAL  &kp LS(LT)  &kp LS(LPAR)       &kp LS(RPAR)      &kp LS(GT)       &kp LG(H)  &sk RGUI  &sk RCTRL  &sk RALT  &none
+&larrow  &kp TILDE  &none       &none              &none             &none            &none      &none     &none      &none     &none  &none
+                                &kp LG(BACKSPACE)  &lt 3 LG(ESCAPE)  &caps_word       &none      &trans    &none
             >;
 
             label = "RIGHT";
