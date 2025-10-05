@@ -218,8 +218,8 @@
 
         right {
             bindings = <
-         &none      &kp LS(AT)    &kp LS(POUND)      &kp LS(DLLR)      &kp LS(PRCNT)    &none      &none      &none          &none           &none
-         &kp EXCL   &kp LS(LBRC)  &kp LBKT           &kp RBKT          &kp LS(RBRC)     &kp LG(H)  &sk RGUI   &sk RCTRL      &sk RALT        &kp QUESTION
+         &kp EXCL   &kp LS(AT)    &kp LS(POUND)      &kp LS(DLLR)      &kp LS(PRCNT)    &none      &none      &none          &none           &none
+         &none      &kp LS(LBRC)  &kp LBKT           &kp RBKT          &kp LS(RBRC)     &kp LG(H)  &sk RGUI   &sk RCTRL      &sk RALT        &kp QUESTION
 &larrow  &kp EQUAL  &kp LS(LT)    &kp LS(LPAR)       &kp LS(RPAR)      &kp LS(GT)       &kp LG(N)  &kp LG(M)  &kp LG(COMMA)  &kp LG(PERIOD)  &kp LG(SLASH)  &none
                                   &kp LG(BACKSPACE)  &lt 3 LG(ESCAPE)  &caps_word       &none      &trans     &none
             >;
