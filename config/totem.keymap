@@ -38,7 +38,6 @@
         delete_word_forward {
             bindings = <&kp LA(DELETE)>;
             key-positions = <16 17>;
-            layers = <2>;
         };
 
         delete_word_backward {
@@ -232,7 +231,7 @@
                         &kp Q  &kp W  &kp E           &kp R            &kp T           &kp Y      &kp U         &kp I             &kp O          &kp P
                         &kp A  &kp S  &kp D           &kp F            &kp G           &kp H      &kp J         &kp K             &kp L          &colon_semicolon
 &mt LCTRL LEFT_BRACKET  &kp Z  &kp X  &kp C           &kp V            &kp B           &kp N      &kp M         &comma_semicolon  &period_colon  &slash_backslash  &mt RCTRL RIGHT_BRACKET
-                                      &sk LEFT_SHIFT  &lt 2 BACKSPACE  &lt 3 DELETE    &kp SPACE  &lt 1 RETURN  &sk RIGHT_SHIFT
+                                      &sk LEFT_SHIFT  &lt 0 BACKSPACE  &lt 2 DELETE    &kp SPACE  &lt 1 RETURN  &sk RIGHT_SHIFT
             >;
         };
 
@@ -245,17 +244,6 @@
             >;
 
             label = "SYM";
-        };
-
-        navigation {
-            bindings = <
-              &kp N1     &kp N2     &kp N3     &kp N4     &kp N5           &kp N6         &kp N7            &kp N8                        &kp N9     &kp N0
-              &kp LG(A)  &sk LALT   &sk LCTRL  &sk LGUI   &kp LG(G)        &kp LEFT       &kp DOWN          &kp UP                        &kp RIGHT  &lt 4 LS(ESCAPE)
-&kp LS(HOME)  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))    &kp HOME       &kp PG_DN         &kp PG_UP                     &kp END    &cmd_tab          &kp LS(END)
-                                    &none      &trans     &none            &kp LG(SPACE)  &lt 0 LG(RETURN)  &mt_kt LEFT_SHIFT LEFT_SHIFT
-            >;
-
-            label = "NAV";
         };
 
         function {
@@ -278,6 +266,28 @@
             >;
 
             label = "MOU";
+        };
+
+        navigation_main {
+            bindings = <
+       &none  &none     &none      &none           &none    &none     &none     &none   &none      &none
+       &none  &kp LALT  &kp LCTRL  &kp LGUI        &none    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans
+&none  &none  &none     &none      &none           &none    &none     &none     &none   &none      &none   &none
+                        &none      &kp LEFT_SHIFT  &none    &none     &none     &none
+            >;
+
+            label = "NAV1";
+        };
+
+        navigation_aux {
+            bindings = <
+       &none   &none   &none   &none   &none    &none     &none      &none      &none    &none
+       &trans  &trans  &trans  &trans  &none    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END  &trans
+&none  &none   &none   &none   &none   &none    &none     &none      &none      &none    &none   &none
+                       &none   &trans  &none    &none     &none      &none
+            >;
+
+            label = "NAV2";
         };
     };
 };
