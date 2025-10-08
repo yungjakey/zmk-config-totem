@@ -232,8 +232,8 @@
         navigation {
             bindings = <
               &none      &none      &none      &none      &none            &none     &none             &kp TAB     &kp LS(TAB)  &none
-              &kp LG(A)  &sk LALT   &sk LCTRL  &sk LGUI   &kp LG(LS(A))    &kp LEFT  &kp DOWN          &kp UP      &kp RIGHT    &lt 5 LS(ESCAPE)
-&kp LS(HOME)  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))    &kp HOME  &kp PG_DN         &kp PG_UP   &kp END      &kp LS(TAB)       &kp LS(END)
+              &kp LG(A)  &sk LALT   &sk LCTRL  &sk LGUI   &kp LG(LS(A))    &kp LEFT  &kp DOWN          &kp UP      &kp RIGHT    &none
+&kp LS(HOME)  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))    &kp HOME  &kp PG_DN         &kp PG_UP   &kp END      &none  &kp LS(END)
                                     &none      &trans     &none            &none     &lt 3 LG(RETURN)  &caps_word
             >;
 
