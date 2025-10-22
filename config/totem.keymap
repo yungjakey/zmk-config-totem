@@ -137,6 +137,16 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_LALT|MOD_LGUI|MOD_LCTL|MOD_RCTL|MOD_RALT|MOD_RGUI)>;
         };
+
+        quotes: quotes {
+            compatible = "zmk,behavior-mod-morph";
+            label = "QUOTES";
+            bindings = <&mt RCTRL DOUBLE_QUOTES>, <&mt RCTRL SINGLE_QUOTE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RALT|MOD_RGUI)>;
+        };
     };
 
     macros {
@@ -214,7 +224,7 @@
             bindings = <
                  &kp Q  &kp W  &kp E           &kp R        &kp T         &kp Y      &kp U         &kp I             &kp O          &kp P
                  &kp A  &kp S  &kp D           &kp F        &kp G         &kp H      &kp J         &kp K             &kp L          &mt LA(LC(LEFT_GUI)) ESCAPE
-&mt LCTRL GRAVE  &kp Z  &kp X  &kp C           &kp V        &kp B         &kp N      &kp M         &comma_semicolon  &period_colon  &kp MINUS                    &mt RCTRL RIGHT_BRACKET
+&mt LCTRL GRAVE  &kp Z  &kp X  &kp C           &kp V        &kp B         &kp N      &kp M         &comma_semicolon  &period_colon  &kp MINUS                    &quotes
                                &sk LEFT_SHIFT  &lt_nav_del  &caps_word    &kp SPACE  &lt 1 RETURN  &sk RIGHT_SHIFT
             >;
         };
