@@ -46,6 +46,29 @@
             key-positions = <16 17>;
             layers = <0>;
         };
+
+        crbrace {
+            bindings = <&rbrace>;
+            key-positions = <23 24>;
+        };
+
+        csbrace {
+            bindings = <&sbrace>;
+            key-positions = <12 13>;
+            layers = <1>;
+        };
+
+        ccbrace {
+            bindings = <&cbrace>;
+            key-positions = <14 11>;
+            layers = <1>;
+        };
+
+        cabrace {
+            bindings = <&abrace>;
+            key-positions = <22 25>;
+            layers = <1>;
+        };
     };
 
     behaviors {
@@ -185,18 +208,11 @@
             label = "CBRACE";
         };
 
-        larrow: larrow {
+        abrace: abrace {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LESS_THAN &kp MINUS>;
-            label = "LARROW";
-        };
-
-        rarrow: rarrow {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp MINUS &kp GREATER_THAN>;
-            label = "RARROW";
+            bindings = <&kp LESS_THAN &kp GREATER_THAN &kp LEFT>;
+            label = "ABRACE";
         };
     };
 
