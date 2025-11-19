@@ -36,13 +36,7 @@
         };
 
         delete_word_forward {
-            bindings = <&kp LA(DELETE)>;
-            key-positions = <16 17>;
-            layers = <2>;
-        };
-
-        delete_word_backward {
-            bindings = <&kp LA(BACKSPACE)>;
+            bindings = <&delete_word>;
             key-positions = <16 17>;
             layers = <0>;
         };
@@ -169,6 +163,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RALT|MOD_RGUI)>;
+        };
+
+        delete_word: delete_word {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DELETE_WORD";
+            bindings = <&kp LA(BACKSPACE)>, <&kp LA(DELETE)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
