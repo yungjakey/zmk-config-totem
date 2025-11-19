@@ -250,10 +250,10 @@
 
         symbol {
             bindings = <
-        &kp LS(EXCL)   &kp LS(AT)      &kp LS(POUND)     &kp LS(DLLR)       &kp LS(PRCNT)      &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)   &kp EQUAL       &kp LS(QMARK)
-        &kp BACKSLASH  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_BRACE    &none          &sk LGUI      &sk LCTRL      &sk LALT        &kp SLASH
-&trans  &kp PIPE       &kp LS(LT)      &kp LS(LPAR)      &kp LS(RPAR)       &kp LS(GT)         &kp LG(N)      &kp LG(M)     &kp LG(COMMA)  &kp LG(PERIOD)  &kp PLUS       &trans
-                                       &trans            &trans             &trans             &none          &trans        &none
+        &kp LS(EXCL)   &kp LS(AT)      &kp LS(POUND)     &kp LS(DLLR)       &kp LS(PRCNT)      &kp LS(CARET)  &kp LS(AMPS)         &kp LS(STAR)     &kp EQUAL       &kp LS(QMARK)
+        &kp BACKSLASH  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_BRACE    &kp LG(H)      &mt RIGHT_GUI LG(J)  &mt LCTRL LG(K)  &mt LALT LG(L)  &kp SLASH
+&trans  &kp PIPE       &kp LS(LT)      &kp LS(LPAR)      &kp LS(RPAR)       &kp LS(GT)         &kp LG(N)      &kp LG(M)            &kp LG(COMMA)    &kp LG(PERIOD)  &kp PLUS       &trans
+                                       &trans            &lt 3 BACKSPACE    &trans             &none          &trans               &none
             >;
 
             label = "SYM";
@@ -261,10 +261,10 @@
 
         navigation {
             bindings = <
-              &kp N1     &kp N2          &kp N3           &kp N4          &kp N5           &kp N6    &kp N7     &kp N8     &kp N9     &kp N0
-              &kp LG(A)  &mt LALT LG(S)  &mt LCTRL LG(D)  &mt LGUI LG(F)  &kp LG(G)        &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &lt 4 TAB
-&kp LS(HOME)  &kp LG(Z)  &kp LG(X)       &kp LG(C)        &kp LG(V)       &kp LS(LG(Z))    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp LS(TAB)  &kp LS(END)
-                                         &none            &trans          &none            &trans    &trans     &trans
+              &kp N1     &kp N2          &kp N3           &kp N4          &kp N5           &kp N6    &kp N7       &kp N8     &kp N9     &kp N0
+              &kp LG(A)  &mt LALT LG(S)  &mt LCTRL LG(D)  &mt LGUI LG(F)  &kp LG(G)        &kp LEFT  &kp DOWN     &kp UP     &kp RIGHT  &lt 4 TAB
+&kp LS(HOME)  &kp LG(Z)  &kp LG(X)       &kp LG(C)        &kp LG(V)       &kp LS(LG(Z))    &kp HOME  &kp PG_DN    &kp PG_UP  &kp END    &kp LS(TAB)  &kp LS(END)
+                                         &none            &trans          &none            &trans    &lt 3 ENTER  &trans
             >;
 
             label = "NAV";
